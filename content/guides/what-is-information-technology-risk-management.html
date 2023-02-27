@@ -1,0 +1,903 @@
+ <!DOCTYPE html> <html lang="en"> 
+<!-- Mirrored from www.comptia.org/content/guides/what-is-information-technology-risk-management by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Feb 2023 05:13:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head> <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> <meta charset="utf-8" /> <title>
+	Complete Guide to IT Risk Management | CompTIA
+</title> <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0, minimum-scale=1.0" /> <meta name="referrer" content="always" /> <script src="../../../code.jquery.com/jquery-latest.min.js" type="text/javascript"></script><script src="../../scripts/jquery.validate.min.js" type="text/javascript"></script><script src="../../scripts/jquery.validate.unobtrusive.min.js" type="text/javascript"></script><script src="../../client%20scripts/mvcfoolproof.unobtrusive.js" type="text/javascript"></script><script src="../../scripts/js-cookie/js.cookie-2.2.0.min.js" type="text/javascript"></script><script src="../../resourcepackages/mainsite/assets/dist/js/project.minbc3e.js?v=4.0.9" type="text/javascript"></script><link href="../../resourcepackages/mainsite/assets/dist/css/main.minf642.css?v=4.0.10" rel="stylesheet" type="text/css" /> <script src="../../../s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b4e3a272dd369e0" type="text/javascript"></script> <script src="../../../kit.fontawesome.com/df896256a0.js" crossorigin="anonymous"></script> <!-- idio Analytics Tracking Code --> <script type="text/javascript">
+        // Set client and delivery
+
+        _iaq = [
+            ['client', '5d23cdc951f74144b35946c0c4de3efe'],
+            ['delivery', 1062],
+            ['track', 'consume']
+        ];
+
+        // Include the Idio Analytics JavaScript
+        !function (d, s) { var ia = d.createElement(s); ia.async = 1, s = d.getElementsByTagName(s)[0], ia.src = '../../../s.usea01.idio.episerver.net/ia.js', s.parentNode.insertBefore(ia, s) }(document, 'script');
+    </script> <!-- / idio Analytics Tracking Code --> <script src="../../../ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script> <script type="text/javascript">WebFont.load({ google: { families: ["Roboto:300,300italic,regular,italic,500,500italic,700,700italic"] } });</script> <script src="../../../use.typekit.net/fqu5ybu.js" type="text/javascript"></script> <script type="text/javascript">try { Typekit.load(); } catch (e) { }</script> <meta property="og:title" content="Complete Guide to IT Risk Management | CompTIA" /><meta property="og:description" content="Risk management is an important part of information technology. Read this guide to learn more about the basics of IT risk management, why it is important for the enterprise leaders, policies, procedures and technologies involved, and how to manage information risk." /><meta property="og:url" content="https://www.comptia.org/content/guides/what-is-information-technology-risk-management" /><meta property="og:type" content="website" /><meta property="og:site_name" content="Default" /><meta property="og:image" content="https://comptiacdn.azureedge.net/webcontent/images/default-source/mainsitetemplateimages/comptia_logo_white.png?sfvrsn=df1edab8_2" /><link rel="alternate" hreflang="en" href="what-is-information-technology-risk-management.html" /><link rel="alternate" hreflang="x-default" href="what-is-information-technology-risk-management.html" /><script type="text/javascript">
+$(function() {
+    var $el = $("#accordionCerts");
+    if ($el.length) {
+        $("#accordionCerts").jqueryAccordion({
+            interval: 600,
+            fadeContent: false,
+            open: false,
+            defaultOpenIndex: 1
+        });
+    }
+});
+</script><style type="text/css" media="all">.meetingaccordion .accordion-content a {
+  color: #008fc3;
+  text-decoration: none;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.main-content h3 {
+margin: 15px 0;
+}
+
+ul.bulletlist, ul.list {
+  padding: 0;
+}
+
+div.sidebarSection:nth-child(5) {
+  display: none;
+}</style><meta name="Generator" content="Sitefinity 13.1.7428.0 OME" /><link rel="canonical" href="what-is-information-technology-risk-management.html" /><meta name="article:tag" content="cybersecurity" /><meta name="keywords" content="cybersecurity" /><script type="text/javascript">
+	
+(function(){
+    var metadataStr = '{\"Id\":\"09fdb914-4fb7-478f-b7c9-89004c99d79e\",\"ContentType\":\"Page\",\"Title\":\"Complete Guide to IT Risk Management\",\"CanonicalTitle\":\"Complete Guide to IT Risk Management\",\"CanonicalUrl\":\"what-is-information-technology-risk-management.html\",\"Language\":\"en\",\"CreatedOn\":\"2022-10-09T23:46:44Z\",\"ModifiedOn\":\"2022-10-13T21:15:54Z\",\"SiteName\":\"Default\",\"PageId\":\"09fdb914-4fb7-478f-b7c9-89004c99d79e\"}';
+    window.decMetadata = window.decMetadata || {};
+    window.decMetadata.contentMetadata = JSON.parse(metadataStr);
+})();
+</script><script type="text/javascript">
+	(function() {
+    var detectjs = false;
+    var executeDataIntelligenceScript = function() {
+        var source;
+        if (!window.JSON) {
+            source = '/WebResource.axd?d=tTNUeDtL8OsI39FmMLAdgBQBc-fQa8Zapz4xvupjc2u3a0YKXmxWFXx9mciVdoC7VzbV4hb5cqjKUmgjgX74neyz5il70jFCpEoTH-EkQxelKL1MKV5hAkveXsdpQDwAKAhg6P86u61v4L4qK-n7gdu4kJw1&t=637429511240000000';
+        } else if (!detectjs) {
+            source = '/WebResource.axd?d=6kZXgApsQ6ne3RX7gMeiNahLDbzLehKOtS8GRay_gzHC_qE3a2_kpaSbDUjmpgRqKRmLS4_1gBJtu2kHZBJBtGZ55w0X5YkbqhYB4x5b9GqYV7wZB2CgSaSY6UbHUTBbwkgwFKtd7E_tak0eqrZQj76pH8lPhLBOUHHtYcjNrvZVwfRqyiiYxjmAUNt4swxYqwDQiQpQbZY6wUAB3neaqOVik_I1&t=637429511220000000';
+            detectjs = true;
+        } else if (!window.DataIntelligenceSubmitScript) {
+            source = '/WebResource.axd?d=svCNDiDihPX-0SS0GCW70GTCob9kSVbrmRcpYaIyqKiuSRqNT_HmrbuuLKCCVxSkZpUFcGKXvrV-kdFWRV9WOSBbhT_LXa6RHrd9nAgi4Lh1CxYskGQglbaFjQ1VMwYjcqHs4z983wuNNAfc8VNkfSEFqakXZo8cqG4g2tlSECFAg6ZCRrYLwsJxumR2TUwZZFqowmwrbvm1l3cJxFytNAh1bNCCZF0N-eto-_nAfxFvyd1D0&t=637429511220000000';
+        } else if (!window.sfDataIntell) {
+            source = '../../../cdn.insight.sitefinity.com/sdk/sitefinity-insight-client.min.3.0.11.js';
+        } else {
+            return DataIntelligenceSubmitScript.load({"apiServerUrl":"https://api.insight.sitefinity.com","apiKey":"3053cddb-5173-1bee-1b10-43e0ff4f97c4","applicationName":"DevCompTIAOrg","trackingCookieDomain":"","keepDecTrackingCookieOnTrackingConsentRejection":false});
+        }
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        var callback = function() {
+            if (!this.readyState || this.readyState === 'complete' || this.readyState === 'loaded') {
+                executeDataIntelligenceScript();
+            }
+        };
+        if(script.addEventListener) {
+            script.addEventListener('load', callback, false);
+        } else if(script.readyState) {
+            script.onreadystatechange = callback;
+        }
+        script.src = source;
+        return document.body.appendChild(script);
+    };
+    if (window.addEventListener) {
+        window.addEventListener('load', executeDataIntelligenceScript, false);
+    } else if (window.attachEvent) {
+        window.attachEvent('onload', executeDataIntelligenceScript);
+    }
+})();
+</script><meta name="description" content="Risk management is an important part of information technology. Read this guide to learn more about the basics of IT risk management, why it is important for the enterprise leaders, policies, procedures and technologies involved, and how to manage information risk." /></head> <body lang="en"> <!-- MS Dynamics --> <div id="dPCA2Xv2ViMzSahA85lfNNpqlep_9M6Prbp8xqs7K6q8"></div> <script src="../../../mktdplp102cdn.azureedge.net/public/latest/js/ws-trackingd23c.js?v=1.69.1065.0"></script> <div class="d365-mkt-config" style="display:none" data-website-id="PCA2Xv2ViMzSahA85lfNNpqlep_9M6Prbp8xqs7K6q8" data-hostname="4fb516e0ad974eb7b7d929125dbdc1ff.svc.dynamics.com"></div> <!-- End MS Dynamics -->  <!-- Google Tag Manager --> <script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-M53PKPD');</script> <!-- End Google Tag Manager --> <!-- Global site tag (gtag.js) - Google Analytics --> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113138049-1"></script> <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-113138049-1', {
+        send_page_view: false
+    });
+</script> <!-- Google Tag Manager (noscript) --> <noscript> <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M53PKPD"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe> </noscript> <!-- End Google Tag Manager (noscript) --> <!-- OneTrust Cookies Consent Notice start for comptia.org --> <script async src="../../../cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="d3d66ac2-27bc-4963-9709-689280baad0b"></script> <script type="text/javascript">
+        function OptanonWrapper() { }
+    </script> <!-- OneTrust Cookies Consent Notice end for comptia.org --> <!-- Pull the Wootric Snippet --> <script type="text/javascript" src="../../../cdn.wootric.com/wootric-sdk.js"></script> <!-- begin Wootric code --> <script type="text/javascript">
+    window.wootricSettings = {
+        created_at: Math.floor(Date.now() / 1000),
+        account_token: 'NPS-88f9d834'
+    };
+    // Request a survey
+    window.wootric('run');
+</script> <!-- end Wootric code --> 
+
+
+ <section class="header-container-new"> <header class="header"> 
+
+<div class="siteupdate"><div class="popup popup-3" aria-modal="true" role="dialog"><div class="popup-3_box"><img src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/newsiteupdates/whatbringsyoutooursitetoday.jpg" loading="lazy" sizes="100vw" srcset="https://comptiacdn.azureedge.net/webcontent/images/default-source/newsiteupdates/whatbringsyoutooursitetoday-p-500.jpg 500w, 
+    https://comptiacdn.azureedge.net/webcontent/images/default-source/newsiteupdates/whatbringsyoutooursitetoday-p-800.jpg 800w, 
+    https://comptiacdn.azureedge.net/webcontent/images/default-source/newsiteupdates/whatbringsyoutooursitetoday-p-1080.jpg 1080w, 
+    https://comptiacdn.azureedge.net/webcontent/images/default-source/newsiteupdates/whatbringsyoutooursitetoday.jpg 1920w" alt="What brings you to our site today" class="width-full radius-none"><div class="container-large"><div class="popup-3_layout"><div class="popup_heading">What brings you to our site today?</div><div class="popup-1_tags"><a href="../../career-intent.html" class="popup-2_option w-inline-block" onclick="gtag('event', 'ASPopup', { 'event_category': 'PopupOptions', 'event_label': 'Career Intent' });">
+ <div>I'm considering a career change and exploring all my options</div></a>
+ <a href="../../tech-intent.html" class="popup-2_option w-inline-block" onclick="gtag('event', 'ASPopup', { 'event_category': 'PopupOptions', 'event_label': 'Tech Intent' });">
+ <div>I'm interested in a tech career and want to learn more</div></a>
+ <a href="../../comptia-intent.html" class="popup-2_option w-inline-block" onclick="gtag('event', 'ASPopup', { 'event_category': 'PopupOptions', 'event_label': 'CompTIA Intent' });">
+ <div>I'm ready to purchase CompTIA&nbsp;training and certification products</div></a>
+ <a href="../../brand.html" class="popup-2_option w-inline-block" onclick="gtag('event', 'ASPopup', { 'event_category': 'PopupOptions', 'event_label': 'Brand' });">
+ <div>I'd like to learn more about CompTIA</div></a>
+ </div><div data-w-id="bc94d0e4-740d-dc23-da4f-5120e29cb9ac" class="popup-1_close" role="button"><div class="icon"></div></div></div></div></div><div data-w-id="bc94d0e4-740d-dc23-da4f-5120e29cb9af" class="popup_overlay"></div></div></div><a id="top" name="#top"></a>
+
+<script type="text/javascript">
+    //Determine how much padding is needed for the nav.  1170px - window width
+    $(document).ready(function () {
+
+        var e = window,
+            a = 'inner';
+        if (!('innerWidth' in window)) {
+            a = 'client';
+            e = document.documentElement || document.body;
+        }
+        /*var width = jQuery(window).width();*/
+        var width = e[a + 'Width'];
+        var navTotal = width - 1185;
+        var navPadding = navTotal / 2;
+
+        $('.cd-secondary-nav').attr('style', 'padding: 48px ' + (navPadding) + 'px 48px 180px; margin-left: -180px;');
+        $('.cd-secondary-nav.cd-secondary-search-nav').attr('style', 'padding: 48px ' + (navPadding) + 'px; margin-left: -180px;');
+    });
+</script>
+
+<div class="siteupdate">
+    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+        <div class="top-bar hideOnTablet hideOnMobile">
+            <div class="padding-global">
+                <div class="top-bar_menu">
+                    <div><a href="https://connect.comptia.org/" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Corporate Membership' });">Membership Community</a></div>
+                    <div><a href="https://partners.comptia.org/" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Partners' });">Partners</a></div>
+                    <div><a href="../../about-us.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'About Us' });">About Us</a></div>
+                    <div><a href="../../contact-us.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Contact Us' });">Contact Us</a></div>
+                    <div><a href="https://help.comptia.org/" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Help' });">Help</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar_layout">
+            <a href="../../home.html" class="cd-logo" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Top Logo' });">
+                <img src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/mainsitetemplateimages/comptia_logo_rgbd16d9a1df26d4c17a95d23916d9db2d259d3.png?sfvrsn=d6d8_2" alt="CompTIA" title="CompTIA" class="toplogo">
+            </a>
+
+            <div class="cd-main-header">
+                <nav role="navigation" class="navbar_menu w-nav-menu">
+                    <div class="navbar_menu-items">
+                        <nav class="cd-nav">
+                            <ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+                                
+                                <!-- Certifications -->
+                                <li class="has-children">
+                                    <a href="../../certifications.html" aria-haspopup="true" aria-expanded="false" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Certifications' });">
+                                        Certifications<span></span>
+                                    </a>
+
+                                    <ul class="cd-secondary-nav is-hidden">
+                                        <li class="mobile-secondary-navigation-row hideOnDesktop">
+                                            <a href="#0" class="go-back"></a>
+                                            <a class="see-all" href="../../certifications.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Certifications' });">Certifications</a>
+                                            <span class="close-button"><i class="fas fa-xmark" aria-hidden="true"></i></span>
+                                        </li>
+
+                                        <li class="has-children half">
+                                            <span class="nav-heading" role="presentation"><a href="../../certifications.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Certifications' });">Certifications</a></span>
+                                            <ul class="is-hidden three-col">
+                                                <li><a href="../../certifications/a.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'A+' });">A+</a></li>
+                                                <li><a href="../../certifications/comptia-advanced-security-practitioner.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CASP+' });">CASP+</a></li>
+                                                <li><a href="../../certifications/cloud.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Cloud+' });">Cloud+</a></li>
+                                                <li><a href="../../certifications/cloud-essentials.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Cloud Essentials' });">Cloud Essentials+</a></li>
+                                                <li><a href="../../certifications/ctt.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CTT+' });">CTT+</a></li>
+                                                <li><a href="../../certifications/cybersecurity-analyst.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Cybersecurity Analyst+' });">CySA+</a></li>
+                                                <li><a href="../../certifications/data.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Data+' });">Data+</a></li>
+                                                <li><a href="../../certifications/it-fundamentals.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'IT Fundamentals' });">ITF+</a></li>
+                                                <li><a href="../../certifications/linux.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Linux+' });">Linux+</a></li>
+                                                <li><a href="../../certifications/network.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Network+' });">Network+</a></li>
+                                                <li><a href="../../certifications/pentest.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'PenTest+' });">PenTest+</a></li>
+                                                <li><a href="../../certifications/project.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Project+' });">Project+</a></li>
+                                                <li><a href="../../certifications/server.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Server+' });">Server+</a></li>
+                                                <li><a href="../../certifications/security.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Security+' });">Security+</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children quarter">
+                                            <span class="nav-heading" role="presentation">Exam Development</span>
+                                            <ul class="is-hidden one-col">
+                                                <li><a runat="server" href="../../certifications/become-a-subject-matter-expert.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'SME Overview' });">Overview</a></li>
+                                                <li><a runat="server" href="../../certifications/become-a-subject-matter-expert/apply-now.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'How to Apply' });">How to Apply</a></li>
+                                                <li><a runat="server" href="../../certifications/become-a-subject-matter-expert/workshops.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Workshops' });">Currently Recruiting</a></li>
+                                                <li><a runat="server" href="../../certifications/become-a-subject-matter-expert/current-smes.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Current SMEs' });">Current CompTIA SMEs</a></li>
+                                                <li><a runat="server" href="../../certifications/become-a-subject-matter-expert/refer-a-friend.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'SME Refer a Friend' });">Refer a Friend</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children quarter">
+                                            <span class="nav-heading" role="presentation"> Certification Resources</span>
+                                            <ul class="is-hidden one-col">
+
+                                                <li><a href="../../certifications/4-steps-to-certification.html" class="cd-nav-item" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': '4 Steps to Certification' });">4 Steps to Certification</a></li>
+                                                <li><a href="../../certifications/which-certification.html" class="cd-nav-item" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Which Certification is Right' });">Which Certification Is Right for Me?</a></li>
+                                                <li><a href="../../certifications/comptia-digital-badges.html" class="cd-nav-item" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Digital Badges' });">CompTIA Digital Badges</a></li>
+                                                <li><a href="../lp/certified-team-award.html" class="cd-nav-item" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Certified Team Award' });">Certified Team Award</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- Training -->
+                                <li class="has-children">
+                                    <a href="../../training.html" aria-haspopup="true" aria-expanded="false" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Training' });">Training<span></span></a>
+
+                                    <ul class="cd-secondary-nav is-hidden">
+                                        <li class="mobile-secondary-navigation-row hideOnDesktop">
+                                            <a href="#0" class="go-back"></a>
+                                            <a class="see-all" href="../../training.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Training' });">Training</a>
+                                            <span class="close-button"><i class="fas fa-xmark" aria-hidden="true"></i></span>
+                                        </li>
+
+                                        <li class="has-children quarter training-en">
+                                            <span class="nav-heading"><a href="../../training/by-certification.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Training By Certification' });">By Certification</a></span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../training/by-certification/a.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'A+ Training' });">CompTIA A+ Training</a></li>
+                                                <li><a href="../../training/by-certification/network.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Network+ Training' });">CompTIA Network+ Training</a></li>
+                                                <li><a href="../../training/by-certification/security.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Security+ Training' });">CompTIA Security+ Training</a></li>
+                                                <li><a href="../../training/by-certification/casp.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CASP+ Training' });">CompTIA CASP+ Training</a></li>
+                                                <li class="hideOnMobile">&nbsp;</li>
+                                                <li><a href="../../training/by-certification.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'View All Cert Training' });">View All Certs</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children quarter training-en">
+                                            <span class="nav-heading" role="presentation">For Individuals</span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../training/certmaster-learn.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'eLearning' });">eLearning</a></li>
+                                                <li><a href="../../training/certmaster-labs.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Virtual Labs' });">Virtual Labs</a></li>
+
+                                                <li><a href="../../training/classroom-training/online-instructor-led-training.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Virtual Labs' });">Live Online Training</a></li>
+                                                <li><a href="../../training/classroom-training/comptia-tech-training-career-services.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Virtual Labs' });">CompTIA Tech Career Academy</a></li>
+
+                                                <li><a href="../../training/certmaster-practice.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Exam Prep' });">Exam Prep</a></li>
+                                                <li><a href="../../training/books.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CompTIA Books' });">CompTIA Books</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children quarter training-en">
+                                            <span class="nav-heading" role="presentation">For Groups</span>
+                                            <ul class="is-hidden">
+                                                <li><a href="../../training/employers-workforce-development/workforce-development-training.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Workforce Development Solutions' });">Workforce Development Solutions</a></li>
+                                                <li><a href="../../training/employers-workforce-development/academic-government-solutions.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Academic & Government Solutions' });">Employer/Academic/Government</a></li>
+                                                <li><a href="../../training/employers-workforce-development/why-comptia-training-solutions.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Why CompTIA Training Solutions' });">Why CompTIA Training Solutions</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children quarter training-en">
+                                            <span class="nav-heading"><a href="../../training/resources.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Training Resources' });">Training Resources</a></span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../training/resources/practice-tests.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Practice Test' });">Practice Test</a></li>
+                                                <li><a href="../../training/resources/exam-objectives.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Exam Objectives' });">Exam Objectives</a></li>
+                                                <li><a style="height:auto;" href="../../training/certmaster-learn/trial-sign-up.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CertMaster Learn Labs Trial' });">CertMaster Learn + Labs Trial</a></li>
+                                                <li><a style="height:auto;" href="../../training/certmaster-practice/trial-sign-up.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CertMaster Practice Trial' });">CertMaster Practice Trial</a></li>
+                                                <li><a href="../../training/resources/book-samples.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Book Samples' });">CompTIA Book Samples</a></li>
+                                                <li><a style="height:auto;" href="../../training/resources/training-partners.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Authorized Partners' });">Authorized Partner Program</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </li>
+
+                                <!-- Testing -->
+                                <li class="has-children">
+                                    <a href="../../testing.html" aria-haspopup="true" aria-expanded="false" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Testing' });">Testing<span></span></a>
+
+                                    <ul class="cd-secondary-nav is-hidden">
+                                        <li class="mobile-secondary-navigation-row hideOnDesktop">
+                                            <a href="#0" class="go-back"></a>
+                                            <a class="see-all" href="../../testing.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Testing' });">Testing</a>
+                                            <span class="close-button"><i class="fas fa-xmark" aria-hidden="true"></i></span>
+                                        </li>
+
+                                        <li class="has-children third training-en">
+                                            <span class="nav-heading" role="presentation">Testing Options</span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../testing/testing-options/about-testing-options.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'About Testing Options' });">About Testing Options</a></li>
+                                                <li><a href="../../testing/testing-options/take-in-person-exam.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Take In-Person Exam' });">In-Person Exams</a></li>
+                                                <li><a href="../../testing/testing-options/take-online-exam.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Take Online Exam' });">Online Exams</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children third training-en">
+                                            <span class="nav-heading" role="presentation">Exam Vouchers</span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../testing/exam-vouchers/exam-prices.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'About Exam Pricing' });">About Exam Pricing</a></li>
+                                                <li><a href="../../testing/exam-vouchers/buy-exam.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Buy Exam Vouchers' });">Buy Exam Vouchers</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children third training-en">
+                                            <span class="nav-heading" role="presentation">Testing Policies and Procedures</span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../testing/testing-policies-procedures/test-policies.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'About Testing Policies' });">About Testing Policies</a></li>
+                                                <li><a href="../../testing/testing-policies-procedures/test-policies/exam-development.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Exam Development Process' });">Exam Development Process</a></li>
+                                                <li><a style="height:auto;" href="../../contact-us/comptia-exam-security-hotline.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Exam Security Hotline' });">Exam Security Hotline</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </li>
+
+                                <!-- Continuing Ed -->
+                                <li class="has-children">
+                                    <a href="../../continuing-education.html" aria-haspopup="true" aria-expanded="false" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Continuing Education' });">Continuing Education<span></span></a>
+
+                                    <ul class="cd-secondary-nav is-hidden">
+                                        <li class="mobile-secondary-navigation-row hideOnDesktop">
+                                            <a href="#0" class="go-back"></a>
+                                            <a class="see-all" href="../../continuing-education.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Continuing Education' });">Continuing Education</a>
+                                            <span class="close-button"><i class="fas fa-xmark" aria-hidden="true"></i></span>
+                                        </li>
+
+                                        <li class="has-children two-thirds">
+                                            <span class="nav-heading"><a runat="server" href="../../continuing-education/learn.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Learn About the Renewal Process' });">Learn About the Renewal Process</a></span>
+                                            <ul class="is-hidden two-col">
+                                                <li><a href="../../continuing-education/why-renew.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CE Why Renew' });">Why Renew?</a></li>
+                                                <li><a href="../../continuing-education/learn/overview.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Renewal Overview' });">Overview</a></li>
+                                                <li><a href="../../continuing-education/learn/how-to-renew.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'How to Renew' });">How to Renew</a></li>
+                                                <li><a href="../../continuing-education/learn/ce-program-fees.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Continuing Education Fees' });">Continuing Education Fees</a></li>
+                                                <li><a href="../../continuing-education/learn/earn-continuing-education-units.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Continuing Education Units' });">Continuing Education Units (CEUs)</a></li>
+                                                <li><a href="../../continuing-education/learn/renewing-multiple-certifications.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Multiple Renewals' });">Multiple Renewals</a></li>
+                                                <li><a href="../../continuing-education/learn/dod-ce-information.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'DoD Employees' });">DoD Employees and Contractors</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children third">
+                                            <span class="nav-heading"><a href="../../continuing-education/choose.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Choose Your Renewal Path' });">Choose Your Renewal Path</a></span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../continuing-education/choose/renew-with-a-single-activity.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Renew with a Single Activity' });">Renew with a Single Activity</a></li>
+                                                <li><a href="../../continuing-education/choose/renewing-with-multiple-activities.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Renew with a Multiple Activities' });">Renew with Multiple Activities</a></li>
+                                                <li><a href="../../continuing-education/choose/renewal-options.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Renewal Options' });">What Renewal Options Are Available to You?</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- Events -->
+                                <li class="has-children">
+                                    <a href="https://connect.comptia.org/events" aria-haspopup="true" aria-expanded="false" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Events' });">Events<span></span></a>
+
+                                    <ul class="cd-secondary-nav is-hidden">
+                                        <li class="mobile-secondary-navigation-row hideOnDesktop">
+                                            <a href="#0" class="go-back"></a>
+                                            <a class="see-all" href="https://connect.comptia.org/events" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Events' });">Events</a>
+                                            <span class="close-button"><i class="fas fa-xmark" aria-hidden="true"></i></span>
+                                        </li>
+
+                                        <li class="has-children quarter">
+                                            <span class="nav-heading"><a href="../../events/all-events/index.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Event List' });">Events</a></span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../events/all-events/index.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'All Events' });">All Events</a></li>
+                                                <li><a href="https://connect.comptia.org/events/view/comptia-communities-councils-forum-(ccf)-2023?sfredirect=/ccf" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CompTIA Community Forum' });">CompTIA Communities &amp; Councils Forum</a></li>
+                                                <li><a href="https://connect.comptia.org/partnersummit/" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Partner Summit' });">Partner Summit</a></li>
+                                                <li><a href="https://connect.comptia.org/channelcon?sfredirect=/channelcon" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'ChannelCon' });">ChannelCon</a></li>
+                                                <li><a href="https://connect.comptia.org/emea" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'EMEA Member & Partner Conference' });">EMEA Member & Partner Conference</a></li>
+                                                <li><a href="../../events/view/comptia-pti-cyber-leader-summit.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Cyber Leader Summit' });">PTI Cyber Leader Summit</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children quarter">
+                                            <span class="nav-heading"><a href="../../events/webinars/index.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Self-Study Tools' });">Upcoming Webinars</a></span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="https://connect.comptia.org/events/webinars/on-demand" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'On Demand Webinars' });">On Demand Webinars</a></li>
+                                            </ul>
+
+
+                                            <span class="nav-heading"><a href="https://connect.comptia.org/resources/podcasts" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Podcasts' });">Podcasts</a></span>
+                                        </li>
+
+                                        <li class="has-children quarter">
+                                            <span class="nav-heading"><a href="../../events/channel-training/index.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Classroom Training' });">Channel Training</a></span>
+
+                                           <!-- <span class="nav-heading"><a href="/events/industry-events/" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Industry Events' });">Industry Events</a></span> -->
+
+                                            <span class="nav-heading"><a href="../../events/archives/index.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Event Archives' });">Event Archives</a></span>
+                                        </li>
+
+                                        <li class="has-children quarter">
+                                            <div style="padding-top: 50px; padding-bottom: 0;">
+          <a href="../../events/view/comptia-communities-councils-forum-(ccf)-2023.html" style="height: auto;">
+                     <img style="border: medium none; width: 100%;" src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/events/ccf-2023-style-sheet_420-x-121---event-nav-banner0de2.png?sfvrsn=1cf8a2ed_2" data-displaymode="Original" alt="ccf" title="ccf">  </a>
+
+</div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- Resources -->
+                                <li class="has-children">
+                                    <a href="../../resources.html" aria-haspopup="true" aria-expanded="false" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Resources' });">Resources<span></span></a>
+
+                                    <ul class="cd-secondary-nav is-hidden">
+                                        <li class="mobile-secondary-navigation-row hideOnDesktop">
+                                            <a href="#0" class="go-back"></a>
+                                            <a class="see-all" href="../../resources.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Resources' });">Resources</a>
+                                            <span class="close-button"><i class="fas fa-xmark" aria-hidden="true"></i></span>
+                                        </li>
+
+                                        <li class="has-children fifth no-margin">
+                                            <span class="nav-heading"><a href="../../resources.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Trends & Analysis' });">Trends &amp; Analysis</a></span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../resources/cloud-computing.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Cloud Computing' });">Cloud Computing</a></li>
+                                                <li><a href="../../resources/computer-networks.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Computer Networks' });">Computer Networks</a></li>
+                                                <li><a href="../../resources/cybersecurity.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Cybersecurity' });">Cybersecurity</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children fifth no-margin">
+                                            <span class="nav-heading hideOnMobile" role="presentation">&nbsp;</span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../resources/data-and-analytics.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Data and Analytics' });">Data and Analytics</a></li>
+                                                <li><a href="../../resources/it-career-center.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'IT Career Center' });">IT Career Center</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children fifth">
+                                            <span class="nav-heading hideOnMobile" role="presentation">&nbsp;</span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../resources/it-support-and-help-desk.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'IT Support and Help Desk' });">IT Support and Help Desk</a></li>
+                                                <li><a href="../../resources/it-workforce.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'IT Workforce' });">IT Workforce</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children fifth">
+                                            <span class="nav-heading" role="presentation">IT Career Tools</span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../it-careers-path-roadmap.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Career Roadmap' });">Career Roadmap</a></li>
+                                                <li><a href="../lp/it-certifications-job-match.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Certifications and Jobs' });">Certifications and Jobs</a></li>
+                                                <li><a href="../it-salary-calculator.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'IT Salary Calculator' });">IT Salary Calculator</a></li>
+                                                <li><a href="../lp/ziprecruiter.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Zip Recruiter' });">Find a Job</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children fifth">
+                                            <span class="nav-heading"><a href="../../blog.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CompTIA Blog' });">CompTIA Blog</a></span>
+                                            <span class="nav-heading"><a href="https://connect.comptia.org/resources/comptia-world" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CompTIA World' });">CompTIA World</a></span>
+                                            <span class="nav-heading"><a href="../../membership/it-pro/student-membership-and-benefits.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Students' });">Students</a></span>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- Career Changers -->
+                                <li class="has-children">
+                                    <a href="../../career-change.html" aria-haspopup="true" aria-expanded="false" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Career Changers' });">Career Changers<span></span></a>
+
+                                    <ul class="cd-secondary-nav is-hidden">
+                                        <li class="mobile-secondary-navigation-row hideOnDesktop">
+                                            <a href="#0" class="go-back"></a>
+                                            <a class="see-all" href="../../career-change.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Career Changer' });">Career Changers</a>
+                                            <span class="close-button"><i class="fas fa-xmark" aria-hidden="true"></i></span>
+                                        </li>
+
+                                        <li class="has-children forth no-margin">
+                                            <span class="nav-heading"><a href="../../career-change/plan.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Plan Your Career Change' });">Plan Your Career Change</a></span>
+                                        </li>
+
+                                        <li class="has-children forth no-margin">
+                                            <span class="nav-heading"><a href="../../career-change/exploring-it.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Learn About Careers in IT' });">Learn About Careers in IT</a></span>
+                                        </li>
+
+                                        <li class="has-children forth no-margin">
+                                            <span class="nav-heading"><a href="../../career-change/switching-career-path.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Change Careers to IT' });">Change Careers to IT</a></span>
+                                        </li>
+
+                                        <li class="has-children forth no-margin">
+                                            <span class="nav-heading"><a href="../../career-change/quiz.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Take Free Career Quiz' });">Take Free Career Quiz</a></span>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <ul class="cd-secondary-nav is-hidden cd-secondary-search-nav">
+                                        <li class="mobile-secondary-navigation-row hideOnDesktop">
+                                            <a class="see-all" href="../../search.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Search' });">Search</a>
+                                            <span class="close-button"><i class="fas fa-xmark" aria-hidden="true"></i></span>
+                                        </li>
+                                        <li class="full">
+                                            <div id="cd-search" class="cd-search">
+                                                <form action="https://www.comptia.org/search" method="get" id="searchForm">
+                                                    <input type="text" id="query" name="query" />
+                                                    <button class="ibSearch"><i class="fas fa-magnifying-glass"></i></button>
+                                                </form>
+                                                <div class="popular-results">
+                                                    <span class="nav-heading">Most Popular Search Results</span>
+                                                    <ul>
+                                                        <li><a href="../../searchb514.html?query=security">Security</a></li>
+                                                        <li><a href="../../search1a1e.html?query=comptia%20a%2b">CompTIA A+</a></li>
+                                                        <li><a href="../../search2365.html?query=education">Education</a></li>
+                                                        <li><a href="../../searchb2c9.html?query=network">Network</a></li>
+                                                        <li><a href="../../search2a42.html?query=roadmap">Roadmap</a></li>
+                                                        <li><a href="../../search4e90.html?query=CertMaster">CertMaster</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="hideOnDesktop"><a href="https://my.comptia.org/" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'My Account' });">Log in</a></li>
+
+                                <li class="hideOnDesktop"><a href="https://connect.comptia.org/" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Corporate Membership' });">Corporate Membership</a></li>
+                                <li class="hideOnDesktop"><a href="https://partners.comptia.org/" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Partners' });">Partners</a></li>
+                                <li class="hideOnDesktop"><a href="../../about-us.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'About Us' });">About Us</a></li>
+                                <li class="hideOnDesktop"><a href="../../contact-us.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Contact Us' });">Contact Us</a></li>
+                                <li class="hideOnDesktop"><a href="https://help.comptia.org/" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Help' });">Help</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="navbar_menu-buttons cd-header-buttons hideOnMobile hideOnTablet">
+                        <div tabindex="0" role="button" class="search-icon cd-search-trigger"></div>
+
+                        <a id="tn_myaccount" class="button is-login w-inline-block my-account hideOnMobile hideOnTablet" href="https://my.comptia.org/" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'My Account' });">
+Log in
+                        </a>
+                        <a id="tn_store" href="https://store.comptia.org/" class="button is-store w-inline-block hideOnMobile hideOnTablet" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Store' });">
+                            <div class="icon"></div><div>Store</div>
+                        </a>
+                    </div>
+                </nav>
+                
+
+                <ul class="cd-header-buttons hideOnDesktop">
+                    <li class="mobile-button-group"><a class="cd-nav-trigger" href="#cd-primary-nav" aria-label="Mobile Navigation"><i class="fas fa-bars" aria-hidden="true"></i></a></li>
+                    <li class="mobile-button-group">
+                        <ul>
+                            <li><a id="tn_search" class="cd-search-trigger" href="#cd-search" aria-label="Search"><i class="fas fa-magnifying-glass"></i></a></li>
+                            <li>
+                                <a id="tn_store" aria-label="CompTIA Store" class="store" href="https://store.comptia.org/" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Store' });">
+                                    <i class="fas fa-cart-shopping"><span class="item-count">3</span></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
+    </div>
+</div>
+
+
+
+<main class="cd-main-content"></main>
+
+<div class="cd-overlay"></div> </header> </section> <section class="body-container white"> 
+
+<section class="titleSection" style="background-image:url(../../../comptiacdn.azureedge.net/webcontent/images/default-source/researchreports/complete-guide-to-it-risk-management/risk-management-handbook-banners_risk-management---header-imageae6f.jpg?sfvrsn=80f674d5_0);"><div class="titleSectionContent"><div class="date">Guide | October 2022</div><h1 style="color:#FFF;">What Is Information Technology (IT) Risk Management?</h1></div></section> </section> <section class="body-container white"> <div class="container"> <div class="row"> <div id="topOfContent"></div> <div class="col-md-9 main-content" id="Content"> 
+
+
+
+<div id="section1 start"></div><p class="introtext">While presenting the results of a security audit to the board of a medium-sized health care company, the lead <a href="../../blog/your-next-move-penetration-tester.html">penetration tester</a> for a third-party
+    security auditing company got a nasty surprise. After providing documentation showing all the potentially sensitive information that was publicly available, one of the board members revealed that the organization had hired a second auditing team,
+    and that their report listed additional resources that the first auditing team missed. The first pen testing team was let go right away.</p><p>The moral of this story isn&rsquo;t necessarily that people make mistakes or that one of the pen testing teams was better than the other. The important message is that organizations are now taking risk management very seriously. Sometimes, organizations
+    act in useful, rational ways that increase maturity and resilience. In other cases, organizations that lack proper communication and processes make snap judgments and jump to conclusions.</p><p>Risk management is a term that both IT and security teams employ every day, whether they realize it or not. It is the consistent process of identifying, analyzing, evaluating and treating loss exposures while also observing risk control and resources
+    in efforts to mitigate the adverse effects of loss. It is often a practice that is also employed within IT departments but used for enterprise systems, networks and devices to mitigate potential cyber threats. When security professionals today use
+    the term <a href="../../blog/three-parts-of-cybersecurity.html">Governance Risk Management and Compliance</a>, they&rsquo;re talking about their daily activities. It is vital to mature risk management practices on a continual basis; otherwise,
+    the technologies we use will become nothing more than the &ldquo;internet of threats.&rdquo;</p><div id="section1 end"></div>
+<div id="section2 start"></div><h2>The Complexity of Risk Management Today</h2><p>With the ever-evolving cyber threat landscape, organizations have to be more diligent than ever to minimize risk while adapting to new challenges. CompTIA has tracked how corporations have been slowly adopting the hybrid, &ldquo;virtual&rdquo; workforce,
+    the cloud and <a href="../../blog/cybersecurity-zero-trust.html">zero trust</a> frameworks and best practices. The COVID-19 pandemic only accelerated this trend. Most businesses have rapidly shifted from primarily on-site teams to remote-only
+    or hybrid workforce environments. This shift has created new challenges for IT and cybersecurity workers. It has changed the existing attack surface. As a result, it is necessary for organizations worldwide to re-evaluate how they manage risk today.</p><p>In one case, a financial institution realized that they had a <a href="../articles/what-is-malware.html">malware</a> problem. They approved security training not only for <a href="../../blog/your-next-move-security-analyst.html">security analysts</a> and <a href="../../blog/your-next-move-server-administrator.html">server administrators</a>, but also for <a href="../../blog/your-next-move-help-desk-technician.html">help desk workers</a>. Following this training, that
+    organization saw a dramatic decrease in malware-based incidents.</p><p>All IT pros need to possess risk management skills. Risk management is a primary consideration for most IT job roles, including help desk professionals, network administrators, security analysts and pen testers. <a href="../../blog/your-next-move-security-architect.html">Security architects</a>,
+ compliance analysts and many others spend most of their time helping organizations manage risk. Proper risk management across IT teams within organizations can reduce and prevent cybersecurity breaches and attacks from happening in the first place.</p><p>This guide will navigate you through the basics of IT risk management, its types, why it&rsquo;s so important, how it intertwines with cybersecurity compliance, best practices, and how to build and implement a risk management plan within your IT department.
+</p><div id="section2 end"></div>
+<div id="section3 start"></div><h2>How Businesses Approach Risk Management</h2><p>The majority of all risk management, including IT risk management, falls within the best practices represented by the term Governance, Risk and Compliance (GRC). GRC regularly involves more than simply choosing a framework or conducting a single risk
+    management exercise. Accepted GRC practice calls for integrating and rehearsing practical risk management tactics and their initiatives. Implementing a risk management strategy entails creating, implementing and measuring the efficacy of procedures
+    and processes. It also involves considering how your organization identifies and handles risks and legal expectations. These expectations can include financial, technological and human resources, and industry risk or federal regulations.</p><p>In one case, a retired British police officer became a GRC officer. This particular individual never considered himself particularly technical. But, he was very good at obtaining and evaluating information. Furthermore, this individual was also very good
+    at identifying inconsistencies and potential root causes of problems. Organizations value individuals who can do more than consult a list of rules; they need individuals who can identify problems, and then propose solutions.</p><p>Many compliance, governance and business risk management teams approach risk management with the goal of following a formula that focuses on a five-step process. This process focuses on risk assessment and mitigation goals in order to meet optimal compliance.
+    It also includes identifying the risks, conducting risk analysis or assessment activities, prioritizing them, responding to the risk and monitoring its threat potential. </p><h3 id="commonrisk">Common Risk Management Issues</h3><p>While this common five-step process can help ensure compliance, the way teams approach risk management from a business standpoint does not always translate into the same methodology of how IT risk management for cybersecurity is approached. This is often
+    a common issue across enterprises when approaching business risk versus cybersecurity risk.</p><p>Cybersecurity often requires IT pros and leaders to look within the deeper root causes of their increased IT risk management. Below are some of the common root causes for IT risk management issues.</p><div class="meetingaccordion" id="accordionResearch"><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>1. Third-party IT Solutions (Shadow IT Solutions)</h4></div><div class="accordion-content"><p>Organizations are increasingly moving to source technology solutions independent of the IT department. Whether it be for cost-efficiency or to boost resources, enterprises are utilizing more third-party IT solutions to essentially shadow their
+                IT. Shadowing IT from third-party solutions can aid a department in sourcing a technical solution right away. </p><p>While third-party IT solutions can be beneficial, they can also be detrimental to an organization. In one recent case, a research department created a data lake using a popular cloud company to help complete a project. The issue derived from
+                the fact that no one outside of the research department knew this resource was being used nor existed. That led to the third-party cloud company not being properly configured, and an attacker was able to exploit the entire organization
+                by exploiting a security misconfiguration in the data lake. Proper IT risk management instills processes that require all technologies, including third-party technologies, to be identified within an organization.</p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>2. Immaturity of Processes</h4></div><div class="accordion-content"><p>Security involves more than just external threats and insider threats. It also involves the processes, and the people, used to create technical solutions. Security workers are often tasked with the mitigation of incidents rather than ensuring
+                the processes in place are protecting the enterprise from risk. </p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>3. Technical Debt </h4></div><div class="accordion-content"><p><a href="../../blog/the-internet-of-things-(iot)-and-technical-debt-why-it-matters.html">Technical debt</a> is what happens when a device or piece of software is created, and a person or organization consciously (or even unconsciously)
+                decides to skip certain steps or use an older set of resources out of necessity. Within IT risk management, technical debt can take many forms, including skipping critical risk management steps, processes and testing. Often teams that
+                resort to technical debt practices do so because of time or cost constraints. IT teams then anticipate the debt will be repaid down the road by skipping steps. </p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>4. Lack of Communication </h4></div><div class="accordion-content"><p>Lack of communication between IT and leadership is often a common risk management issue. Proper risk management is dependent on process maturity, which can only occur when organizational leaders are communicating properly about risk. Take
+                the example of a C-level security executive at a large U.S. retailer. In his previous job, he found that communication was acceptable, but not ideal. He felt that he wasn&rsquo;t able to discuss processes and needed changes as freely as
+                he wished. So, he moved from managing security at a tech company to a retail organization. The primary reason he took that new job was because he saw the potential for strong communication with his co-workers.</p><p>Years later, after considerable success managing risk, he found that his job was much easier because he had the opportunity to understand exactly how people in that organization communicated. His style fit with theirs. As a result, he was
+                able to create relevant risk assessment and risk mitigation goals. It was then, and only then, that his deep understanding of how to use <a href="../../blog/cybersecurity-red-team-or-blue-team.html">red and blue teams</a> became truly useful. Communication, therefore, helps organizations ensure that technical measures are properly used, according to clearly defined needs and goals. This communication is made possible by management.</p><p>But properly monitoring risk means doing more than regularly communicating with management. Executives and <a href="../articles/what-is-a-security-operations-center.html">security operation center (SOC)</a> teams need
+                to understand the processes that are in place within IT and how they work to manage risk.</p><p>If teams aren&rsquo;t communicating effectively with each other, it can create a false sense of security and therefore create the potential for greater risk. Yes, there are always automated approaches, such as Content Disarm and Reconstruction
+                (CDR), which is a set of technologies that help strip suspect code and data as it enters and exits an organization&rsquo;s network. But, no technical element, including SOC analysis or automation, can work well unless you have proper communication.
+                That&rsquo;s what sets mature organizations apart from less mature organizations.</p></div></div></div><div id="section3 end"></div>
+<img src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/researchreports/complete-guide-to-it-risk-management/cyber-threats-umbrella-infographicf065.png?sfvrsn=ead1daef_6" alt="Cyber threats umbrella" title="Cyber threats umbrella" data-displaymode="Original" />
+<div id="section4 start"></div><h2>Why Is IT Risk Management Important?</h2><p>Due to the factors listed above, organizations have largely ignored GRC-based approaches in their risk management practices. Although it may not be intentional, they allow their technology or immediate needs to get in the way of properly managing risk.
+    The result is increased threats and cyberattacks. <a href="../articles/what-is-social-engineering.html">Social engineering</a>, <a href="what-is-a-ddos-attack-how-it-works.html">DDoS</a>,
+ <a href="../articles/what-is-phishing.html">phishing</a> and <a href="../articles/what-is-malware.html">malware</a> attacks have become more common and destructive because of the lack of practical IT risk management. </p><p>Organizations have spent billions worldwide on technological solutions to aid their risk. Businesses are aware of the various threats they face. Yet many organizations haven&rsquo;t matured their processes to better reduce their risk. Instead of focusing
+    on a technology-first approach, organizations must first focus on a GRC-based mindset to improve their security posture.</p><p>Organizational executives and IT leaders alike seem to be aware that they have effectively put the technological cart before the horse, as it were. They know that proper risk management can reduce and prevent cybersecurity breaches and attacks from happening
+    in the first place. Yet the majority of organizations cannot seem to get to the bottom of how to change their ways.</p><p>In 2021, Ernst &amp; Young conducted a global board risk survey and found that <a href="https://www.ey.com/en_ps/risk/how-risk-managers-can-pivot-from-stabilization-to-transformation">57% of risk leaders</a> indicated their teams are only moderately effective
+    at aligning risk and business strategy. The issue is that risk managers are often not aligned with the board and CEOs regarding their business&rsquo;s greatest strategic opportunities, as well as their associated technical vulnerabilities. Many organizations
+    frequently avoid discussing the problem and instead focus on quick-fix solutions for security. Leaders often tell IT and security teams to buy security to fix the issue or just &ldquo;patch the system or application.&rdquo; They often won&rsquo;t
+    invest in upgrading systems and processes to streamline compliance, security and risk management confidence.</p><p>Many companies were not prepared to go fully remote in 2020 and were forced to quickly modify their IT security stature and risk management practices. Respectively, <a href="https://www.theirm.org/media/8903/irm-covid-response-survey-initial-report-final.pdf">approximately 58</a>
+ <a href="https://www.theirm.org/media/8903/irm-covid-response-survey-initial-report-final.pdf">% of risk managers</a> responded to a survey from the Risk Management Institute stating that their organization had not given any consideration to a level of risk similar to a pandemic. These organizations are not&nbsp; risk averse, but rather have
+        an aversion to discussing risk in a meaningful and practical way.</p><div id="section4 end"></div>
+<div id="section5 start"></div><h2>How Does IT Risk Management Imply Cybersecurity Compliance?</h2><p>Organizations are increasingly forced into compliance for legal reasons. Laws have sprung up worldwide meant to help manage privacy and cyber theft issues that affect people&rsquo;s lives and global businesses. IT compliance is best defined as the actions
+    or facts of complying with a regulation to reduce risk in an organization. Teams often are required to uphold <a href="../articles/what-is-cybersecurity-compliance.html">cybersecurity compliance</a> within their enterprises,
+    given the digital-driven activities most need to maintain their daily operations. These regulations are often high-level guidelines created for specific industries to address specific problems they may face with risk.</p><p>Here are a few real-world examples of regulations that can impact IT pros:</p><ul class="bulletlist" style="padding:10px 0;"><li>The global finance industry uses credit card numbers, and those numbers must be encrypted to avoid theft, so the <a href="../../blog/5-simple-ways-to-become-pci-dss-compliant.html">Payment Card Industry Data Security Standard (PCI DSS)</a> was created to protect that personally identifiable information (PII). </li><li>The health care industry uses patient health information (PHI), which can include non-public PII, that must be securely transmitted to doctors&rsquo; offices and insurance providers. Therefore, the United States created the Health Insurance Portability
+        and Accountability Act (HIPAA) to protect patients and providers from personal data and identity theft.</li><li>Federal governments also work on national security and intelligence efforts to combat terrorism. In response to that need, the United States created the Federal Information Security Management Act (FISMA) to ensure all agencies secure their data accordingly.</li></ul><p>Additionally, some of the more recent privacy laws, such as the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA), ensure customer data is protected and stored locally to the consumer. That means if you are a U.S.-based
+    company and you have customers in Europe, you must ensure the customer data is stored in Europe and bound by European laws, even though your company is in the United States. </p><p>With regular legislative changes to cyber, privacy and data regulations, IT teams must actively work to ensure they comply with the growing number of regulations. Many IT pros and leaders understand that risk management is part of compliance and that
+    when processes are done well, a mature risk management posture often naturally leads to proper governance and compliance.</p><div id="section5 end"></div>
+<div id="section6 start"></div><h2>Using Compliance to Mature Operations</h2><p>It is important to understand, however, that compliance in and of itself is only a half measure. An over-simplified approach to compliance can lead to a ticking boxes mentality. The result is that an organization can lull itself into a false sense of
+    security. If you consider the major security incidents that have been made public over the last ten years, you will find that most of the organizations that were attacked had fulfilled the letter of the law when it comes to privacy and security. The
+    real goal of compliance and GRC is to continually improve and mature processes, not simply <a href="../../blog/penetration-testing-more-than-just-checking-a-box.html">follow a checklist.</a></p><h3>Regulatory Compliance Controls for IT </h3><p>Business executives are often not used to discussing and reviewing risk in technical terms. Most experienced executives understand how to manage risk effectively for their organizations. IT management and professionals often understand the technical elements
+    of risk management. Yet they tend to discuss these elements in technical terms and not in business terms. As a result, executives and IT professionals tend to talk past each other and in disagreement with one another. The reason for this is that they
+    do not take the time to translate terms and ideas with each other to communicate more effectively.</p><p>Business leaders and cybersecurity professionals must thoroughly understand that government regulations are often in the best interest of protecting PII and company data from malicious attackers. Within those laws, there are specific security controls,
+    separation of duties and operational objectives that must be met to ensure legal and regulatory compliance. These regulations often dictate high-level security compliance for most of today&rsquo;s businesses, even if the specific regulations vary
+    per industry.</p><h3>Cybersecurity Management and Operations Controls</h3><p>Security professionals have discussed the concept of separation of duties for decades. By 2010, most organizations still combined their IT and security workers into one team. Most cybersecurity operations and management teams were created after the historic
+    2013-2014 cybersecurity attacks on Target, Sony and other major organizations that impacted both enterprises and individuals.</p><p>By 2015, infrastructure and cybersecurity teams were separated. This is because the industry realized it needed to focus on two main goals: Continuous security monitoring along with vulnerability assessment, and management focused on the main outcome
+    of minimizing risk and avoiding potential attacks.</p><p>Since 2020, we&rsquo;ve seen even further separation. Today, organizations worldwide tend to focus on three major responsibilities:</p><ul class="bulletlist "><li><strong>Infrastructure:</strong> Providing the service</li><li><strong>Cybersecurity operations:</strong> Securing the service</li><li><strong>Cybersecurity management:</strong> Providing governance, risk management and compliance</li></ul><img src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/researchreports/complete-guide-to-it-risk-management/cybersecurity-management-and-operations-controls-infographic1dd5.png?sfvrsn=c0661a7a_2" cybersecurity-management-and-operations-controls-infographic.png?sfvrsn="c0661a7a_2" alt="Cybersecurity Management and Operations Controls image showing attacks by team size " title="Cybersecurity Management and Operations Controls image showing attacks by team size " data-displaymode="Original " /><p>To accomplish those goals, organizations built new and separate SOC facilities to monitor security and provide metrics. These metrics are designed to help organizations become more mature by altering their processes. Security workers use software tools
+    like security information and event management (SIEM) systems to help them engage in continuous monitoring. Organizations added vulnerability assessment and management workers (plus the software) to help test systems and conduct penetration tests.
+    Combined with security analytics, these steps help mature processes and make organizations more resilient to attacks.</p><h3>Enterprise Security Controls as Compared With Regulatory Goals</h3><p>Security controls are broad tasks that must be implemented, such as backing up information systems or encrypting data. The majority of security controls within organizations include ensuring proper access control policies and procedures, access enforcement,
+    separation of duties and <a href="../../blog/security-awareness-training-network-segmentation.html">least privilege permissions</a>. These controls can also include penetration testing and other system monitoring activities.</p><p>Within greater regulatory compliance, there are specifications of those controls depending on the law and industry in which it applies. For example, PCI DSS has more than 50 security controls, HIPAA has more than 100 and FISMA/ NIST has more than 1,000.
+</p><p>It&rsquo;s important to note that one specific legal regulation can apply across multiple industries. For instance,&nbsp; legislation like HIPAA is designed to protect patient and provider data, but it can cover more than health care as it also applies
+    to HR practices within enterprises. </p><p><a href="https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#/
+    ">NIST Special Publication 800-53</a> outlines common security controls used by industries across the globe. The more cybersecurity controls, the more difficult the regulation will be to implement if IT risk management is focused solely on compliance
+    versus IT risk maturity. Security controls and processes, when done effectively, are critical to ensure global economies function securely, and businesses continue to provide services, maintain our medical systems and protect our national security.
+</p><h3>Separation of Duties: Cybersecurity vs. IT Infrastructure</h3><p>IT departments are breaking into two groups to accommodate the increase in regulations. Cybersecurity is treated separately from the traditional IT infrastructure team due to the separation of duty requirements in nearly all regulations. The cybersecurity
+    team works in a separate SOC.</p><p>Although they are separate teams, the cybersecurity and IT infrastructure teams work together to ensure the organization stays within regulatory compliance. Some of this separation of duties include the cybersecurity team's need to identify and assess
+    risk in order to comply with regulations. That task is then assigned to the IT infrastructure team to complete it. </p><p>As organizations grow in size and in required regulatory compliance, they need separate cybersecurity from IT infrastructure to ensure better security control checks and balances. This also ensures security controls are implemented, audited and reported
+    to the correct regulatory agency. </p><p>Cybersecurity teams will continue to split from traditional IT infrastructure teams to ensure separation of duty requirements in nearly all regulations. In some cases, organizations have their security teams report to a completely different executive
+    than the IT department. In other cases, ensuring an adequate level of communication and separation of duties achieves the same result. The point is, no single entity or individual should be allowed to provide and then secure a service; in many cases,
+    security and maturity will suffer. </p><p>For example, a financial institution in Australia once had the IT department and security department reporting through the same individual. As a result of poor communication, the email administrator created a potential security issue when bypassing endpoint
+    security checks on the email service. She was also able to bypass the firewall, which was acting as a traffic bottleneck, because it was underpowered. As a result, pen testers were able to obtain full control over the email server. The fix was relatively
+    easy: The CIO realized that she had to solve a communications and process problem, rather than a mere technical problem. She made sure that the IT team coordinated properly with the security team when resolving performance issues going forward.</p><h3>Moving From Compliance to Maturity</h3><p>The primary regulatory oversight function is most often performed by the <a href="../../blog/your-next-move-chief-information-security-officer.html">chief information security officer (CISO)</a>, who is ultimately responsible for the organization&rsquo;s regulatory compliance. The CISO also works with the board of directors and the cybersecurity team to meet regulatory compliance requirements.
+        Even if an organization doesn&rsquo;t have a named CISO, the point is that the CISO function is fulfilled. Executive management is always responsible for managing risk strategically. It is up to CISOs and CIOs to ensure that the organization follows
+        risk management processes adequately.</p><p>Cybersecurity management teams enforce regulatory compliance through oversight, auditing and management. They also work closely with the cybersecurity operations and IT infrastructure teams to ensure that compliance measures actually help organizations
+        re-think and transform existing processes. By doing this, internal IT audits and security control reviews do more than enforce compliance. They help an organization naturally improve and transform itself through better processes. </p><p>These approaches help make the term digital transformation meaningful. For example, a group of <a href="../../blog/your-next-move-penetration-tester.html">pen testers</a> contracting for a large online and brick-and-mortar retail organization
+        noticed it was following incident response procedures that were ideal for on-premise systems, but the company had migrated many of its systems to <a href="../articles/what-is-saas.html">software as a service (SaaS)</a> platforms on Amazon Web Services (AWS). <br /><br />As a result, the company&rsquo;s incident response procedures were extremely out of date. This mismatch between on-premise incident response and cloud-based incident
+        response had existed for at least two years. The company still passed compliance audits each year, even with an outdated process. However, a forward-thinking pen testing team looked beyond compliance and auditing to proactively find solutions
+        to mature the organization&rsquo;s processes.</p><p>By doing this, organizations lower their IT risk with greater visibility of their systems and networks. In the end, companies can move forward with better regulatory compliance, and have more confidence in their processes and controls within the business.</p><p>One of the more common ways to improve maturity is to coordinate pen testing (red team) and security monitoring (blue team) activities. The primary purpose of holding a penetration test should not be compliance; it should be to help <a href="../../blog/your-next-move-security-analyst.html">security analysts </a>improve
+ the organization&rsquo;s processes and security controls.</p><div id="section6 end "></div>
+<div id="section7 start"></div><h2>Common Risk Management Frameworks</h2><p>There are numerous risk management frameworks that exist today. It&rsquo;s important to understand that such frameworks represent only the beginning of the GRC maturity process. As you begin improving organizational processes, it can be useful to consult
+    appropriate frameworks, such as those listed below.</p><table class="basictable k-table"><thead><tr><th><strong>Framework</strong></th><th>Description</th></tr></thead><tbody><tr><td><a href="https://csrc.nist.gov/projects/risk-management/about-rmf">NIST Risk Management Framework (RMF)</a> </td><td>Provides a U.S. government-defined process meant to integrate security, privacy and cyber supply chain risk management. The goal is to create a systematic approach that resembles a system development lifecycle. This framework has been adopted
+                worldwide. </td></tr><tr><td><a href="https://www.iso.org/isoiec-27001-information-security.html">ISO 27001</a> &amp; <a href="https://www.iso.org/standard/75652.html">ISO 27002 </a> </td><td>These two documents enable organizations of any kind to use security controls to manage the security of assets such as financial information, intellectual property, employee details or information entrusted by third parties. ISO 27001 provides
+                information about industry-accepted security controls. The ISO 27002 document is a supplement that explains best practice suggestions and guidance for implementing the security controls found in ISO 27001. </td></tr><tr><td><a href="https://www.nist.gov/privacy-framework/nist-sp-800-53">NIST 800-53</a> </td><td>This particular document is aimed at recommending specific security and privacy controls for U.S. federal government agencies. While it does not officially specify controls for national security organizations, it nevertheless is a common resource
+                for both public and private organizations. </td></tr><tr><td><a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171r1.pdf">NIST 800-171</a> </td><td><p>Originally meant as a companion to NIST 800-53, the 800-171 document is meant to provide organizations, including&nbsp; U.S. federal agencies, with information about how to control unclassified information. Many organizations around the
+                    world have adopted this document as a baseline framework for managing risk. </p></td></tr></tbody></table><p>In some scenarios, governments and corporations around the world will use NIST-based standards, even though they were originally created in the United States. Other organizations globally may focus more on ISO standards as the beginning of their risk
+    management journey.</p><p>Certain organizations are also expected to comply systematically with such frameworks. For example, pen testers and security auditors often focus on the security controls and processes listed in these documents. Many companies and organizations within
+    the finance sector -&nbsp; especially banks - also use the NIST Cybersecurity Framework (CSF). These organizations undergo audits to ensure they comply with required government regulations. Nevertheless, many organizations use frameworks as a beginning
+    of solidifying their risk management goal.</p><p>But it is very important to understand that the above frameworks only represent the beginning of the risk management process. Security professionals are expected to modify and depart from the above frameworks in many cases, based on the needs of an organization
+    and the risks that organization encounters.</p><div id="section7 end"></div>
+<div id="section8 start"></div><h2>Compliance Can Assist With Process Maturity</h2><p style="margin-top:10.0pt;">IT risk management is simple to discuss in basic concepts, but most teams need to become more practical about it. Regulatory compliance is important to all risk management practices. It protects both businesses and individuals from malicious attacks.
+    Compliance is often looked at as the bar to achieve within risk management and the overall enterprise GRC. However, some organizations focus more on the compliance aspect of risk management and not as much on the process maturity needed to achieve
+    compliance naturally. </p><p style="margin-top:10.0pt;">The primary goal of the cybersecurity team is to ensure compliance with security controls established by a regulation to protect an organization. Typically cybersecurity teams are tasked with most of the IT risk management activities, including monitoring
+    risk by implementing, auditing and reporting on these activities. <br /><br />In contrast, the primary goal of the leadership team with the enterprise GRC is to ensure the entire organization is minimizing risk and protecting business assets while
+    also ensuring regulatory compliance. Most leadership teams are business executives first and discuss risk with a business mindset. For compliance to assist with process maturity, both teams need to communicate the risk issues they face with practical
+    risk management conversations. <br /><br />For instance, security control patching may be the solution to minimize system vulnerability or in the event of an incident response. However, specific security patching can differ based on the type of industry.
+    In Supervisory Control and Data Acquisition (SCADA) industries, most of the operations have a 24/7 need. In the event of an incident or vulnerability, business leaders may reinforce a process that halts manufacturing or operations temporarily. <br /><br />In an industry like SCADA, the system usually cannot be taken offline and patched accordingly without major disruption. Therefore, leaders and IT teams need to manage expectations of the security controls collaboratively to ensure better process
+    maturity. IT risk management and GRC compliance have to work together to create, implement and establish processes that focus on process maturity to achieve greater compliance. </p><p style="margin-top:10.0pt;"><img src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/researchreports/complete-guide-to-it-risk-management/regulations-compliance5683.png?sfvrsn=aea8f689_2" alt="Venn diagram image of regulations and compliance" title="Venn diagram image of regulations and compliance" data-displaymode="Original" /></p><div id="section8 end"></div>
+<div id="section9 start"></div><h2>How to Build and Implement a Risk Management Plan in 4 Steps</h2><p>Building and implementing an IT risk management plan, or a more resilient risk management plan, is critical in today&rsquo;s digital-driven world. The key goal for building a risk management plan is to write, develop and practice the plan. Practical and
+    realistic risk management needs to be written and documented, or it will remain only an idea and set of abstract strategies. <br /><br />The goal should be to put risk management principles to work for the organization. While this is a fundamental
+    start, teams need to do more than just write procedures down in a security policy. Organizations need to ensure that these plans are part of its &ldquo;muscle memory.&rdquo; </p><p>Here are 4 steps to build and implement a practical risk management plan that focuses on maturing processes: </p><h3>1. Identify Your Organizational Risk and Potential Vulnerabilities</h3><p>Risk looks and feels different across industries. Some industries have more risk than others. However, risk is something that exists in all businesses. It&rsquo;s important for IT teams and business leadership to work together to identify what
+            common risks their organization faces.</p><p>For example, risk identification is going to be different for a small retail shop than it would for a hospital. For a small retail shop, the biggest risk could be an attack on their digital inventory or payment processing system. In contrast,
+            a hospital is going to have more need for secure processes and must understand that they face a digital risk with their customer data and personally identifiable information (PII), health information, email servers, networks, computer systems
+            and more. </p><p>If you cannot identify the weakest points of your business infrastructure, then you may find that attackers will gladly aim to exploit those for you. The goal of practical risk management is to know your weak trigger points. Only then can you
+            work to improve processes and mitigate them.</p><h3>2. Evaluate and Assess Risk to Focus on More Zero Trust Activities vs. &ldquo;Good to Go&rdquo;</h3><p>Once the primary risks of the organization have been identified, IT professionals and organizational leaders need to instill practices and processes that aim to evaluate and mitigate that risk. The sweet spot for practical risk management sits
+            in between regulation/compliance/GRC and internal and external risk. This is where businesses need to focus on maturing their processes.
+        </p><p>For example, over the past few years, many IT pros and leaders have regularly heard the term &ldquo;zero trust&rdquo; shared in regard to risk management. Zero trust is more than just a security term - it&rsquo;s a process to implement for practical
+            risk management. A zero trust framework views risk as existing on both sides of the firewall. It looks at internal risk as detrimental as external risk.</p><p>Zero trust also looks at the processes in place to better secure internal systems as much as external system traffic. Zero trust focuses on processes that require better security plus checks and balances within organizational infrastructures.
+        </p><p>For illustration, let&rsquo;s look at the internal process for your organization of allow-listing or deny-listing. If your organization deals with a lot of controlled data and intellectual property, restricting or securely limiting internal user
+            access to external sites, like social media sites, can minimize the risk of data leaks from your business. It also removes the &ldquo;good to go&rdquo; aspect, assuming that risk no longer exists. Zero trust approaches can also help improve
+            internet of things (IoT) and operational technology (OT) security. </p><h3>3. Ensure Effective Communication Between the IT and Business Leadership Teams</h3><p>IT pros, management and business leadership need to implement better communication across teams. They need to talk to each other, not at each other, and simplify terminology if needed depending on the audience. Conversations should also be more
+            proactive, not reactive.</p><p>When building and implementing a risk management plan in an organization, regular risk conversations and communication must be a part of the equation. In today&rsquo;s constant threat landscape, ignorance is no longer bliss, and risk avoidance
+            only hinders processes - it does not help them.</p><h3>4. Review and Run Risk Scenario Simulations and Exercises</h3><p>Organizations have to take the time to review and run risk scenario simulations and exercises. For example, the Target data breach was one of the largest breaches in recent history, and it spearheaded the implementation of better security practices.
+            While some aspects of that breach are still unclear, all it took was <a href="https://www.zdnet.com/article/anatomy-of-the-target-data-breach-missed-opportunities-and-lessons-learned/">one phishing email to unleash an attack</a> that compromised
+            more than 100 million people&rsquo;s personal information.</p><p>For organizations to implement a practical risk management plan, they need to start focusing on activities that run employees and leadership through scenario simulations and exercises. Leadership can create tabletop exercises for IT pros and management
+            to talk through a proposed security incident together and how it can be best rectified. Cybersecurity teams should work with leadership to create full-on activities that involve major portions of the entire organization. Namely, they can run
+            phishing campaigns that send phishing emails to employees to target where there may be a greater risk of incidents in specific departments or teams.</p><div id="section9 end"></div>
+<div id="section10 start"></div><h2>Best Practices for Effectively Managing Information Risk in IT</h2><p>The primary best practice for organizations to effectively manage information risk in IT is to focus on maturing security processes within your organization. </p><p>Doing this involves employing organizational activities like the following: </p><ul class="bulletlist" style="padding:10px 0;"><li><strong>More engagement with upper management.</strong> IT pros have a tendency to focus on technology more than the overall risk of an organization. Management has a tendency to focus on risk and ignore technology. As a security professional, it&rsquo;s
+        your job to liaise with executive and technical workers. This involves holding meetings, gathering data and identifying commonalities. Conducting regular meetings and communicating with individuals and groups inside the organization will help
+        you better apply security controls and make appropriate changes to them. Without a consensus and administrative buy-in, any solutions will appear (and actually be) inadequate and ineffective to help better manage risk.
+    </li><li><strong>Identify business processes that need modification.</strong> One of the major reasons why security workers end up playing &ldquo;clean up&rdquo; is because the organization follows processes that cause messes in the first place. It is necessary
+        to conduct a series of root cause analysis investigations. The root cause analysis isn&rsquo;t necessarily a technical investigation. To begin, take a look into the overall behavior of the organization.</li><li><strong>Determine existing technical procedures and controls.</strong> Vulnerability Assessment and Penetration Testing (VAPT) exists for more reasons than just compliance. VAPT, along with monitoring, can help an organization identify weaknesses
+        in both technical teams and existing business processes. As part of this activity, you will:</li><ul class="bulletlist"><li>Conduct a business impact analysis.</li><li>Identify risk management strategies that apply to your particular organization. These strategies can include acceptance, avoidance, transference, cybersecurity insurance and mitigation.</li><li>Identify impacts on business processes.</li><li>Determine how issues can impact an organization in terms of laws and privacy frameworks that apply to the organization.</li></ul><li><strong>Codify changes.</strong> Once you have identified existing processes, work with management and technical teams to create and implement changes that will help mature security. </li></ul><p>The best practices for practical risk management focus on the processes versus the compliance or GRC demands of the organization. For better risk management, organizations need to shift the risk mindset from avoidance or tolerance to implementing more
+    zero trust within their processes. </p><p>Leaders also need to shift the narrative to concentrate their risk management on best practices. They should pivot to increasing organizational resilience rather than compliance. Improving processes requires a <a href="../research/using-strategic-it-for-competitive-advantage.html">strategic approach to IT</a> in order to improve security. Taking a strategic approach to increase resilience is the best way to improve confidence in an organization&rsquo;s processes. </p><img src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/researchreports/complete-guide-to-it-risk-management/risk-management-infographic3945.png?sfvrsn=4989a73d_2" alt="Risk management infographic showing the 6 signs you are doing risk management" title="Risk management infographic showing the 6 signs you are doing risk management" data-displaymode="Original" /><div id="section10 end"></div>
+<div id="section11 start"></div><h2>Education Critical to Maturing Processes</h2><p>Education is a critical element in maturing processes and implementing proper risk management within organizations. This is best done through training and education. IT teams and business leadership need to focus on being resilient with their processes
+    which require adapting and evolving knowledge and skills in an ever-changing threat landscape.</p><p>For example, let&rsquo;s explore a real-world scenario of a mid-sized bank in the United States regularly focusing on educating its IT professionals
+    and executives together about risk management. This scenario resulted in executives and IT professionals alike speaking the same language and working together to transform how their company uses technology. Since establishing a greater educational focus, security incidents declined in the first year by 35%.</p><p>Global teams can also benefit from more education in order to mature processes. For instance, a large diversified technology company in India began teaching their technical workers
+    how they can better think in terms of business risk management. As a result, they found that <a href="../../blog/your-next-move-help-desk-technician.html">help desk technicians</a>, <a href="../../blog/your-next-move-network-engineer.html">network engineers</a> and others were able to help the organization maintain compliance, but also create new, more efficient processes.</p><p>Shifting the focus to maturing processes through better communication and education of both IT and business leadership can create more confidence in processes. More confidence in processes increases organizational resilience instead of solely focusing
+    on compliance with regulations. Cyber threats grow daily, and only through training and education can teams mitigate risk and be able to increase their resiliency from attacks. </p><div id="section11 end"></div>
+<div id="section12 start"></div><h2>Gain the Risk Management Skills You Need With CompTIA</h2><p>Gaining better risk management skills can be critical to helping with maturing processes and implementing better IT risk management for organizations.</p><h3 id="risktopics">Risk Management Topics in CompTIA Certifications</h3><p>Several CompTIA certifications cover regulatory needs, which include IT infrastructure, cybersecurity operations and cybersecurity management. A combination of CompTIA certifications, training and education can help IT pros gain greater skills around
+    risk management.</p><table id="comparisons" class="basictable k-table"><tbody><tr><td>&nbsp;</td><td>IT Risk Basic Concepts </td><td>Intermediate Risk Skills </td><td>Advanced Risk Skills </td></tr><tr id="jobroles"><td>Job Roles </td><td><a href="../../blog/your-next-move-help-desk-technician.html">Help</a><a href="../../blog/your-next-move-help-desk-technician.html"> desk technician/Service desk   technician</a><br />&nbsp;<br /><a href="../../blog/your-next-move-network-administrator.html">Network administrator</a><br />&nbsp;<br /><a href="../../blog/your-next-move-security-administrator.html">Security administrator</a><br />&nbsp;<br /><a href="../../blog/your-next-move-linux-administrator.html">Linux administrator</a><br />&nbsp;<br /><a href="../../blog/your-next-move-it-project-manager.html">IT project manager </a> </td><td><a href="../../blog/your-next-move-penetration-tester.html">Penetration tester</a>/<a href="../../blog/your-next-move-vulnerability-analyst.html">Vulnerability assessor</a><br />&nbsp;<br /><a href="../../blog/your-next-move-security-analyst.html">Security analyst</a><br />&nbsp;<br /><a href="../../blog/your-next-move-data-center-manager.html">Data center administrator</a><br />&nbsp;<br /><a href="../../blog/your-next-move-cloud-systems-administrator.html">Cloud administrator</a> </td><td><a href="../../blog/your-next-move-security-architect.html">Security architect</a><br />&nbsp;<br /><a href="../../blog/your-next-move-cybersecurity-engineer.html">Senior security engineer </a><br />&nbsp;<br />Cloud
+ security analyst<br />&nbsp;<br />Data center security analyst<br />&nbsp;<br />Compliance analyst<br />&nbsp;<br /><a href="../../blog/your-next-move-security-operations-center-soc-manager.html">SOC manager</a><br />&nbsp;<br /><a href="../../blog/your-next-move-chief-information-security-officer.html">CISO</a> </td></tr><tr><td>CompTIA Certifications </td><td><a href="../../certifications/a.html">CompTIA&nbsp; A+</a><br /><a href="../../certifications/network.html">CompTIA Network+</a><br /><a href="../../certifications/security.html">CompTIA Security+</a><br /><a href="../../certifications/linux.html">CompTIA Linux+</a><br /><a href="../../certifications/project.html">CompTIA Project+</a> </td><td><a href="../../certifications/pentest.html">CompTIA&nbsp; PenTest+</a><br /><a href="../../certifications/cybersecurity-analyst.html">CompTIA Cybersecurity   Analyst (CySA+)</a><br /><a href="../../certifications/server.html">CompTIA Server+ </a><br /><a href="../../certifications/cloud.html">CompTIA Cloud+</a> </td><td><a href="../../certifications/comptia-advanced-security-practitioner.html">CompTIA Advanced   Security Practitioner (CASP+)</a> </td></tr></tbody></table><p>CompTIA certifications cover IT risk management practices in the following ways:</p><div class="meetingaccordion" id="accordionCerts"><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>Teaches Incident Response Procedures</h4></div><div class="accordion-content"><p>In many ways, help desk and technical support professionals form the first line of team-based, human defense in an incident. They also help make changes to many organizational systems (e.g., IoT devices, notebook computers, applications, even
+                servers). Therefore, CompTIA A+ teaches incident response procedures, as well as how to bake security directly into applications and devices. CompTIA A+ also teaches change management best practices, including risk analysis, and how to
+                identify the impact, purpose, and scope of a change.</p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>Teaches Security Best Practices</h4></div><div class="accordion-content"><p>CompTIA Network+ expects candidates to contribute to incident response plans, as well as security policies. This certification also delves deeply into security best practices, including access models, the principle of least privilege, zero
+                trust and threat identification. CompTIA Network+ also requires students to understand how to participate in various types of security risk assessments, including threat and vulnerability assessments.</p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>Teaches Governance, Risk and Compliance Best Practices</h4></div><div class="accordion-content"><p>CompTIA Security+ is the gateway to becoming a security professional. As such, it spends an entire domain on Governance, Risk, and Compliance best practices (14% of the certification). CompTIA Security+ also covers privacy standards that impact
+                cloud security, how to perform systems and security administrator tasks in the cloud, on premises, and in hybrid and heavily regulated environments.</p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>Teaches Risk Management Implementation</h4></div><div class="accordion-content"><p>CompTIA Server+ focuses on more than ensuring data center and installed services are available to the &ldquo;five nines;&rdquo; Over 25% of the certification focuses on how to implement risk management. For example, Domain 3.0 (Security and
+                Disaster Recovery) teaches students about how to identify data security risks, and how to mitigate specific risks. CompTIA Server+ also helps students understand critical regulatory constraints and legal considerations, as well as how
+                to harden servers so that they present a smaller attack surface.</p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>Teaches Cloud Security</h4></div><div class="accordion-content"><p>CompTIA Cloud+ is designed to help workers secure our cloud-first, hybrid world. It therefore devotes at least 25% of its time to security issues, including how to secure a network, enable proper Identity Access Management and how to conduct
+                vulnerability assessments. </p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>Teaches Tactical Risk Management</h4></div><div class="accordion-content"><p>CompTIA Linux+ is, in many ways, the key tactical certification for risk management. Linux forms the foundation of virtually every critical service on the internet. Security analysts and penetration testers use Linux extensively. This is one
+                reason why CompTIA Linux+ devotes at least 25% of its time on skills directly related to risk management and security. Skills include secure user management, SSH configuration and an entire domain on security.</p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>Teaches Full Compliance</h4></div><div class="accordion-content"><p>CompTIA Cybersecurity Analyst (CySA+) includes a full exam domain on compliance. CompTIA CySA+ helps organizations remain compliant and reduce risk through continuous security monitoring, reporting and incident response, for example. </p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>Teaches Penetration Testing and Vulnerability Assessment</h4></div><div class="accordion-content"><p>CompTIA PenTest+ covers penetration testing, vulnerability assessment and management skills to help organizations obtain and remain PCI-DSS compliant, for example. Pen testers are responsible for finding vulnerabilities, or risks, on IT systems;
+                they are an integral part of risk management.</p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>Teaches Enterprise Network Architecture Security</h4></div><div class="accordion-content"><p>CompTIA Advanced Security Practitioner (CASP+) covers governance and its relationship to security and enterprise network architecture. It includes best practices for standing up sophisticated networks and enabling zero trust principles. A
+                security architect determines how to increase an organizations&rsquo; resilience to the next attack, which includes identifying risk, and how to integrate security controls within the existing network architecture to control that risk.
+            </p></div></div></div><div id="section12 end"></div>
+<div id="section13 start"></div><h3>How to Study for Your CompTIA Certification</h3><p>CompTIA offers a <a href="../../blog/online-it-training.html">full suite of training products</a> to help you learn the technical and professional skills needed to become
+    CompTIA-certified. Find the right combination of the following training products to help you learn the skills you need to get the job you want.</p><ul class="bulletlist"><li><a href="../../training/certmaster-learn/linux.html"><strong>CertMaster Learn</strong></a>: Learn at your pace with interactive lessons and videos.</li><li><a href="../../training/certmaster-labs.html"><strong>CertMaster Labs</strong></a><a href="../../training/certmaster-labs.html">:</a> Get hands-on practice using real software applications.</li><li><a href="../../training/certmaster-practice.html"><strong>CertMaster Practice</strong></a><a href="../../training/certmaster-practice.html">:</a> Test your knowledge and find out if
+    you&rsquo;re ready for the exam.</li><li><a href="../../training/classroom-training/online-instructor-led-training.html"><strong>Live Online Training:</strong></a> Get hands-on instruction live from a certified CompTIA instructor.</li><li><a href="../../training/books.html"><strong>The Official CompTIA Study Guide</strong></a><a href="../../training/books.html">:</a> Review exam objectives with our comprehensive
+        textbook.</li><li><a href="https://www.comptiatech.org/"><strong>CompTIA Tech Career Academy:</strong></a><strong> </strong>Enroll in the IT-Ready Technical Support (online) Program.</li></ul><p><strong><em>Want to learn more? <a href="../../training/resources/exam-objectives.html">Download the exam objectives</a> to see exactly what&rsquo;s covered on each certification exam or <a href="../../training/certmaster-learn/trial-sign-up.html">start your free trial of CompTIA CertMaster Learn + Labs</a>.</em></strong></p><div id="section13 end"></div><br><p><a onclick="gtag('event', 'Clicked Resource Hub Tag', { 'event_category': 'Resource Hub Tag', 'event_label': 'Explore All' });" href='../../resources.html'>Explore More Resources</a></p> </div> <div class="col-md-3" id="sidebarResearch"> <div id="catcher"></div> <div id="sticky"> <div class="tocHeader" runat="server" id="tocHeader"><h4>Table of Contents</h4></div> <div class="tocContent"> 
+
+<div class="addthis_inline_share_toolbox"></div><script>
+      function RecordActivity(Title, Tags, Permissions, AccessType) {
+          if (AccessType.toLowerCase() == "pdfwithlogo") {
+              gtag('event', 'Document Download With Logo', { 'event_category': 'Resource Download', 'event_label': Title });
+          }
+          else if (AccessType.toLowerCase() == "pdf") {
+              gtag('event', 'Document Download', { 'event_category': 'Resource Download', 'event_label': Title });
+          }
+          else {
+              gtag('event', 'Viewed HTML', { 'event_category': 'Resource Download', 'event_label': Title });
+          }
+
+        $.ajax({
+            type: 'POST',
+            url: '/content/guides/what-is-information-technology-risk-management/ajaxrecordactivity/',
+            dataType: 'json',
+            data: { title: Title, tags: Tags, permissions: Permissions  },
+            success: function (data) {
+
+            },
+            error: function (ex) {
+                console.log('Failed : ' + ex);
+            }
+        });
+    }
+
+    function downloadPdfWithLogo(ID) {
+        $.featherlight("<p></p>");
+        $('.featherlight-inner').html("<h2>Loading...</h2>");
+        $.ajax({
+            type: 'POST',
+            url: '/content/guides/what-is-information-technology-risk-management/getdownloadpdfform/',
+            dataType: 'html',
+            data: { ID: ID },
+            success: function (data) {
+                $('.featherlight-inner').html(data);
+            },
+            error: function (ex) {
+                console.log('Failed : ' + ex);
+            }
+        });
+    }
+
+    //Update Image when Uploaded
+    function ShowImagePreview(input) {
+        if (input.files && input.files[0]) {
+            $('#imgLogo').css('display', 'inline');
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#imgLogo').prop('src', e.target.result)
+                    .width(200);
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+
+</script>
+
+
+
+
+
+
+
+
+
+<div class="sidebarSection download"><h2>Download Document</h2><div class="content"><div id="TableOfContentsLinks_C066_divDownloadLink"><a target="_blank" href="https://comptiacdn.azureedge.net/webcontent/docs/default-source/research-reports/complete-guide-to-it-risk-management.pdf?sfvrsn=e2755b4d_0" title="Download Full PDF Report" onclick="RecordActivity('Complete Guide to IT Risk Management', 'Cybersecurity', 'Public', 'pdf')">
+ <img src="../../../comptiawebsite.blob.core.windows.net/webcontent/images/default-source/researchreports/pdf1.png" style="position:relative;top:-3px;" />Get Your Free Risk Management Resources
+                </a>
+ </div></div></div>
+<div class="sidebarSection download"><h2>Table of Contents</h2><div class="content"><p><a href="#section1 start">What Is Information Technology (IT) Risk Management?</a></p><p><a href="#section2 start">The Complexity of Risk Management Today</a></p><p><a href="#section3 start">How Businesses Approach Risk Management</a></p><p><a href="#section4 start">Why Is IT Risk Management Important?</a></p><p><a href="#section5 start">How Does IT Risk Management Imply Cybersecurity  Compliance?</a></p><p><a href="#section6 start">Using Compliance to Mature Operations</a></p><p><a href="#section7 start">Common Risk Management Frameworks</a></p><p><a href="#section8 start">Compliance Can Assist With Process Maturity</a></p><p><a href="#section9 start">How to Build and Implement a Risk Management Plan</a></p><p><a href="#section10 start">Best Practices for Effectively Managing Information Risk  in IT</a></p><p><a href="#section11 start">Education Critical to Maturing Processes</a></p><p><a href="#section12 start">CompTIA Certifications That Cover IT Risk Management</a></p></div></div>
+<div class="sidebarSection download"><h2>Get Started with Cybersecurity</h2><div class="content"><div id="TableOfContentsLinks_C066_divDownloadLink"><a href="../../resources/cybersecurity.html">Read more about cybersecurity
+</a>
+ <a href="../../training/by-certification/cysa.html">Get cybersecurity training
+</a>
+ <a href="../../certifications/cybersecurity-analyst.html">Earn a cybersecurity certification
+</a>
+ </div></div></div> </div> </div> </div> </div> </div> </section> <section class="footer-container" id="footer"> <footer class="container"> 
+
+<footer class="footer">
+<div class="row">
+
+<div class="col-md-3">
+<img src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/mainsitetemplateimages/comptia-logocbc0.png?sfvrsn=30cdad27_2" alt="comptia-logo" title="comptia-logo" data-displaymode="Original">&nbsp;
+<ul>
+<li><a href="../../about-us.html" aria-label="About Us">About Us</a></li>
+<li><a href="https://connect.comptia.org/newsroom" aria-label="CompTIA Newsroom">Newsroom</a></li>
+<li><a href="../../contact-us.html" aria-label="Contact Us">Contact Us</a></li>
+<li><a href="../../blog.html" aria-label="CompTIA Blog">Blog</a></li>
+</ul>
+
+<ul class="social">
+    <li><a href="https://www.facebook.com/comptia" aria-label="CompTIA Facebook"><i class="fa fa-facebook-f"></i></a><br></li>
+    <li><a href="https://www.twitter.com/comptia" aria-label="CompTIA Twitter"><i class="fa fa-twitter"></i></a><br></li>
+    <li><a href="https://www.linkedin.com/company/comptia" aria-label="CompTIA LinkedIn"><i class="fa fa-linkedin"></i></a><br></li>
+    <li><a href="https://www.youtube.com/comptia" aria-label="CompTIA YouTube"><i class="fa fa-youtube-play"></i></a><br></li>
+    <li><a href="https://www.instagram.com/comptiaofficial/" aria-label="CompTIA Instagram"><i class="fa fa-instagram"></i></a><br></li>
+    <li><a href="https://open.spotify.com/user/69zrdapuhgxuofckbsuuzm80k?si=89172934b235442a&amp;nd=1" aria-label="CompTIA Spotify"><i class="fa fa-spotify"></i></a><br></li>
+</ul>
+
+</div>
+
+<div class="col-md-3">
+<h3>Certification</h3>
+<ul>
+    <li><a href="../../certifications.html">CompTIA IT Certifications</a></li>
+    <li><a href="https://store.comptia.org/">Store</a></li>
+    
+    <li><a href="https://www.certmetrics.com/comptia/login.aspx">Account Login</a></li>
+<li><a href="https://www.comptiatech.org/">CompTIA Tech Career Academy</a></li>
+</ul>
+</div>
+<div class="col-md-3">
+<h3>Membership Community</h3>
+<ul>
+    <li><a href="../../membership.html">CompTIA – The IT Industry Association</a></li>
+    
+</ul>
+
+<h3>Social Impact</h3>
+<ul>
+    <li><a href="https://www.comptiaspark.org/">CompTIA Spark</a></li>
+</ul>
+</div>
+<div class="col-md-3">
+<h3>Government Relations</h3>
+<ul>
+    <li><a href="https://connect.comptia.org/membership/public-sector">CompTIA Public Sector</a></li>
+</ul>
+
+<h3>Partners</h3>
+<ul>
+    <li><a href="https://partners.comptia.org/">CompTIA Authorized Partner Program</a></li>
+</ul>
+
+<select id="language_select" aria-label="Change Language">
+<option>Change Language</option>
+<option value="/">English</option>
+ <option value="/de/start">German</option>
+ <option value="/pt/pagina-inicial">Portuguese</option>
+ <option value="/es/pagina-principal">Spanish</option>
+</select>
+
+</div>
+
+</div>
+</footer> </footer> </section> <section class="copyright-container"> <div class="container copyright-content"> 
+
+<ul>
+    <li>Copyright © CompTIA, Inc. All Rights Reserved</li>
+    <li><a href="../../sitemap.html">Sitemap</a></li>
+    <li><a href="../../legal.html">Legal</a></li>
+</ul> </div> </section> <script src="../../resourcepackages/mainsite/assets/dist/js/initialize.min9b1a.js?v=4.0.1" type="text/javascript"></script><script type="text/javascript" src="../../WebResource80aa.js?d=NjxTqR2bqTw1rewxxlkHPubjZy05NEOaKaMLHW4Lo32JlaoXFWJWQ76gpu7rAFqs7j_NRtPGHELptxKNcYRgcW7OGBxy-XnAT4LWmqos2vXIQw0HFjI9dJRsIpI5cPTAXYQcJQJ-Pp3o7rLaWXccaUiLnvQOQH2V4P5VWa3JeRRyPS_CM4VssLHlWRIAKxx6Y1V5c066Qqdi90--l3eSSkDGbkQ1&amp;t=637429511240000000">
+
+</script> </body> 
+<!-- Mirrored from www.comptia.org/content/guides/what-is-information-technology-risk-management by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Feb 2023 05:13:26 GMT -->
+</html>

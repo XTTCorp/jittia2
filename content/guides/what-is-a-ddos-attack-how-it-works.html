@@ -1,0 +1,1079 @@
+ <!DOCTYPE html> <html lang="en"> 
+<!-- Mirrored from www.comptia.org/content/guides/what-is-a-ddos-attack-how-it-works by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Feb 2023 04:37:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head> <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> <meta charset="utf-8" /> <title>
+	What Is a DDoS Attack and How Does It Work | Cybersecurity | CompTIA
+</title> <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0, minimum-scale=1.0" /> <meta name="referrer" content="always" /> <script src="../../../code.jquery.com/jquery-latest.min.js" type="text/javascript"></script><script src="../../scripts/jquery.validate.min.js" type="text/javascript"></script><script src="../../scripts/jquery.validate.unobtrusive.min.js" type="text/javascript"></script><script src="../../client%20scripts/mvcfoolproof.unobtrusive.js" type="text/javascript"></script><script src="../../scripts/js-cookie/js.cookie-2.2.0.min.js" type="text/javascript"></script><script src="../../resourcepackages/mainsite/assets/dist/js/project.minbc3e.js?v=4.0.9" type="text/javascript"></script><link href="../../resourcepackages/mainsite/assets/dist/css/main.minf642.css?v=4.0.10" rel="stylesheet" type="text/css" /> <script src="../../../s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b4e3a272dd369e0" type="text/javascript"></script> <script src="../../../kit.fontawesome.com/df896256a0.js" crossorigin="anonymous"></script> <!-- idio Analytics Tracking Code --> <script type="text/javascript">
+        // Set client and delivery
+
+        _iaq = [
+            ['client', '5d23cdc951f74144b35946c0c4de3efe'],
+            ['delivery', 1062],
+            ['track', 'consume']
+        ];
+
+        // Include the Idio Analytics JavaScript
+        !function (d, s) { var ia = d.createElement(s); ia.async = 1, s = d.getElementsByTagName(s)[0], ia.src = '../../../s.usea01.idio.episerver.net/ia.js', s.parentNode.insertBefore(ia, s) }(document, 'script');
+    </script> <!-- / idio Analytics Tracking Code --> <script src="../../../ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script> <script type="text/javascript">WebFont.load({ google: { families: ["Roboto:300,300italic,regular,italic,500,500italic,700,700italic"] } });</script> <script src="../../../use.typekit.net/fqu5ybu.js" type="text/javascript"></script> <script type="text/javascript">try { Typekit.load(); } catch (e) { }</script> <meta property="og:title" content="What Is a DDoS Attack and How Does It Work | Cybersecurity | CompTIA" /><meta property="og:description" content="Learn what a DDoS attack is, the types of DDoS attacks, DDoS attack tools, DDoS protection and how to stop a DDoS attack." /><meta property="og:url" content="https://www.comptia.org/content/guides/what-is-a-ddos-attack-how-it-works" /><meta property="og:type" content="website" /><meta property="og:site_name" content="Default" /><meta property="og:image" content="https://comptiacdn.azureedge.net/webcontent/images/default-source/mainsitetemplateimages/comptia_logo_white.png?sfvrsn=df1edab8_2" /><link rel="alternate" hreflang="en" href="what-is-a-ddos-attack-how-it-works.html" /><link rel="alternate" hreflang="x-default" href="what-is-a-ddos-attack-how-it-works.html" /><script type="text/javascript">
+$(function() {
+    var $el = $("#accordionResearch3");
+    if ($el.length) {
+        $("#accordionResearch3").jqueryAccordion({
+            interval: 600,
+            fadeContent: false,
+            open: false,
+            defaultOpenIndex: 1
+        });
+    }
+});
+$(function() {
+    var $el = $("#accordionResearch4");
+    if ($el.length) {
+        $("#accordionResearch4").jqueryAccordion({
+            interval: 600,
+            fadeContent: false,
+            open: false,
+            defaultOpenIndex: 1
+        });
+    }
+});
+</script><script type="text/javascript">
+$(function(){
+  $('.sidebarSection:first').hide();
+});
+</script><meta name="Generator" content="Sitefinity 13.1.7428.0 OME" /><link rel="canonical" href="what-is-a-ddos-attack-how-it-works.html" /><script type="text/javascript">
+	
+(function(){
+    var metadataStr = '{\"Id\":\"e1b888d2-0628-44db-b728-332e9c8fcb90\",\"ContentType\":\"Page\",\"Title\":\"What Is a DDoS Attack? A Guide for Protection\",\"CanonicalTitle\":\"What Is a DDoS Attack? A Guide for Protection\",\"CanonicalUrl\":\"what-is-a-ddos-attack-how-it-works.html\",\"Language\":\"en\",\"CreatedOn\":\"2020-03-05T15:24:29Z\",\"ModifiedOn\":\"2022-09-29T17:37:28Z\",\"SiteName\":\"Default\",\"PageId\":\"e1b888d2-0628-44db-b728-332e9c8fcb90\"}';
+    window.decMetadata = window.decMetadata || {};
+    window.decMetadata.contentMetadata = JSON.parse(metadataStr);
+})();
+</script><script type="text/javascript">
+	(function() {
+    var detectjs = false;
+    var executeDataIntelligenceScript = function() {
+        var source;
+        if (!window.JSON) {
+            source = '/WebResource.axd?d=tTNUeDtL8OsI39FmMLAdgBQBc-fQa8Zapz4xvupjc2u3a0YKXmxWFXx9mciVdoC7VzbV4hb5cqjKUmgjgX74neyz5il70jFCpEoTH-EkQxelKL1MKV5hAkveXsdpQDwAKAhg6P86u61v4L4qK-n7gdu4kJw1&t=637429511240000000';
+        } else if (!detectjs) {
+            source = '/WebResource.axd?d=6kZXgApsQ6ne3RX7gMeiNahLDbzLehKOtS8GRay_gzHC_qE3a2_kpaSbDUjmpgRqKRmLS4_1gBJtu2kHZBJBtGZ55w0X5YkbqhYB4x5b9GqYV7wZB2CgSaSY6UbHUTBbwkgwFKtd7E_tak0eqrZQj76pH8lPhLBOUHHtYcjNrvZVwfRqyiiYxjmAUNt4swxYqwDQiQpQbZY6wUAB3neaqOVik_I1&t=637429511220000000';
+            detectjs = true;
+        } else if (!window.DataIntelligenceSubmitScript) {
+            source = '/WebResource.axd?d=svCNDiDihPX-0SS0GCW70GTCob9kSVbrmRcpYaIyqKiuSRqNT_HmrbuuLKCCVxSkZpUFcGKXvrV-kdFWRV9WOSBbhT_LXa6RHrd9nAgi4Lh1CxYskGQglbaFjQ1VMwYjcqHs4z983wuNNAfc8VNkfSEFqakXZo8cqG4g2tlSECFAg6ZCRrYLwsJxumR2TUwZZFqowmwrbvm1l3cJxFytNAh1bNCCZF0N-eto-_nAfxFvyd1D0&t=637429511220000000';
+        } else if (!window.sfDataIntell) {
+            source = '../../../cdn.insight.sitefinity.com/sdk/sitefinity-insight-client.min.3.0.11.js';
+        } else {
+            return DataIntelligenceSubmitScript.load({"apiServerUrl":"https://api.insight.sitefinity.com","apiKey":"3053cddb-5173-1bee-1b10-43e0ff4f97c4","applicationName":"DevCompTIAOrg","trackingCookieDomain":"","keepDecTrackingCookieOnTrackingConsentRejection":false});
+        }
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        var callback = function() {
+            if (!this.readyState || this.readyState === 'complete' || this.readyState === 'loaded') {
+                executeDataIntelligenceScript();
+            }
+        };
+        if(script.addEventListener) {
+            script.addEventListener('load', callback, false);
+        } else if(script.readyState) {
+            script.onreadystatechange = callback;
+        }
+        script.src = source;
+        return document.body.appendChild(script);
+    };
+    if (window.addEventListener) {
+        window.addEventListener('load', executeDataIntelligenceScript, false);
+    } else if (window.attachEvent) {
+        window.attachEvent('onload', executeDataIntelligenceScript);
+    }
+})();
+</script><meta name="description" content="Learn what a DDoS attack is, the types of DDoS attacks, DDoS attack tools, DDoS protection and how to stop a DDoS attack." /></head> <body lang="en"> <!-- MS Dynamics --> <div id="dPCA2Xv2ViMzSahA85lfNNpqlep_9M6Prbp8xqs7K6q8"></div> <script src="../../../mktdplp102cdn.azureedge.net/public/latest/js/ws-trackingd23c.js?v=1.69.1065.0"></script> <div class="d365-mkt-config" style="display:none" data-website-id="PCA2Xv2ViMzSahA85lfNNpqlep_9M6Prbp8xqs7K6q8" data-hostname="4fb516e0ad974eb7b7d929125dbdc1ff.svc.dynamics.com"></div> <!-- End MS Dynamics -->  <!-- Google Tag Manager --> <script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-M53PKPD');</script> <!-- End Google Tag Manager --> <!-- Global site tag (gtag.js) - Google Analytics --> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113138049-1"></script> <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-113138049-1', {
+        send_page_view: false
+    });
+</script> <!-- Google Tag Manager (noscript) --> <noscript> <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M53PKPD"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe> </noscript> <!-- End Google Tag Manager (noscript) --> <!-- OneTrust Cookies Consent Notice start for comptia.org --> <script async src="../../../cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="d3d66ac2-27bc-4963-9709-689280baad0b"></script> <script type="text/javascript">
+        function OptanonWrapper() { }
+    </script> <!-- OneTrust Cookies Consent Notice end for comptia.org --> <!-- Pull the Wootric Snippet --> <script type="text/javascript" src="../../../cdn.wootric.com/wootric-sdk.js"></script> <!-- begin Wootric code --> <script type="text/javascript">
+    window.wootricSettings = {
+        created_at: Math.floor(Date.now() / 1000),
+        account_token: 'NPS-88f9d834'
+    };
+    // Request a survey
+    window.wootric('run');
+</script> <!-- end Wootric code --> 
+
+
+ <section class="header-container-new"> <header class="header"> 
+
+<div class="siteupdate"><div class="popup popup-3" aria-modal="true" role="dialog"><div class="popup-3_box"><img src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/newsiteupdates/whatbringsyoutooursitetoday.jpg" loading="lazy" sizes="100vw" srcset="https://comptiacdn.azureedge.net/webcontent/images/default-source/newsiteupdates/whatbringsyoutooursitetoday-p-500.jpg 500w, 
+    https://comptiacdn.azureedge.net/webcontent/images/default-source/newsiteupdates/whatbringsyoutooursitetoday-p-800.jpg 800w, 
+    https://comptiacdn.azureedge.net/webcontent/images/default-source/newsiteupdates/whatbringsyoutooursitetoday-p-1080.jpg 1080w, 
+    https://comptiacdn.azureedge.net/webcontent/images/default-source/newsiteupdates/whatbringsyoutooursitetoday.jpg 1920w" alt="What brings you to our site today" class="width-full radius-none"><div class="container-large"><div class="popup-3_layout"><div class="popup_heading">What brings you to our site today?</div><div class="popup-1_tags"><a href="../../career-intent.html" class="popup-2_option w-inline-block" onclick="gtag('event', 'ASPopup', { 'event_category': 'PopupOptions', 'event_label': 'Career Intent' });">
+ <div>I'm considering a career change and exploring all my options</div></a>
+ <a href="../../tech-intent.html" class="popup-2_option w-inline-block" onclick="gtag('event', 'ASPopup', { 'event_category': 'PopupOptions', 'event_label': 'Tech Intent' });">
+ <div>I'm interested in a tech career and want to learn more</div></a>
+ <a href="../../comptia-intent.html" class="popup-2_option w-inline-block" onclick="gtag('event', 'ASPopup', { 'event_category': 'PopupOptions', 'event_label': 'CompTIA Intent' });">
+ <div>I'm ready to purchase CompTIA&nbsp;training and certification products</div></a>
+ <a href="../../brand.html" class="popup-2_option w-inline-block" onclick="gtag('event', 'ASPopup', { 'event_category': 'PopupOptions', 'event_label': 'Brand' });">
+ <div>I'd like to learn more about CompTIA</div></a>
+ </div><div data-w-id="bc94d0e4-740d-dc23-da4f-5120e29cb9ac" class="popup-1_close" role="button"><div class="icon"></div></div></div></div></div><div data-w-id="bc94d0e4-740d-dc23-da4f-5120e29cb9af" class="popup_overlay"></div></div></div><a id="top" name="#top"></a>
+
+<script type="text/javascript">
+    //Determine how much padding is needed for the nav.  1170px - window width
+    $(document).ready(function () {
+
+        var e = window,
+            a = 'inner';
+        if (!('innerWidth' in window)) {
+            a = 'client';
+            e = document.documentElement || document.body;
+        }
+        /*var width = jQuery(window).width();*/
+        var width = e[a + 'Width'];
+        var navTotal = width - 1185;
+        var navPadding = navTotal / 2;
+
+        $('.cd-secondary-nav').attr('style', 'padding: 48px ' + (navPadding) + 'px 48px 180px; margin-left: -180px;');
+        $('.cd-secondary-nav.cd-secondary-search-nav').attr('style', 'padding: 48px ' + (navPadding) + 'px; margin-left: -180px;');
+    });
+</script>
+
+<div class="siteupdate">
+    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+        <div class="top-bar hideOnTablet hideOnMobile">
+            <div class="padding-global">
+                <div class="top-bar_menu">
+                    <div><a href="https://connect.comptia.org/" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Corporate Membership' });">Membership Community</a></div>
+                    <div><a href="https://partners.comptia.org/" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Partners' });">Partners</a></div>
+                    <div><a href="../../about-us.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'About Us' });">About Us</a></div>
+                    <div><a href="../../contact-us.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Contact Us' });">Contact Us</a></div>
+                    <div><a href="https://help.comptia.org/" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Help' });">Help</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar_layout">
+            <a href="../../home.html" class="cd-logo" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Top Logo' });">
+                <img src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/mainsitetemplateimages/comptia_logo_rgbd16d9a1df26d4c17a95d23916d9db2d259d3.png?sfvrsn=d6d8_2" alt="CompTIA" title="CompTIA" class="toplogo">
+            </a>
+
+            <div class="cd-main-header">
+                <nav role="navigation" class="navbar_menu w-nav-menu">
+                    <div class="navbar_menu-items">
+                        <nav class="cd-nav">
+                            <ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+                                
+                                <!-- Certifications -->
+                                <li class="has-children">
+                                    <a href="../../certifications.html" aria-haspopup="true" aria-expanded="false" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Certifications' });">
+                                        Certifications<span></span>
+                                    </a>
+
+                                    <ul class="cd-secondary-nav is-hidden">
+                                        <li class="mobile-secondary-navigation-row hideOnDesktop">
+                                            <a href="#0" class="go-back"></a>
+                                            <a class="see-all" href="../../certifications.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Certifications' });">Certifications</a>
+                                            <span class="close-button"><i class="fas fa-xmark" aria-hidden="true"></i></span>
+                                        </li>
+
+                                        <li class="has-children half">
+                                            <span class="nav-heading" role="presentation"><a href="../../certifications.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Certifications' });">Certifications</a></span>
+                                            <ul class="is-hidden three-col">
+                                                <li><a href="../../certifications/a.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'A+' });">A+</a></li>
+                                                <li><a href="../../certifications/comptia-advanced-security-practitioner.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CASP+' });">CASP+</a></li>
+                                                <li><a href="../../certifications/cloud.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Cloud+' });">Cloud+</a></li>
+                                                <li><a href="../../certifications/cloud-essentials.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Cloud Essentials' });">Cloud Essentials+</a></li>
+                                                <li><a href="../../certifications/ctt.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CTT+' });">CTT+</a></li>
+                                                <li><a href="../../certifications/cybersecurity-analyst.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Cybersecurity Analyst+' });">CySA+</a></li>
+                                                <li><a href="../../certifications/data.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Data+' });">Data+</a></li>
+                                                <li><a href="../../certifications/it-fundamentals.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'IT Fundamentals' });">ITF+</a></li>
+                                                <li><a href="../../certifications/linux.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Linux+' });">Linux+</a></li>
+                                                <li><a href="../../certifications/network.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Network+' });">Network+</a></li>
+                                                <li><a href="../../certifications/pentest.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'PenTest+' });">PenTest+</a></li>
+                                                <li><a href="../../certifications/project.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Project+' });">Project+</a></li>
+                                                <li><a href="../../certifications/server.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Server+' });">Server+</a></li>
+                                                <li><a href="../../certifications/security.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Security+' });">Security+</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children quarter">
+                                            <span class="nav-heading" role="presentation">Exam Development</span>
+                                            <ul class="is-hidden one-col">
+                                                <li><a runat="server" href="../../certifications/become-a-subject-matter-expert.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'SME Overview' });">Overview</a></li>
+                                                <li><a runat="server" href="../../certifications/become-a-subject-matter-expert/apply-now.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'How to Apply' });">How to Apply</a></li>
+                                                <li><a runat="server" href="../../certifications/become-a-subject-matter-expert/workshops.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Workshops' });">Currently Recruiting</a></li>
+                                                <li><a runat="server" href="../../certifications/become-a-subject-matter-expert/current-smes.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Current SMEs' });">Current CompTIA SMEs</a></li>
+                                                <li><a runat="server" href="../../certifications/become-a-subject-matter-expert/refer-a-friend.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'SME Refer a Friend' });">Refer a Friend</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children quarter">
+                                            <span class="nav-heading" role="presentation"> Certification Resources</span>
+                                            <ul class="is-hidden one-col">
+
+                                                <li><a href="../../certifications/4-steps-to-certification.html" class="cd-nav-item" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': '4 Steps to Certification' });">4 Steps to Certification</a></li>
+                                                <li><a href="../../certifications/which-certification.html" class="cd-nav-item" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Which Certification is Right' });">Which Certification Is Right for Me?</a></li>
+                                                <li><a href="../../certifications/comptia-digital-badges.html" class="cd-nav-item" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Digital Badges' });">CompTIA Digital Badges</a></li>
+                                                <li><a href="../lp/certified-team-award.html" class="cd-nav-item" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Certified Team Award' });">Certified Team Award</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- Training -->
+                                <li class="has-children">
+                                    <a href="../../training.html" aria-haspopup="true" aria-expanded="false" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Training' });">Training<span></span></a>
+
+                                    <ul class="cd-secondary-nav is-hidden">
+                                        <li class="mobile-secondary-navigation-row hideOnDesktop">
+                                            <a href="#0" class="go-back"></a>
+                                            <a class="see-all" href="../../training.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Training' });">Training</a>
+                                            <span class="close-button"><i class="fas fa-xmark" aria-hidden="true"></i></span>
+                                        </li>
+
+                                        <li class="has-children quarter training-en">
+                                            <span class="nav-heading"><a href="../../training/by-certification.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Training By Certification' });">By Certification</a></span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../training/by-certification/a.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'A+ Training' });">CompTIA A+ Training</a></li>
+                                                <li><a href="../../training/by-certification/network.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Network+ Training' });">CompTIA Network+ Training</a></li>
+                                                <li><a href="../../training/by-certification/security.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Security+ Training' });">CompTIA Security+ Training</a></li>
+                                                <li><a href="../../training/by-certification/casp.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CASP+ Training' });">CompTIA CASP+ Training</a></li>
+                                                <li class="hideOnMobile">&nbsp;</li>
+                                                <li><a href="../../training/by-certification.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'View All Cert Training' });">View All Certs</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children quarter training-en">
+                                            <span class="nav-heading" role="presentation">For Individuals</span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../training/certmaster-learn.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'eLearning' });">eLearning</a></li>
+                                                <li><a href="../../training/certmaster-labs.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Virtual Labs' });">Virtual Labs</a></li>
+
+                                                <li><a href="../../training/classroom-training/online-instructor-led-training.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Virtual Labs' });">Live Online Training</a></li>
+                                                <li><a href="../../training/classroom-training/comptia-tech-training-career-services.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Virtual Labs' });">CompTIA Tech Career Academy</a></li>
+
+                                                <li><a href="../../training/certmaster-practice.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Exam Prep' });">Exam Prep</a></li>
+                                                <li><a href="../../training/books.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CompTIA Books' });">CompTIA Books</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children quarter training-en">
+                                            <span class="nav-heading" role="presentation">For Groups</span>
+                                            <ul class="is-hidden">
+                                                <li><a href="../../training/employers-workforce-development/workforce-development-training.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Workforce Development Solutions' });">Workforce Development Solutions</a></li>
+                                                <li><a href="../../training/employers-workforce-development/academic-government-solutions.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Academic & Government Solutions' });">Employer/Academic/Government</a></li>
+                                                <li><a href="../../training/employers-workforce-development/why-comptia-training-solutions.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Why CompTIA Training Solutions' });">Why CompTIA Training Solutions</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children quarter training-en">
+                                            <span class="nav-heading"><a href="../../training/resources.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Training Resources' });">Training Resources</a></span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../training/resources/practice-tests.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Practice Test' });">Practice Test</a></li>
+                                                <li><a href="../../training/resources/exam-objectives.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Exam Objectives' });">Exam Objectives</a></li>
+                                                <li><a style="height:auto;" href="../../training/certmaster-learn/trial-sign-up.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CertMaster Learn Labs Trial' });">CertMaster Learn + Labs Trial</a></li>
+                                                <li><a style="height:auto;" href="../../training/certmaster-practice/trial-sign-up.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CertMaster Practice Trial' });">CertMaster Practice Trial</a></li>
+                                                <li><a href="../../training/resources/book-samples.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Book Samples' });">CompTIA Book Samples</a></li>
+                                                <li><a style="height:auto;" href="../../training/resources/training-partners.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Authorized Partners' });">Authorized Partner Program</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </li>
+
+                                <!-- Testing -->
+                                <li class="has-children">
+                                    <a href="../../testing.html" aria-haspopup="true" aria-expanded="false" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Testing' });">Testing<span></span></a>
+
+                                    <ul class="cd-secondary-nav is-hidden">
+                                        <li class="mobile-secondary-navigation-row hideOnDesktop">
+                                            <a href="#0" class="go-back"></a>
+                                            <a class="see-all" href="../../testing.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Testing' });">Testing</a>
+                                            <span class="close-button"><i class="fas fa-xmark" aria-hidden="true"></i></span>
+                                        </li>
+
+                                        <li class="has-children third training-en">
+                                            <span class="nav-heading" role="presentation">Testing Options</span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../testing/testing-options/about-testing-options.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'About Testing Options' });">About Testing Options</a></li>
+                                                <li><a href="../../testing/testing-options/take-in-person-exam.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Take In-Person Exam' });">In-Person Exams</a></li>
+                                                <li><a href="../../testing/testing-options/take-online-exam.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Take Online Exam' });">Online Exams</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children third training-en">
+                                            <span class="nav-heading" role="presentation">Exam Vouchers</span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../testing/exam-vouchers/exam-prices.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'About Exam Pricing' });">About Exam Pricing</a></li>
+                                                <li><a href="../../testing/exam-vouchers/buy-exam.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Buy Exam Vouchers' });">Buy Exam Vouchers</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children third training-en">
+                                            <span class="nav-heading" role="presentation">Testing Policies and Procedures</span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../testing/testing-policies-procedures/test-policies.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'About Testing Policies' });">About Testing Policies</a></li>
+                                                <li><a href="../../testing/testing-policies-procedures/test-policies/exam-development.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Exam Development Process' });">Exam Development Process</a></li>
+                                                <li><a style="height:auto;" href="../../contact-us/comptia-exam-security-hotline.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Exam Security Hotline' });">Exam Security Hotline</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </li>
+
+                                <!-- Continuing Ed -->
+                                <li class="has-children">
+                                    <a href="../../continuing-education.html" aria-haspopup="true" aria-expanded="false" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Continuing Education' });">Continuing Education<span></span></a>
+
+                                    <ul class="cd-secondary-nav is-hidden">
+                                        <li class="mobile-secondary-navigation-row hideOnDesktop">
+                                            <a href="#0" class="go-back"></a>
+                                            <a class="see-all" href="../../continuing-education.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Continuing Education' });">Continuing Education</a>
+                                            <span class="close-button"><i class="fas fa-xmark" aria-hidden="true"></i></span>
+                                        </li>
+
+                                        <li class="has-children two-thirds">
+                                            <span class="nav-heading"><a runat="server" href="../../continuing-education/learn.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Learn About the Renewal Process' });">Learn About the Renewal Process</a></span>
+                                            <ul class="is-hidden two-col">
+                                                <li><a href="../../continuing-education/why-renew.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CE Why Renew' });">Why Renew?</a></li>
+                                                <li><a href="../../continuing-education/learn/overview.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Renewal Overview' });">Overview</a></li>
+                                                <li><a href="../../continuing-education/learn/how-to-renew.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'How to Renew' });">How to Renew</a></li>
+                                                <li><a href="../../continuing-education/learn/ce-program-fees.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Continuing Education Fees' });">Continuing Education Fees</a></li>
+                                                <li><a href="../../continuing-education/learn/earn-continuing-education-units.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Continuing Education Units' });">Continuing Education Units (CEUs)</a></li>
+                                                <li><a href="../../continuing-education/learn/renewing-multiple-certifications.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Multiple Renewals' });">Multiple Renewals</a></li>
+                                                <li><a href="../../continuing-education/learn/dod-ce-information.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'DoD Employees' });">DoD Employees and Contractors</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children third">
+                                            <span class="nav-heading"><a href="../../continuing-education/choose.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Choose Your Renewal Path' });">Choose Your Renewal Path</a></span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../continuing-education/choose/renew-with-a-single-activity.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Renew with a Single Activity' });">Renew with a Single Activity</a></li>
+                                                <li><a href="../../continuing-education/choose/renewing-with-multiple-activities.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Renew with a Multiple Activities' });">Renew with Multiple Activities</a></li>
+                                                <li><a href="../../continuing-education/choose/renewal-options.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Renewal Options' });">What Renewal Options Are Available to You?</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- Events -->
+                                <li class="has-children">
+                                    <a href="https://connect.comptia.org/events" aria-haspopup="true" aria-expanded="false" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Events' });">Events<span></span></a>
+
+                                    <ul class="cd-secondary-nav is-hidden">
+                                        <li class="mobile-secondary-navigation-row hideOnDesktop">
+                                            <a href="#0" class="go-back"></a>
+                                            <a class="see-all" href="https://connect.comptia.org/events" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Events' });">Events</a>
+                                            <span class="close-button"><i class="fas fa-xmark" aria-hidden="true"></i></span>
+                                        </li>
+
+                                        <li class="has-children quarter">
+                                            <span class="nav-heading"><a href="../../events/all-events/index.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Event List' });">Events</a></span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../events/all-events/index.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'All Events' });">All Events</a></li>
+                                                <li><a href="https://connect.comptia.org/events/view/comptia-communities-councils-forum-(ccf)-2023?sfredirect=/ccf" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CompTIA Community Forum' });">CompTIA Communities &amp; Councils Forum</a></li>
+                                                <li><a href="https://connect.comptia.org/partnersummit/" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Partner Summit' });">Partner Summit</a></li>
+                                                <li><a href="https://connect.comptia.org/channelcon?sfredirect=/channelcon" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'ChannelCon' });">ChannelCon</a></li>
+                                                <li><a href="https://connect.comptia.org/emea" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'EMEA Member & Partner Conference' });">EMEA Member & Partner Conference</a></li>
+                                                <li><a href="../../events/view/comptia-pti-cyber-leader-summit.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Cyber Leader Summit' });">PTI Cyber Leader Summit</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children quarter">
+                                            <span class="nav-heading"><a href="../../events/webinars/index.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Self-Study Tools' });">Upcoming Webinars</a></span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="https://connect.comptia.org/events/webinars/on-demand" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'On Demand Webinars' });">On Demand Webinars</a></li>
+                                            </ul>
+
+
+                                            <span class="nav-heading"><a href="https://connect.comptia.org/resources/podcasts" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Podcasts' });">Podcasts</a></span>
+                                        </li>
+
+                                        <li class="has-children quarter">
+                                            <span class="nav-heading"><a href="../../events/channel-training/index.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Classroom Training' });">Channel Training</a></span>
+
+                                           <!-- <span class="nav-heading"><a href="/events/industry-events/" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Industry Events' });">Industry Events</a></span> -->
+
+                                            <span class="nav-heading"><a href="../../events/archives/index.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Event Archives' });">Event Archives</a></span>
+                                        </li>
+
+                                        <li class="has-children quarter">
+                                            <div style="padding-top: 50px; padding-bottom: 0;">
+          <a href="../../events/view/comptia-communities-councils-forum-(ccf)-2023.html" style="height: auto;">
+                     <img style="border: medium none; width: 100%;" src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/events/ccf-2023-style-sheet_420-x-121---event-nav-banner0de2.png?sfvrsn=1cf8a2ed_2" data-displaymode="Original" alt="ccf" title="ccf">  </a>
+
+</div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- Resources -->
+                                <li class="has-children">
+                                    <a href="../../resources.html" aria-haspopup="true" aria-expanded="false" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Resources' });">Resources<span></span></a>
+
+                                    <ul class="cd-secondary-nav is-hidden">
+                                        <li class="mobile-secondary-navigation-row hideOnDesktop">
+                                            <a href="#0" class="go-back"></a>
+                                            <a class="see-all" href="../../resources.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Resources' });">Resources</a>
+                                            <span class="close-button"><i class="fas fa-xmark" aria-hidden="true"></i></span>
+                                        </li>
+
+                                        <li class="has-children fifth no-margin">
+                                            <span class="nav-heading"><a href="../../resources.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Trends & Analysis' });">Trends &amp; Analysis</a></span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../resources/cloud-computing.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Cloud Computing' });">Cloud Computing</a></li>
+                                                <li><a href="../../resources/computer-networks.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Computer Networks' });">Computer Networks</a></li>
+                                                <li><a href="../../resources/cybersecurity.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Cybersecurity' });">Cybersecurity</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children fifth no-margin">
+                                            <span class="nav-heading hideOnMobile" role="presentation">&nbsp;</span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../resources/data-and-analytics.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Data and Analytics' });">Data and Analytics</a></li>
+                                                <li><a href="../../resources/it-career-center.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'IT Career Center' });">IT Career Center</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children fifth">
+                                            <span class="nav-heading hideOnMobile" role="presentation">&nbsp;</span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../resources/it-support-and-help-desk.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'IT Support and Help Desk' });">IT Support and Help Desk</a></li>
+                                                <li><a href="../../resources/it-workforce.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'IT Workforce' });">IT Workforce</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children fifth">
+                                            <span class="nav-heading" role="presentation">IT Career Tools</span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../it-careers-path-roadmap.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Career Roadmap' });">Career Roadmap</a></li>
+                                                <li><a href="../lp/it-certifications-job-match.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Certifications and Jobs' });">Certifications and Jobs</a></li>
+                                                <li><a href="../it-salary-calculator.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'IT Salary Calculator' });">IT Salary Calculator</a></li>
+                                                <li><a href="../lp/ziprecruiter.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Zip Recruiter' });">Find a Job</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children fifth">
+                                            <span class="nav-heading"><a href="../../blog.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CompTIA Blog' });">CompTIA Blog</a></span>
+                                            <span class="nav-heading"><a href="https://connect.comptia.org/resources/comptia-world" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CompTIA World' });">CompTIA World</a></span>
+                                            <span class="nav-heading"><a href="../../membership/it-pro/student-membership-and-benefits.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Students' });">Students</a></span>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- Career Changers -->
+                                <li class="has-children">
+                                    <a href="../../career-change.html" aria-haspopup="true" aria-expanded="false" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Career Changers' });">Career Changers<span></span></a>
+
+                                    <ul class="cd-secondary-nav is-hidden">
+                                        <li class="mobile-secondary-navigation-row hideOnDesktop">
+                                            <a href="#0" class="go-back"></a>
+                                            <a class="see-all" href="../../career-change.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Career Changer' });">Career Changers</a>
+                                            <span class="close-button"><i class="fas fa-xmark" aria-hidden="true"></i></span>
+                                        </li>
+
+                                        <li class="has-children forth no-margin">
+                                            <span class="nav-heading"><a href="../../career-change/plan.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Plan Your Career Change' });">Plan Your Career Change</a></span>
+                                        </li>
+
+                                        <li class="has-children forth no-margin">
+                                            <span class="nav-heading"><a href="../../career-change/exploring-it.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Learn About Careers in IT' });">Learn About Careers in IT</a></span>
+                                        </li>
+
+                                        <li class="has-children forth no-margin">
+                                            <span class="nav-heading"><a href="../../career-change/switching-career-path.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Change Careers to IT' });">Change Careers to IT</a></span>
+                                        </li>
+
+                                        <li class="has-children forth no-margin">
+                                            <span class="nav-heading"><a href="../../career-change/quiz.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Take Free Career Quiz' });">Take Free Career Quiz</a></span>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <ul class="cd-secondary-nav is-hidden cd-secondary-search-nav">
+                                        <li class="mobile-secondary-navigation-row hideOnDesktop">
+                                            <a class="see-all" href="../../search.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Search' });">Search</a>
+                                            <span class="close-button"><i class="fas fa-xmark" aria-hidden="true"></i></span>
+                                        </li>
+                                        <li class="full">
+                                            <div id="cd-search" class="cd-search">
+                                                <form action="https://www.comptia.org/search" method="get" id="searchForm">
+                                                    <input type="text" id="query" name="query" />
+                                                    <button class="ibSearch"><i class="fas fa-magnifying-glass"></i></button>
+                                                </form>
+                                                <div class="popular-results">
+                                                    <span class="nav-heading">Most Popular Search Results</span>
+                                                    <ul>
+                                                        <li><a href="../../searchb514.html?query=security">Security</a></li>
+                                                        <li><a href="../../search1a1e.html?query=comptia%20a%2b">CompTIA A+</a></li>
+                                                        <li><a href="../../search2365.html?query=education">Education</a></li>
+                                                        <li><a href="../../searchb2c9.html?query=network">Network</a></li>
+                                                        <li><a href="../../search2a42.html?query=roadmap">Roadmap</a></li>
+                                                        <li><a href="../../search4e90.html?query=CertMaster">CertMaster</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="hideOnDesktop"><a href="https://my.comptia.org/" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'My Account' });">Log in</a></li>
+
+                                <li class="hideOnDesktop"><a href="https://connect.comptia.org/" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Corporate Membership' });">Corporate Membership</a></li>
+                                <li class="hideOnDesktop"><a href="https://partners.comptia.org/" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Partners' });">Partners</a></li>
+                                <li class="hideOnDesktop"><a href="../../about-us.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'About Us' });">About Us</a></li>
+                                <li class="hideOnDesktop"><a href="../../contact-us.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Contact Us' });">Contact Us</a></li>
+                                <li class="hideOnDesktop"><a href="https://help.comptia.org/" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Help' });">Help</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="navbar_menu-buttons cd-header-buttons hideOnMobile hideOnTablet">
+                        <div tabindex="0" role="button" class="search-icon cd-search-trigger"></div>
+
+                        <a id="tn_myaccount" class="button is-login w-inline-block my-account hideOnMobile hideOnTablet" href="https://my.comptia.org/" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'My Account' });">
+Log in
+                        </a>
+                        <a id="tn_store" href="https://store.comptia.org/" class="button is-store w-inline-block hideOnMobile hideOnTablet" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Store' });">
+                            <div class="icon"></div><div>Store</div>
+                        </a>
+                    </div>
+                </nav>
+                
+
+                <ul class="cd-header-buttons hideOnDesktop">
+                    <li class="mobile-button-group"><a class="cd-nav-trigger" href="#cd-primary-nav" aria-label="Mobile Navigation"><i class="fas fa-bars" aria-hidden="true"></i></a></li>
+                    <li class="mobile-button-group">
+                        <ul>
+                            <li><a id="tn_search" class="cd-search-trigger" href="#cd-search" aria-label="Search"><i class="fas fa-magnifying-glass"></i></a></li>
+                            <li>
+                                <a id="tn_store" aria-label="CompTIA Store" class="store" href="https://store.comptia.org/" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Store' });">
+                                    <i class="fas fa-cart-shopping"><span class="item-count">3</span></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
+    </div>
+</div>
+
+
+
+<main class="cd-main-content"></main>
+
+<div class="cd-overlay"></div> </header> </section> <section class="body-container white"> 
+
+
+
+<section class="titleSection" style="background-image:url(../../../comptiacdn.azureedge.net/webcontent/images/default-source/researchreports/what-is-a-ddos-attack/07513-ddos-handbook-banners-02-v2d777.jpg?sfvrsn=653a08cf_2);"><div class="titleSectionContent"><div class="date">&nbsp;</div><h1 style="color:#FFF;">What Is a DDoS Attack <br />and How Does It Work?</h1></div></section> </section> <section class="body-container white"> <div class="container"> <div class="row"> <div id="topOfContent"></div> <div class="col-md-9 main-content" id="Content"> 
+
+<div id="section1 start" style="height:1px;">&nbsp;</div><h2>What Is a DDoS Attack and How Does It Work?</h2><p class="intro">The IT industry has recently seen a steady increase of distributed denial of service (DDoS) attacks. Years ago, DDoS attacks were perceived as minor nuisances perpetrated by novice attackers who did it for fun and it was relatively easy to mitigate them.
+    Unfortunately, that situation is no more. DDoS attacks are now a sophisticated activity, and in many cases, <a href="https://www.comtech-networking.com/blog/item/hackers-are-using-ddos-attacks-to-profit-off-businesses/">big business</a>.</p><p><a href="https://www.infosecurity-magazine.com/news/q1-2021-sees-millions-ddos-attacks/">InfoSecurity Magazine reported</a> 2.9 million DDoS attacks in Q1 of 2021, an increase of 31% over the same period in 2020. </p><p>DDoS attacks rose 31% in Q1 2021 over the same period in 2020, to 2.9 million attacks</p><p><img src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/researchreports/what-is-a-ddos-attack/ddos-011c77.png?sfvrsn=bc0ac353_0" alt="DDoS attacks rose 31% in Q1 2021 over the same period in 2020, to 2.9 million attacks" title="Bar graph with an upwards trending line" data-displaymode="Original" style="display:block;margin-left:auto;margin-right:auto;max-width:50%;" /></p>
+<p>In recent years, we have seen an <a href="https://blog.malwarebytes.com/reports/2021/04/huge-upsurge-in-ddos-attacks-during-pandemic/">exponential increase</a> in DDoS attacks that have incapacitated businesses for significant amounts of time. </p><ul class="bulletlist"><li>In February of 2020, Amazon Web Services (AWS) suffered a DDoS attack sophisticated enough to keep its incident response teams occupied for several days also affecting customers worldwide.
+    </li><li>In February of 2021, the EXMO Cryptocurrency exchange fell victim to a DDoS attack that rendered the organization inoperable for almost five hours.
+    </li><li>Recently, Australia experienced a significant, <a href="https://theconversation.com/australia-is-under-sustained-cyber-attack-warns-the-government-whats-going-on-and-what-should-businesses-do-141119">sustained, state-sponsored DDoS attack</a>.
+ </li><li>Belgium also became a victim of a DDoS attack that targeted the country&rsquo;s parliament, <a href="https://www.infosecurity-magazine.com/news/cyber-attack-on-belgian-parliament/">police services and universities</a>.
+ </li></ul><p>Hundreds of thousands of unnamed, undocumented, yet successful DDoS attacks continue daily. In fact, it is these attacks that are the most effective and costly. The DDoS upward trend <a href="https://blogs.akamai.com/2021/01/part-i-retrospective-2020-ddos-was-back-bigger-and-badder-than-ever-before.html">promises to continue</a>, putting IT pros with mitigation skills in high demand. </p>
+<h2>Raging IT Warfare: What Is a DDoS Attack?</h2><p>Despite becoming more common, DDoS attacks can be quite advanced and difficult to combat. But what exactly is a DDoS attack and what does DDoS stand for? </p><p>DDoS is short for distributed denial of service. A DDoS attack occurs when a threat actor uses resources from multiple, remote locations to attack an organization&rsquo;s online operations. Usually, DDoS attacks focus on generating attacks that manipulate
+    the default, or even proper workings, of network equipment and services (e.g., routers, naming services or caching services). In fact, that&rsquo;s the main problem. </p><p>Sophisticated DDoS attacks don&rsquo;t necessarily have to take advantage of default settings or open relays. They exploit normal behavior and take advantage of how the protocols that run on today&rsquo;s devices were designed to run in the first place.
+    In the same way that a social engineer manipulates the default workings of human communication, a DDoS attacker manipulates the normal workings of the network services we all rely upon and trust.</p><p>When a DDoS attack takes place, the targeted organization experiences a crippling interruption in one or more of its services because the attack has flooded their resources with HTTP requests and traffic, denying access to legitimate users. DDoS attacks
+    are ranked as one of the top four cybersecurity threats of our time, amongst <a href="../articles/what-is-social-engineering.html">social engineering</a>, <a href="../articles/what-is-ransomware.html">ransomware</a> and supply chain attacks.
+</p>
+<img src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/researchreports/what-is-a-ddos-attack/ddos-023585.png?sfvrsn=eca5ded6_0" alt="Top 4 Cybersecurity Threats: Social Engineering, DDoS Attacks, Supply Chain Attacks, Ransomware" title="Top 4 cybersecurity threats matric" data-displaymode="Original" style="display:block;margin-left:auto;margin-right:auto;max-width:50%;" /><h2>Modern Warfare: Avoiding Confusion About DDoS Attacks</h2><p>It&rsquo;s relatively easy to confuse DDoS attacks with other cyberthreats. In fact, there is a significant lack of knowledge among IT pros and even cybersecurity professionals concerning exactly how DDoS attacks work.</p><p>In a DDoS attack, cybercriminals take advantage of normal behavior that occurs between network devices and servers, often <a href="network-security-basics-definition-threats-and-solutions.html">targeting the networking devices</a> that establish a connection to the internet. Therefore, attackers focus on the edge network devices (e.g., routers, switches), rather than individual servers. A DDoS attack overwhelms the network&rsquo;s pipe, (the bandwidth) or the devices that provide
+    that bandwidth.</p><p>Here&rsquo;s a useful analogy: Imagine that several people call you simultaneously so that you can&rsquo;t make or receive phone calls or use your phone for any other purpose. This problem persists until you block those calls through your provider.</p><p>Notice that you don&rsquo;t fix, upgrade or otherwise make adjustments to your actual mobile device. Instead, you fix the connection between the attackers and your phone by using your mobile phone provider&rsquo;s blocking service. </p><p>A similar thing happens during a DDoS attack. Instead of modifying the resource that is being attacked, you apply fixes (otherwise known as mitigations) between your network and the threat actor.</p>
+<img src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/researchreports/what-is-a-ddos-attack/ddos-03353e.png?sfvrsn=2909ad78_0" alt="Cyber attackers focus on the edge network devices rather than individual servers." title="DDoS phone line example" data-displaymode="Original" style="display:block;margin-left:auto;margin-right:auto;max-width:50%;" /><div id="section1 end" style="height:1px;">&nbsp;</div><div id="section2 start" style="height:1px;">&nbsp;</div><h2>DDoS vs. DoS Attacks: What&rsquo;s the Difference?</h2><p>It&rsquo;s important to avoid confusing a DDoS (distributed denial of service) attack with a DoS (denial of service) attack. Although only one word separates the two, these attacks vary significantly in nature. </p><ul class="bulletlist"><li>Strictly defined, a typical DDoS attack manipulates many distributed network devices in between the attacker and the victim into waging an unwitting attack, exploiting legitimate behavior.
+    </li><li>A traditional DoS attack doesn&rsquo;t use multiple, distributed devices, nor does it focus on devices between the attacker and the organization. These attacks also tend not to use multiple internet devices.
+    </li></ul><p><img src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/researchreports/what-is-a-ddos-attack/ddos-04f81b.png?sfvrsn=9fb9ead3_0" alt="A venn diagram describing the differences and similarities between DoS attacks and DDoS attacks" title="DoS vs DDoS venn diagram" data-displaymode="Original" style="display:block;margin-left:auto;margin-right:auto;" /></p><p>Typical DoS attacks can include the following:</p><ul class="bulletlist"><li><strong>Single-source SYN floods:</strong> This occurs when an attacker uses a single system to issue a flood attack of SYN packets, manipulating the typical TCP three-way handshake. For example, a SYN flood someone might generate using a Kali Linux
+        computer is not a true DDoS attack because the attack being made is only coming from one device. This is the case even if the attacker uses IP address spoofing. A true DDoS attack is generated by network-level devices, for network-level devices.
+        In other words, you use multiple routers or Memcached servers to attack a network.
+    </li><li><strong>The &ldquo;ping of death&rdquo;:</strong> Years ago, some network drivers contained flawed code that would crash a system if it received an ICMP packet that contained certain parameters.
+    </li><li><strong>The <a href="https://dev.to/kalkwst/boring-a-server-to-death-the-slow-loris-attack-2do">slow loris attack</a>:</strong> The slow loris attack is often called a DDoS attack, but because the attack targets a specific server (in this case, a
+        web server) and usually does not use intermediate networking devices, it is typically a traditional DoS attack.
+    </li></ul><p>Each of the above DoS attacks take advantage of software or kernel weaknesses in a particular host. To resolve the issue, you fix the host, and/or filter out the traffic. If you can upgrade a server to mitigate an attack, then it doesn&rsquo;t qualify
+    as a traditional DDoS attack. </p><p>Remember, in a DDoS attack, the threat actor adopts a resource consumption strategy. This strategy involves using what appears to be legitimate requests to overwhelm systems which are, in fact, not legitimate, resulting in system issues.
+</p><h2>Attack Strategy: Types of DDoS Attacks</h2><p><strong>There are three general types of DDoS attacks.</strong></p><div class="meetingaccordion" id="accordionResearch"><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>1. Application Layer</h4></div><div class="accordion-content"><p>Application Layer attacks target the actual software that provides a service, such as Apache Server, the most popular web server on the internet, or any application offered through a <a href="../articles/cloud-types-solutions-and-vendors.html">cloud provider</a>.
+ This is the most common form of DDoS attack and is often referred to as Layer 7 attacks, after the corresponding number of the application layer in the <a href="../../blog/layers-2-and-3-osi-model.html">OSI/RM</a>.
+ </p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>2. Protocol</h4></div><div class="accordion-content"><p>This occurs when an attack consumes the resources of critical servers and network-based devices, such as a server&rsquo;s operating system or firewalls. While those resources are overwhelmed, balancers are loaded. Protocol attacks often include
+                manipulating traffic at layers 3 and 4 of the OSI/RM (the network and transport layers, respectively). This is the second most common form of DDoS attack.
+            </p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>3. Volumetric</h4></div><div class="accordion-content"><p>Volumetric DDoS attacks focus on exploiting the normal operations of the internet to create tremendous floods of network traffic that then consume the organization&rsquo;s bandwidth, making their resources unavailable. Contrary to popular opinion, most DDoS attacks do not involve high levels of traffic. Less than 1% of all DDoS attacks are volumetric. Volumetric attacks are simply covered in the news more often due to their sensational nature. 
+            </p></div></div></div><p>In some cases, IT and cybersecurity professionals consider protocol and application-based DDoS attacks to be one category.</p><h2>Gathering Intel: Why You Need to Know About DDoS Attacks</h2><p>DDoS attacks have become increasingly problematic, and IT pros need to be ready.</p><ul class="bulletlist"><li>Layer 7 attacks have increased through 2020, going into 2021, <a href="https://blog.cloudflare.com/network-layer-ddos-attack-trends-for-q4-2020/">according to CloudFlare</a>.
+ </li><li>The number of DDoS attacks over 100 GB/s in volume increased nearly tenfold (967%) in Q1 2020, <a href="https://www.comparitech.com/blog/information-security/ddos-statistics-facts/">according to Comparitech</a>.
+ </li><li>The sheer size of volumetric attacks has increased to overwhelming proportions. <a href="https://blog.cloudflare.com/network-layer-ddos-attack-trends-for-q4-2020/">CloudFlare also reports</a> that 500 Mbps DDoS attacks have become the norm for volumetric
+        attacks.
+    </li><li>DDoS attacks are becoming more common. In 2021, <a href="https://www.zdnet.com/article/ddos-attacks-big-rise-in-threats-to-overload-business-networks/">ZDNet has reported</a> that DDoS attacks grew by at least 154% in the previous two years.
+    </li><li>Attacks have become more sophisticated. Attackers have combined DDoS with other types of attacks, <a href="https://portswigger.net/daily-swig/ransom-related-ddos-attacks-rise-from-the-dead-as-attack-vectors-diversify">including ransomware</a>.
+ </li><li>DDoS attackers have adopted sophisticated artificial intelligence (AI) and machine learning methods to help conduct their attacks. For example, DDoS botnets apply machine learning methods to conduct sophisticated network reconnaissance to find the
+        most vulnerable systems. They also use AI to reconfigure themselves to thwart detection and change attack strategies. Modern attacks will likely manifest as both defenders and attackers pit AI-enabled systems against each other.
+    </li><li>DDoS attackers have adopted a blended attack strategy. They combine various attack methods with social engineering, credential stealing and physical attacks, making the actual DDoS attack only a single factor in a multifaceted approach.
+    </li></ul>
+<img src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/researchreports/what-is-a-ddos-attack/ddos-05f986.png?sfvrsn=aa8ef3ce_0" alt="Attacks average 500 Mbps, DDoS attacks over 100 GB/s in volume increased 967%, DDoS attacks grew by 154%" title="DDoS stats" data-displaymode="Original" style="display:block;margin-left:auto;margin-right:auto;" /><h2>Tactical Warfare: How DDoS Attackers Avoid Detection</h2><p>DDoS attacks are known to be cunning and therefore tricky to nail down. One of the reasons they are so slippery involves the difficulty in identifying the origin. Threat actors generally engage in three major tactics to pull off a DDoS attack:</p><h3>1. Spoofing</h3><p>By default, IPv4 and IPv6 do not have the ability to authenticate and trace traffic. With IPv4 networks especially, it is quite simple to spoof source and destination addresses. DDoS attackers take advantage of this issue by forging packets that have
+    bogus source addresses. As a result, it is possible for an attacker to trick legitimate devices into responding to these packets by sending millions of replies to a victim host that never actually made a request in the first place.
+</p><h3>2. Reflection</h3><p>Attackers usually want to hide any trace of their involvement in a DDoS attack. To do this, they manipulate the default behavior of internet services so that the services effectively hide the actual attacker. Services often used in these types of attacks
+    include the thousands of Domain Name System (DNS), Network Time Protocol (NTP) and Simple Network Management (SNMP) servers. This is one of the primary reasons that attackers are attracted to a DDoS strategy. Internet services not only provide the
+    traffic, but they also tend to make it more difficult for defenders to trace the origin of the attack because most servers don&rsquo;t keep detailed logs of the services that have used them.
+</p><h3>3. Amplification</h3><p>Amplification is a tactic that lets a DDoS attacker generate a large amount of traffic using a source multiplier which can then be aimed at a victim host. Amplification attacks don&rsquo;t use a botnet, it is simply a tactic that allows an attacker to
+    send a single forged packet which then tricks a legitimate service into sending hundreds, if not thousands, of replies to a victim network or server.
+</p><p>It&rsquo;s very important to understand that DDoS attacks use normal internet operations to conduct their mischief. These devices aren&rsquo;t necessarily misconfigured, they are actually behaving as they are supposed to behave. Attackers have simply
+    found a way to exploit this behavior and manipulate it to conduct their DDoS attack.
+</p>
+<img src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/researchreports/what-is-a-ddos-attack/ddos-066465.png?sfvrsn=4a198e1e_0" alt="A diagram of an example of a DDoS attack" title="How a threat actor performs a DDoS attack" data-displaymode="Original" style="display:block;margin-left:auto;margin-right:auto;" /><p>Additionally, network devices and services often become unwitting participants in a DDoS attack. These three tactics take advantage of the default behavior of network resources worldwide. These resources include:</p><ul class="bulletlist"><li>Routers
+ </li><li>Switches
+ </li><li>Firewalls
+ </li><li>Load balancers
+    </li><li>Caching servers
+    </li><li>Edge network devices
+    </li><li>Mobile towers (including 4G and 5G)
+    </li></ul><h2>Battle Duration: How Long Do DDoS Attacks Last?</h2><p>DDoS attacks vary greatly in length and sophistication. A DDoS attack can take place over a long period of time or be quite brief:</p><ul class="bulletlist"><li><strong>Long-Term Attack:</strong> An attack waged over a period of hours or days is considered a long-term attack. For example, the DDoS attack on AWS caused disruption for three days before finally being mitigated.
+    </li><li><strong>Burst Attack:</strong> Waged over a very short period of time, these DDoS attacks only last a minute or even a few seconds.
+    </li></ul><p>Don&rsquo;t be deceived. Despite being very quick, burst attacks can actually be extremely damaging. With the advent of internet of things (IoT) devices and increasingly powerful computing devices, it is possible to generate more volumetric traffic than
+    ever before. As a result, attackers can create higher volumes of traffic in a very short period of time. A burst DDoS attack is often advantageous for the attacker because it is more difficult to trace.</p><h2>Technological Warfare: Botnets and DDoS Attacks</h2><p>Botnets, which are vast networks of computers, can be used to wage DDoS attacks. They are usually composed of compromised computers (e.g., <a href="https://www.reseller.co.nz/article/668741/iot-2020-awkward-teenage-years/">IoT devices</a>, servers, workstations,
+    routers, etc.), or zombies, that are controlled by a central server.</p><p>Attackers don&rsquo;t necessarily need a botnet to conduct a DDoS attack. Threat actors can simply manipulate the tens of thousands of network devices on the internet that are either misconfigured or are behaving as designed.</p>Nevertheless, it is important
+to understand how a botnet-based DDoS attack can occur.
+<p>&nbsp;</p><h2>A More Sophisticated Digital Enemy: The Evolution of the DDoS Attack</h2><p>One of the realities of cybersecurity is that most attackers are moderately talented individuals who have somehow figured out how to manipulate a certain network condition or situation. Even though there is often discussion about advanced persistent threats
+    (APT) and increasingly sophisticated hackers, the reality is often far more mundane.</p><p>For example, most DDoS attackers simply find a particular protocol. They&rsquo;ll discover that they can manipulate the transmission control protocol (TCP) handshake to create a flood attack of SYN packets or a particular type of server, such as the memory
+    cache daemon (it is often called &ldquo;Memcached,&rdquo; for memory cache daemon). The Memcached service is a legitimate service frequently used to help speed up web applications. Attackers have often exploited Memcached implementations that are
+    not properly secured, and even those that are operating properly.</p><p>Attackers have also discovered that they can compromise IoT devices, such as webcams or baby monitors. But today, attackers have more help. Recent advancements have given rise to AI and connective capabilities that have unprecedented potential. Like legitimate
+    systems administrators, attackers now have voice recognition, machine learning and a digital roadmap that can allow them to manipulate integrated devices in your home or office, such as smart thermostats, appliances and home security systems.</p><h2>Plan of Attack: The Anatomy of a Botnet-Based DDoS Attack</h2><p>DDoS traffic comes in quite a few different varieties. In the case of a botnet-based attack, the DDoS threat actor is using a botnet to help coordinate the attack. Understanding the types of traffic will help to select proactive measures for identification
+    and mitigation. Click on the red plus signs to learn more about each type of DDoS traffic.</p><div class="meetingaccordion" id="accordionResearch2"><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>1. Command and Control (C&amp;C)</h4></div><div class="accordion-content"><p>A botnet administrator, or a wrangler, uses a central server or network of servers to control the thousands of members of the botnet. Whenever a wrangler issues a command to control the botnet, this is called Command and Control (C&amp;C)
+                traffic. The actual administrator is usually far removed from the botnet or C&amp;C server, and the network traffic is usually spoofed, often making detection difficult. The C&amp;C operator then issues commands to manipulate network services
+                and devices to create the DDoS attack.</p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>2. Coordination</h4></div><div class="accordion-content"><p>The most effective DDoS attacks are highly coordinated. The best analogy for a coordinated attack involves comparing a DDoS botnet to a colony of fire ants. When a fire ant colony decides to strike, they first take a position and ready themselves
+                for the attack. Acting under a single directive and without obvious warning, they wait for the signal and then act simultaneously.
+            </p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>3. Beaconing/Heartbeat Traffic</h4></div><div class="accordion-content"><p>Whenever a compromised system calls home to a C&amp;C server, it is said to be beaconing. This traffic passing between a botnet member and its controller often has specific, unique patterns and behaviors. As a result, there is a small chance
+                for security analysts to identify this traffic and treat it as a signature to disable a DDoS attack.
+            </p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>4. Attack Traffic</h4></div><div class="accordion-content"><ul class="bulletlist"><li><strong>Layer 7:</strong> Many modern botnet-based DDoS attacks use HTTP floods of GET and POST traffic to incapacitate organizational devices.
+                </li><li><strong>Protocol-based attacks:</strong> As indicated above, these attacks can include manipulating various protocols, from TCP, UDP and ICMP.
+                </li><li><strong>Amplified:</strong> DDoS attackers often use botnets to identify and target internet-based resources that can help generate massive amounts of traffic.
+                </li><li><strong>Reflected:</strong> Reflected attacks take place when the threat actor uses a system or series of systems to effectively hide the origin.
+                </li></ul></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>5. Operational Technology (OT)/IoT</h4></div><div class="accordion-content"><ul class="bulletlist"><li><strong>OT:</strong> Attacks on OT involve physical items that have programming and an IP address associated with them. This could be devices that are used to control electrical grids, pipelines, automobiles, drones or robots.
+                </li><li><strong>IoT:</strong> IoT devices contain individual systems that can communicate with one another or be integrated. Some examples include video doorbells, smart thermostats, smart watches, IP-enabled light bulbs and printers.
+                </li></ul></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>6. Unusual Traffic</h4></div><div class="accordion-content"><p>Atypical traffic involves using strategies such as reflection and amplification, usually at the same time.</p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>7. Multivector</h4></div><div class="accordion-content"><p>Modern DDoS attacks combine different attack strategies, including the use of Layer 7, volumetric and even seemingly unrelated methods, such as ransomware and malware. In fact, these three attack types have become something of a trifecta and
+                are becoming more prominent in the DDoS attack world.
+            </p></div></div></div>
+<img src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/researchreports/what-is-a-ddos-attack/ddos-078eb0.png?sfvrsn=ca8b6bde_0" alt="A diagram of C&C and heartbeat traffic" title="C&C and Heartbeat traffic" data-displaymode="Original" style="display:block;margin-left:auto;margin-right:auto;" /><div id="section3 end " style="height:1px;">&nbsp;</div><div id="section4 start" style="height:1px;">&nbsp;</div><h2>Assembling Weaponry: Tools for Understanding How DDoS Attacks Work</h2><p>DDoS attacks take on many forms and are always evolving to include various attack strategies. It&rsquo;s essential that IT pros equip themselves with the knowledge of how attacks work.</p><p>There are three models that can help provide insight into the inner workings of DDoS attacks:</p><ul class="bulletlist"><li><a href="https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html"><strong>Lockheed Martin Cyber Kill Chain</strong></a><strong>:</strong> Used to help provide a framework for attack strategies, this model outlines seven steps
+        a hacker might take to conduct a long-term persistent DDoS attack. This model does not account for the use of botnets to compromise systems.
+    </li><li><a href="https://attack.mitre.org/"><strong>Mitre ATT&amp;CK Model</strong></a><strong>:</strong> This model profiles real-world attacks and provides a knowledge base of known adversarial tactics and techniques to help IT pros analyze and prevent
+        future incidents. This model is particularly useful to individuals who wish to defend themselves against DDoS attacks because it allows you to profile attackers and identify their strategies.
+    </li><li><a href="https://www.activeresponse.org/wp-content/uploads/2013/07/diamond.pdf"><strong>Diamond Model of Intrusion Analysis</strong></a><strong>:</strong> The Diamond model helps organizations weigh the capabilities of an adversary and the capabilities
+        of the victim, as discussed in a CompTIA blog about the <a href="../../blog/think-like-a-hacker-3-cybersecurity-models-used-to-investigate-intrusions.html">three major cybersecurity models</a>. Even though the Diamond model was created
+        to model actual intrusions, it is also useful for identifying DDoS attacks.
+    </li></ul><p>As an IT pro, knowing how to approach a DDoS attack is of vital importance as most organizations have to manage an attack of one variety or another over time. Security analysts and threat hunters often use the ATT&amp;CK model and the Mitre ATT&amp;CK
+    Navigator to help identify conditions that allow for DDoS attacks to be particularly successful.
+</p><h2>A Brief History of Major Attacks: DDoS Examples</h2><p><strong>There have been an exceedingly large number of distributed denial of service attacks over the years. Let&rsquo;s begin with a short list of major DDoS attacks, the motivations behind them and the lasting impact they have on our digital world. Click on
+    the red plus signs to learn more about each of these major DDoS attacks.</strong></p><div class="meetingaccordion" id="accordionResearch3"><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>1. Estonia: April 27, 2007</h4></div><div class="accordion-content"><p>The DDoS attacks on Estonia occurred in response to the movement of a politically divisive monument to a military cemetery. To Russian-speaking Estonians, the statue represented Nazi liberation, but to ethnic Estonians, the monument symbolized
+                Soviet oppression. Russian Estonians began rioting, and many were publicly outraged. The week of April 27, a barrage of cyberattacks broke out, most of them of the DDoS variety. Individuals used ping floods and botnets to spam and take
+                down many financial institutions, government departments and media outlets. This attack is still regarded as one of the most sophisticated to date and is a solid example of a state-run DDoS attack.</p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>2. Republic of Georgia: July 20, 2008</h4></div><div class="accordion-content"><p>In 2008, the Republic of Georgia experienced a massive DDoS attack, mere weeks before it was invaded by Russia. The attack appeared to be aimed at the Georgian president, taking down several government websites. It was later believed that
+                these attacks were an attempt to diminish the efforts to communicate with Georgia sympathizers. Not long thereafter, Georgia fell victim to Russian invasion. This attack is considered to be the textbook example of a coordinated cyberattack
+                with physical warfare. It is studied around the world by cybersecurity professionals and military groups to understand how digital attacks can work in tandem with physical efforts.</p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>3. Spamhaus: March 18, 2013</h4></div><div class="accordion-content"><p>Infamously known as the &ldquo;Attack that Almost Broke the Internet,&rdquo; the Spamhaus incident was, at the time, the largest DDoS attack in internet history. The attack was prompted when a group named Cyberbunk was added to a blacklist
+                by Spamhaus. In retaliation, the group targeted the anti-spam organization that was curtailing their current spamming efforts with a DDoS attack that eventually grew to a data stream of 300 Gbps.</p><p>The attack was so compromising that it even took down Cloudflare, an internet security company designed to combat these attacks, for a brief time.</p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>4. Occupy Central: June 2014</h4></div><div class="accordion-content"><p>The DDoS attacks that occurred during Occupy Central were an effort to cripple the pro-democracy protests that were occurring in Hong Kong in 2014. Two independent news sites, Apple Daily and PopVote, were known for releasing content in support
+                of the pro-democracy groups.</p><p>Much larger than the Spamhaus attack, Occupy Central pushed data streams of 500 Gbps. This attack was able to circumvent detection by disguising junk packets as legitimate traffic. Many speculate the attack was launched by the Chinese government
+                in an effort to squash pro-democracy sentiments.</p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>5. Dyn: October 21, 2016</h4></div><div class="accordion-content"><p>A massive DDoS attack was launched against the DNS provider Dyn. The attack targeted the company&rsquo;s servers using the Mirai botnet, taking down thousands of websites. This attack affected stock prices and was a wake-up call to the vulnerabilities
+                in IoT devices.</p><p>The Mirai botnet comprised a collection of IoT-connected devices. The botnet was assembled by exploiting the default login credential on the IoT consumer devices which were never changed by end users. The attack impacted the services of 69
+                companies, including powerhouses such and Amazon, CNN and Visa.</p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>6. GitHub: February 28, 2018</h4></div><div class="accordion-content"><p>One of the largest DDoS attacks in history was launched against GitHub, viewed by many as the most prominent developer platform. At the time, this was the largest DDoS attack in history. However, due to precautionary measures, the platform
+                was only taken offline for a matter of minutes.</p><p>Attackers spoofed GitHub&rsquo;s IP address, gaining access to Memcache instances to boost the traffic volumes aimed at the platform. The organization quickly alerted support, and traffic was routed through scrubbing centers to limit the damage.
+                GitHub was back up and running within 10 minutes.</p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>7. Amazon Web Services (AWS): February 2020</h4></div><div class="accordion-content"><p>AWS is well known for being a leading provider of cloud computing services. The company, a subsidiary of the retail giant Amazon, sustained an impressive DDoS attack that kept their response teams busy for several days. </p><p>Reputed to be the largest of its kind to date, the DDoS attack on AWS in boasts an impressive onslaught of 2.3 Tbps, surpassing the previous leader of 1.7 Tbps. The AWS teams combatted the attack, finally mitigating the threat after a three-day
+                incursion.
+            </p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>8. Google: September 2017 (Reported October 2020)</h4></div><div class="accordion-content"><p>In a strange turn of events, Google reported a DDoS attack that surpassed the attack on Amazon, claiming it had mitigated a 2.5 Tbps incident years earlier. The attack originated from a state-sponsored group of cybercriminals out of China
+                and spanned six months. </p><p>Google divulged the flood attack in late 2020 in an effort to draw awareness to an increase in state-sponsored attacks. The organization did not specify any loss of data due to the incident, but plans to enhance preventative measures to thwart
+                the rise in attacks. </p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>9. Sector-Specific Attacks: 2019-2021</h4></div><div class="accordion-content"><p>In recent years, multiple sectors have reported increasing rates of sector-specific DDoS attacks ranging from manufacturing and retail to financial institutions and even governments. <a href="https://www.zdnet.com/article/this-massive-ddos-attack-took-large-sections-of-a-countrys-internet-offline/">The May, 2021 attack on the Belgium government</a> affected more than 200 organizations. But it was specifically designed to disrupt the workings of their government. DDoS attacks on specific sectors can be used as political dissent or to signify disagreement with certain business practices
+                or ideals.
+            </p></div></div></div>
+<img src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/researchreports/what-is-a-ddos-attack/who-performs-ddos-attacksf5e9.png?sfvrsn=ebcc6dbc_2" alt="who performs DDoS attacks" title="who performs DDoS attacks" data-displaymode="Original" style="float:right;width:33%;" /><h2>The Attacker Profile: Who Performs DDoS Attacks?</h2><p>You often see images of nefarious, dark-hooded individuals to symbolize the malicious threat actor. In reality, these groups of attackers are often well known to authorities and use DDoS tactics to gain influence, disrupt government and military operations
+        or cause people to lose confidence in a market sector, company brand or long-established institution.</p><p>Regardless of the motivations that power these attacks, hackers can easily be hired to help launch a DDoS attack&mdash;available simply as guns for hire. Individuals or entire commercial groups are available for hire on the <a href="../../blog/what-is-the-dark-web.html">dark web</a>,
+ often under a service model, similar to that of <a href="../articles/what-is-iaas.html">infrastructure as a service (IaaS)</a> or <a href="../articles/what-is-saas.html">software as a service (SaaS)</a>.
+ In fact, Radware issued a global security alert in August of 2020 in response to the expanding prevalence of DDoS-for-hire attacks.
+    </p><h2>What Motivates an Attack: The Reasons Behind a DDoS Attack</h2><p>In order to thwart DDoS attacks, it&rsquo;s important to understand what drives the incident. While DDoS attacks vary greatly in nature when it comes to tactics and methods, DDoS attackers also may have a multitude of motives, including the following.</p><ul class="bulletlist"><li><strong>Financial Motives:</strong> DDoS attacks are often combined with ransomware attacks. The attacker sends a message informing the victim that the attack will stop if the victim pays a fee. These attackers are most often part of an organized crime syndicate.
+        Today, though, these syndicates can be as small as a dozen individuals with networking knowledge and extra time on their hands. Sometimes, rival businesses will even conduct DDoS attacks on each other to gain a competitive edge.
+    </li><li><strong>Ideological Motives:</strong> Attacks are often launched to target oppressive governing bodies or protestors in political situations. A DDoS attack of this kind is often conducted to support a particular political interest or belief system, such as a religion.
+    </li><li><strong>State-sponsored Motives:</strong> DDoS attacks are often waged to cause confusion for military troops or civilian populations when political unrest or dissension becomes apparent.
+    </li><li><strong>Tactical Motives:</strong> In this case, the DDoS attack is waged as part of a larger campaign. In some cases, the campaign includes a physical attack or another series of software-based attacks. For example, militaries have been known to combine DDoS attacks
+        with physical ones. Tactical attacks are used to divert attention away from normal IT tasks to take advantage of a different target &ndash; the old bait-and-switch cyberattack.
+    </li><li><strong>Business/Economical Motives:</strong> DDoS attacks of this variety help to gather information or cause damage to particular industry sectors. For example, attacks on companies such as Sony, British Airways and Equifax caused consumers to lose faith in entire
+        industries.
+    </li><li><strong>Extortion Motives:</strong> Other attacks are used to attain some personal or monetary gain through extorted means.
+    </li></ul><h2>Missile Launched: Tools That Perform DDoS Attacks</h2><p>Attackers use several devices to target organizations. These are some common tools used in DDoS attacks:</p><ul class="bulletlist"><li><strong>Services:</strong> These include Memcached (used to speed up database and web-based transactions), the DNS server, the NTP and the SNMP.
+        </li><li><strong>Network Devices:</strong> Network devices include items such as routers and switches.
+        </li><li><strong>Botnets:</strong> Collections of compromised systems commonly used in DDoS attacks.
+        </li><li><strong>IoT Devices:</strong> Weaknesses in connected devices can be exploited by cybercriminals, turning them into zombies. The infamous Mirai botnet was utilized to launch a series of attacks using unsecured baby monitors.
+        </li><li><strong>AI:</strong> Artificial intelligence is being used by hackers to modify code during a DDoS attack automatically so the attack remains effective despite safeguards.
+        </li><li><strong>Exploitation of Legacy Equipment:</strong> Older hardware is often exposed to more vulnerabilities and is routinely targeted and exploited.
+        </li></ul>
+<img src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/researchreports/what-is-a-ddos-attack/ddos-0839db.png?sfvrsn=9e13f0bc_0" alt="A diagram of the common tools used in DDoS attacks" title="Common tools used in DDoS attacks" data-displaymode="Original" style="display:block;margin-left:auto;margin-right:auto;max-width:50%;" /><h2>The Role of Recon: Keeping Track of DDoS Attacks</h2><p>DDoS attackers get more and more savvy every day. Attacks are expanding in size and duration, with no signs of slowing. Organizations need to keep a finger on the pulse of incidents to understand how susceptible they may be to a DDoS attack. </p><p>Here are some resources that can help you keep track of the latest DDoS attacks: </p><ul class="bulletlist"><li><a href="https://blog.mazebolt.com/list-of-ddos-attacks-may-2021"><strong>Mazebolt Worldwide List of DDoS Attacks</strong></a><strong>:</strong> This resource provides a running list of attacks with information such as date, country of origin, downtime,
+        attack details and even links to press information about the incident.
+    </li><li><strong>Cybersecurity Threat Intelligence (CTI) Sharing Resources:
+        </strong>
+ <ul class="bulletlist"><li><a href="https://connect.comptia.org/membership/comptia-isao"><strong>CompTIA ISAO</strong></a><strong>:</strong> CompTIA maintains an organization dedicated to sharing intelligence related to threats and providing actionable insight for mitigating
+                and solving cybersecurity challenges.
+            </li><li><a href="https://www.cisa.gov/ais"><strong>U.S. CISA Automated Indicator Sharing</strong></a><strong>:</strong> The tool provided by CISA enables real-time sharing of cyberthreat information to help limit the prevalence of attacks.
+            </li><li><a href="https://www.infragard.org/"><strong>FBI Infragard</strong></a><strong>:</strong> A partnership between the FBI and private sectors, InfraGard supports the sharing of information about attacks and mitigation techniques.
+            </li></ul></li><li><a href="https://www.digitalattackmap.com/"><strong>Digital Attack Map</strong></a><strong>:</strong> This map shows a live feed of DDoS attacks across the world and allows you to filter by type, source port, duration and destination port.
+    </li><li><a href="https://otx.alienvault.com/dashboard/new"><strong>AlienVault Open Threat Exchange</strong></a><strong>:</strong> This threat intelligence community provides free access to threat indicators and allows for sharing of threat research with others.
+    </li><li><a href="https://threatbutt.com/map/"><strong>Threatbutt Internet Hacking Attack Attribution Map</strong></a><strong>:</strong> This map provides real-time tracking of DDoS attacks around the globe.
+    </li><li><a href="https://www.isitdownrightnow.com/"><strong>Is It Down Right Now?</strong></a><strong>:</strong> This resource is a good place to start when you suspect an attack. Check to see whether a website is down by entering the domain and this tool
+        will return immediate results.
+    </li></ul><p><a href="https://www.digitalattackmap.com/"><img src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/researchreports/what-is-a-ddos-attack/ddos-09edce.png?sfvrsn=6785aed8_2" alt="Screenshot of a digital attack map" title="Digital attack map" data-displaymode="Original" style="width:100%;" /></a></p><img src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/researchreports/what-is-a-ddos-attack/sectors-most-vulnerable-to-ddos-attacks5db8.png?sfvrsn=65f1c0c2_2" alt="Sectors Most Vulnerable to DDoS Attacks" title="Sectors Most Vulnerable to DDoS Attacks" data-displaymode="Original" style="display:block;float:right;width:30%;" /><h2>Target Identified: What Do DDoS Attackers Target the Most?</h2><p>While organizations in any industry are vulnerable, these sectors are subject to DDoS attacks most often:</p><ul class="bulletlist"><li>Health care
+    </li><li>Government
+ </li><li>Internet service providers (ISPs)
+    </li><li>Cloud service providers
+    </li></ul><h2>Eyes on the Enemy: Identifying DDoS Attacks</h2><p>From a tactical DDoS mitigation standpoint, one of the primary skills you need to have is pattern recognition. Being able to spot repetitions that signify a DDoS attack is taking place is key, especially in the initial stages. Automated applications and
+    AI are often used as helpers, but generally companies need a skilled IT professional to differentiate between legitimate traffic and a DDoS attack.</p><p>Workers often look for the following warning signs that a DDoS attack is taking place:</p><ul class="bulletlist"><li>Reports from existing mitigation devices (e.g., load balancers, cloud-based services)
+    </li><li>Customers report slow or unavailable service
+    </li><li>Employees utilizing the same connection also experience issues with speed
+    </li><li>Multiple connection requests come in from a specific IP address over a short amount of time
+    </li><li>You receive a 503 service unavailable error when no maintenance is being performed
+    </li><li>Ping requests to technology resources time out due to Time to Live (TTL) timeouts
+    </li><li>Logs show an abnormally huge spike in traffic
+    </li></ul><p><img src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/researchreports/what-is-a-ddos-attack/ddos-10ac52.png?sfvrsn=db6e35e7_0" alt="A graphic illustrating DDoS attack warning signs" title="DDoS attack warning signs" data-displaymode="Original" style="display:block;margin-left:auto;margin-right:auto;max-width:50%;" /></p>
+<div id="section2 end" style="height:1px;">&nbsp;</div><div id="section3 start" style="height:1px;">&nbsp;</div><h2>Responding to a Threat: Response Techniques, Services and Strategies Used to Mitigate a DDoS Attack </h2><p>DDoS mitigation is quite different than mitigating other cyberattacks, such as those originating from ransomware. DDoS attacks are generally mitigated by devices and services that have been enabled to handle these types of attacks. For example, today&rsquo;s
+    load balancers are sometimes able to handle DDoS attacks by identifying DDoS patterns and then taking action. Other devices can be used as intermediaries, including firewalls and dedicated scrubber appliances.</p><p>When trying to mitigate a DDoS attack, you want to focus on placing services and devices between your network and the systems being used to attack you. Because attackers generate DDoS traffic by exploiting legitimate network and internet behavior, any
+    connected device or server is vulnerable to an attack because it isn&rsquo;t recognized as malicious in nature. You must create an intermediate mitigation solution to respond to that attack instead. In a ransomware or malware attack, security professionals
+    generally solve the problem by upgrading the software on end points or restoring from backup.
+</p><h2>Acting on a Threat: 5 Steps for DDoS Attack Response</h2><p>Typical steps for responding to a DDoS attack include:</p><h3>1. Detection</h3><p>Early detection is critical for defending against a DDoS attack. Look for warning signs, provided above, that you may be a target. DDoS detection may involve investigating the content of packets to detect Layer 7 and protocol-based attacks or utilizing
+    rate-based measures to detect volumetric attacks. Rate-based detection is usually discussed first when it comes to DDoS attacks, but most effective DDoS attacks are not blocked using rate-based detection.
+</p><h3>2. Filtering</h3><p>A transparent filtering process helps to drop the unwanted traffic. This is done by installing effective rules on network devices to eliminate the DDoS traffic.
+</p><h3>3. Diversion and redirection:</h3><p>This step involves diverting traffic so that it doesn&rsquo;t affect your critical resources. You can redirect DDoS traffic by sending it into a scrubbing center or other resource that acts as a sinkhole. It is typically recommended that you transparently
+    communicate what is taking place so that employees and customers don&rsquo;t need to change their behavior to accommodate slowness.
+</p><h3>4. Forwarding and analysis:</h3><p>Understanding where the DDoS attack originated is important. This knowledge can help you develop protocols to proactively protect against future attacks. While it may be tempting to try and kill off the botnet, it can create logistical problems and may
+    result in legal ramifications. Generally, it is not recommended.
+</p><h3>5. Alternate delivery</h3><p>It is possible to use alternate resources that can almost instantaneously offer new content or open up new networking connections in the event of an attack.
+</p><p><img src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/researchreports/what-is-a-ddos-attack/ddos-112aef.png?sfvrsn=22ee7a67_0" alt="DDos attack response: detection, filtering, diversion and redirection, forwarding and analysis, alternate delivery" title="5 Steps for DDoS Attack Response" data-displaymode="Original" style="display:block;margin-left:auto;margin-right:auto;max-width:50%;" /></p><p>One of the best ways to mitigate a DDoS attack is to respond as a team and collaborate during the incident response process. The steps outlined above can only be achieved through a combination of services, devices and individuals working together. For
+    example, to mitigate Layer 7 DDoS attacks it is often necessary to do the following:</p><ul class="bulletlist"><li><strong>Detection:</strong> Organizations will use a combination of security analyst and penetration activities to identify Layer 7 attack patterns. A penetration tester generally simulates the DDoS attack, and the security analyst will listen carefully
+        to identify unique characteristics.
+    </li><li><strong>Traffic filtering:</strong> Use scrubbing centers and services to help redirect and contain harmful traffic.
+    </li><li><strong>Layer 7 control:</strong> CAPTCHAs and cookie challenges are often used to determine if a network connection request is originating from a bot or legitimate user.
+    </li><li><strong>Forwarding of packets to a security professional for further analysis:</strong> A security analyst will engage in pattern recognition activities and then recommend mitigation steps according to their findings.
+    </li><li><strong>Alternate delivery during a Layer 7 attack:</strong> Using a CDN (content delivery network) could help support additional uptime when your resources are combatting the attack. It is important to note that mitigation devices can experience
+        problems. It may not be properly updated or configured, and can actually become part of the problem during a DDoS attack.
+    </li></ul><h2>Limiting the Damage: DDoS Mitigation Techniques</h2><p>Once you know you are facing a DDoS attack, it&rsquo;s time for mitigation. Prepare for the fight! </p>
+<table class="basictable k-table"><tbody><tr><td>Physical devices</td><td>Managing physical devices during a DDoS attack has largely remained a separate category from other mitigation efforts. Often called appliances, physical devices are kept separate because DDoS patterns and traffic are so unique and difficult
+                to properly identify. Even so, devices can be very effective for protecting small businesses from DDoS attacks.</td></tr><tr><td>Cloud scrubbing devices</td><td>Often called scrubbing centers, these services are inserted between the DDoS traffic and the victim network. They take traffic meant for a specific network and route it to a different location to isolate the damage away from its intended source.
+                The scrubbing center cleans the data, only allowing legitimate business traffic to pass on to the destination. Examples of scrubbing services include those provided by Akamai, Radware and Cloudflare.</td></tr><tr><td>Multiple internet service connections</td><td>Because DDoS attacks often seek to overwhelm resources with traffic, businesses sometimes use multiple ISP connections. This makes it possible to switch from one to another if a single ISP becomes overwhelmed.</td></tr><tr><td>Black hole</td><td>This DDoS mitigation technique involves using a cloud service to implement a strategy known as a data sink. The service channels bogus packets and floods of traffic to the data sink, where they can do no harm.</td></tr><tr><td>Content delivery network (CDN)</td><td>This is a group of geographically distributed proxy servers and networks often used for DDoS mitigation. A CDN works as a single unit to provide content quickly via multiple backbone and WAN connections, thus distributing network load. If
+                one network becomes flooded with DDoS traffic, the CDN can deliver content from another unaffected group of networks.</td></tr><tr><td>Load balancing servers</td><td>Generally deployed to manage legitimate traffic, load balancing servers can also be used to thwart DDoS attacks. IT pros can utilize these devices to deflect traffic away from certain resources when a DDoS attack is under way.</td></tr><tr><td>Web application firewall (WAF)</td><td>Used to filter and monitor HTTP traffic, WAFs are often used to help mitigate DDoS attacks and are commonly part of cloud-based services such as AWS, Azure or CloudFlare. While sometimes effective, a dedicated device or cloud-based scrubber
+                is often recommended instead. A WAF focuses on filtering traffic to a specific web server or application. But a true DDoS attack focuses on network devices, thus denying services eventually meant for the web server, for example. Still,
+                there are times when a WAF can be used in conjunction with additional services and devices to respond to a DDoS attack.</td></tr></tbody></table><p>Almost all DDoS mitigation devices on the market use the same five mechanisms:</p><ul class="bulletlist"><li>Signature
+ </li><li>Behavioral or SYN flood
+    </li><li>Rate-based and geolocation: As mentioned above, this is not usually reliable.
+    </li><li>Botnet detection/IP reputation lists: The success of using lists will vary depending on the quality of your lists.
+    </li><li>Challenge and response
+    </li></ul><h2>Weapons at the Ready: DDoS Mitigation Services</h2><p>Hundreds of organizations provide devices and services intended to help you prevent or combat a DDoS attack. A small sample of these services and devices is shown below.
+</p><table class="basictable k-table"><tbody><tr><td class="small-padding
+    tdno3 " data-content=" Higher Non-CompTIA IT Industry Certifications "><p><strong>DDoS Mitigation Vendor</strong></p></td><td class="small-padding tdno4 " data-content=" Pass the Latest Release of Your CompTIA Exam
+    "><p><strong>Services Offered</strong></p></td></tr><tr><td class="small-padding tdno3 " data-content=" Higher Non-CompTIA IT Industry Certifications "><p><a href="https://aws.amazon.com/shield/">AWS Shield</a> </p></td><td class="small-padding tdno4 " data-content=" Pass the Latest Release of Your CompTIA Exam
+    "><p>Offers protection against Layer 3 and Layer 4 attacks. Available to all customers at no extra charge. Additional protection for Layer 7 attacks is available for a fee.</p></td></tr><tr><td class="small-padding tdno3 " data-content=" Higher Non-CompTIA IT Industry Certifications "><p><a href="https://www.home.neustar/ddos-protection">Neustar DDoS Protection</a> </p></td><td class="small-padding tdno4 " data-content=" Pass the Latest Release of
+    Your CompTIA Exam "><p>Solutions include cloud-based, on-premise and hybrid protection completely focused on thwarting DDoS attacks.</p></td></tr><tr><td class="small-padding tdno3 " data-content=" Higher Non-CompTIA IT Industry Certifications "><p><a href="https://www.cloudflare.com/ddos/">Cloudflare DDoS Protection</a> </p></td><td class="small-padding tdno4 " data-content=" Pass the Latest Release of Your CompTIA Exam "><p>Layer 3, 4 and 7 services for free, as well as more sophisticated DDoS protection services for a fee.<sup></sup></p></td></tr><tr><td class="small-padding tdno3 " data-content="
+    Higher Non-CompTIA IT Industry Certifications "><a href="https://www.akamai.com/us/en/resources/ddos-protection.jsp">Akamai</a> </td><td class="small-padding tdno4 " data-content=" Pass the Latest Release of Your CompTIA Exam
+    ">A highly respected service for help against volumetric DDoS attacks. Akamai owns many sites around the world to help identify and filter traffic.</td></tr><tr><td class="small-padding tdno3 " data-content=" Higher Non-CompTIA IT Industry Certifications "><a href="https://apptrana.indusface.com/managed-ddos-protection-mitigation/">AppTrana</a> </td><td class="small-padding tdno4 " data-content=" Pass the Latest Release
+    of Your CompTIA Exam ">Focuses on Layer 7 as well as volumetric (Layer 3 and 4) DDoS traffic.</td></tr><tr><td class="small-padding tdno3 " data-content=" Higher Non-CompTIA IT Industry Certifications "><a href="https://www.alibabacloud.com/product">Alibaba DDoS</a> </td><td class="small-padding tdno4 " data-content=" Pass the Latest Release of Your CompTIA Exam
+    ">Specializes in mitigating volumetric attacks.</td></tr></tbody></table><h2>A Coordinated Defense: Best Practices for DDoS Response</h2><p><strong>Click the red plus signs for more details on the eight ways you can prepare for a DDoS attack.</strong></p><div class="meetingaccordion" id="accordionResearch4"><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>1. Policy creation or alteration</h4></div><div class="accordion-content"><p>If you don&rsquo;t have a defined security policy, then creating one is the first step. If your policy is older or hasn&rsquo;t considered modern DDoS methods and issues, it&rsquo;s time to make a few changes.</p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>2. Identify critical services</h4></div><div class="accordion-content"><p>Business-critical services are those that would cause operational delays if affected. These might include systems such as database, web, commerce server, customer relationship management (CRM), custom programming, AI, machine learning, streaming
+                and data collection, among others. It may also be necessary to outline all business-critical applications running on your web servers. You can then make decisions based on the sample matrix, located below.</p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>3. CDN information backup</h4></div><div class="accordion-content"><p>Store mission-critical information in a CDN to allow your organization to reduce response and recovery time.</p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>4. Multiple ISP connections</h4></div><div class="accordion-content"><p>Larger organizations will want to have multiple ISPs ready in case one becomes flooded with traffic or can&rsquo;t provide an essential filtering service in time. As an alternate or complementary solution, you could also engage a third-party
+                scrubbing service that filters out DDoS traffic.</p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>5. Server and endpoint backup</h4></div><div class="accordion-content"><p>It is important to back up server resources, as well as workstations and other devices.</p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>6. Risk analysis</h4></div><div class="accordion-content"><p>A DDoS preparation scheme will always identify the risk involved when specific resources become compromised.</p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>7. Identify and assign responsibility</h4></div><div class="accordion-content"><p>The last thing an organization wants to do is assign responsibility for DDoS response during or after an actual attack. Assign responsibility before an attack happens.</p></div></div><div class="accordion-item"><div class="accordion-header "><span class="expander"></span><h4>8. Practice</h4></div><div class="accordion-content"><p>Similar to other areas of expertise, the best way to know how to respond to a DDoS attack is to practice. Schedule dedicated training sessions and practice combatting attacks in a controlled environment.</p></div></div></div><h2>Training at the Ready: The Do&rsquo;s and Don&rsquo;ts of Responding to a DDoS Attack</h2><p>When dealing with a DDoS attack, there are certain best practices that can help keep a situation under control. Observe these DDoS attack do&rsquo;s and don&rsquo;ts.</p><table class="basictable k-table"><tbody><tr><th>What to Do When Dealing with a DDoS Attack</th><th>What NOT to Do When Dealing with a DDoS Attack</th></tr><tr><td>Overcommunicate with management and other workers. Leadership needs to be informed and involved so that the necessary steps are taken to limit damage.</td><td>Overcommunicate with the public. To limit damage to your brand&rsquo;s reputation and ensure you have the attack contained, only provide necessary information to the public.</td></tr><tr><td>Delegate tasks. A DDoS attack means all hands on deck. Enlist other IT pros to report back and follow up with quick updates.</td><td>Assume that it is someone else&rsquo;s responsibility to handle the attack. These attacks must be dealt with quickly, and waiting to hand off responsibility can cost valuable time.</td></tr><tr><td>Focus on root-cause analysis. Uncovering the cause of the attack can be vital when attempting to slow the progression.</td><td>Try to solve the problem alone. DDoS attacks can escalate very quickly. Enlisting others in your mitigation efforts will help curb the attack more quickly.</td></tr><tr><td>Conduct mock exercises for DDoS attacks. This may involve planned or surprise exercises to properly educate IT pros, staff and management on response activities.</td><td>Make the assumption that IT pros, staff or management know what to do during a DDoS attack. Without proper training, these attacks can be damaging, and many employees lack the practical skills to counteract the hack.</td></tr><tr><td>Work with ISPs, cloud providers and other service providers to determine the costs related to the DDoS attack. Get a report from all providers. To move past the attack, you need to know exactly what you are dealing with and have documentation
+                to illustrate it.</td><td>Presume old reports are still valid. Any reports older than six months or that involve data from before a company merger or major business change should not be considered sound data.</td></tr></tbody></table><h2>A Formidable Strategy: DDoS Mitigation Matrix</h2><p>With so many as-a-service options, it can be difficult to know which services to engage as part of an effective DDoS prevention strategy. This DDoS mitigation matrix should help you understand how to place your services appropriately.
+</p><table class="basictable k-table"><tbody><tr><th>Service</th><th>Location</th><th>Mitigation Tactic</th></tr><tr><td>Web server</td><td>Company server room</td><td>Installed on the on-premise Web Application Firewall (WAF)</td></tr><tr><td>Database server</td><td>Public cloud</td><td>Load balancer, cloud-based DDoS mitigation server</td></tr><tr><td>Credit card-accepting commerce server</td><td>Private cloud</td><td>Load balancer, cloud-based DDoS mitigation server, alternate ISP</td></tr><tr><td>Virtual Desktop Infrastructure (VDI) hosts for end users</td><td>Public cloud</td><td>Cloud-based DDoS protection service, alternate ISP, </td></tr><tr><td>Network infrastructure</td><td>On-premise</td><td>Multiple alternate ISPs, cloud scrubbing service</td></tr></tbody></table><p>Your matrix would, of course, vary according to your business-critical resources. It&rsquo;s also important to remember that outsourcing still requires internal support. If you purchase a costly mitigation device or service, you need someone in your organization
+    with enough knowledge to configure and manage it. </p><p>There are times when it is useful to simply outsource for a skillset. But, with DDoS attacks and others, it is always best to have internal expertise. Otherwise, you may end up with a situation where an outsourced expert has made changes to your DDoS
+    protection suite, but then moves on to another organization.</p><h2>IT Pro Skills and Tools for DDoS Management</h2><p>As an IT pro, you can take steps to help ready yourself for a DDoS attack. Check out the following skills and tools that can help you successfully manage an incident.</p><h2>Attack Basics: The Skills You Need to Manage DDoS Attacks</h2><p>Employers will want to know that you are armed with the skills necessary for combatting a DDoS attack. Adding these skills to your toolset will help illustrate your ability to thwart attacks.</p><ul class="bulletlist"><li>Develop effective planning and management of products and applications.
+    </li><li>Communicate clearly during a response.
+    </li><li>Demonstrate ability to work with cloud and ISP providers to tackle difficult situations and troubleshoot problems.
+    </li><li>Illustrate effectiveness in red teaming and blue teaming drills.
+    </li><li>Proactively act as a threat hunter to identify potential threats and understand which systems are critical to business operations.
+    </li></ul>
+<img src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/researchreports/what-is-a-ddos-attack/book-with-warning-symbol0ae4.png?sfvrsn=f55f8fb_2" alt="Book with warning symbol" title="Book with warning symbol" data-displaymode="Original" style="float:right;width:25%;" /><p>Standards such as the U.S. National Institute of Standards and Technology (NIST) Special Publication (SP) 800-61 provide a helpful foundation for knowing how to respond to attacks of various types. The IT industry also uses the ISO/IEC 27035-1:2016 standard
+    as a guideline for incident response procedures. As a general rule, organizations with a reputation for responding well to incidents tend to use such standards as helpful guidelines, rather than absolute rules to follow.</p><p>IT pros can also benefit from seeing demonstrations of attacks to learn how data behaves in particular situations. Take the time to view demonstrations of the following attacks:</p><ul class="bulletlist"><li>Ransomware
+ </li><li>DDoS
+ </li><li>Browser-based threats
+    </li></ul><p><img src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/researchreports/what-is-a-ddos-attack/ddos-1266cb.png?sfvrsn=e2f80406_0" alt="Illustration of an IT pro studying on a computer" title="IT pro at computer" data-displaymode="Original" style="float:right;margin-left:10px;max-width:25%;" /></p><h2>DDoS Boot Camp: DDoS Education Options for IT Pros</h2><p>Ongoing education is essential for any IT pro. Technology advances every day, and IT pros that stagnate will eventually be deemed unnecessary as legacy systems die off and new platforms take their place. To remain relevant, it&rsquo;s important to continue
+    educating yourself.</p><p>The standards and practices taught in the industry will also help you and your organization respond to DDoS attacks. One way to obtain the appropriate level of knowledge is to learn the standards and best practices covered by the IT certifications found
+    in the CompTIA Cybersecurity Pathway. </p><table class="basictable k-table"><tbody><tr><th style="text-align:center;" data-role="resizable" width="16.6%"><strong><span style="text-align:center;">Endpoints</span></strong></th><th style="text-align:center;" width="16.6%"><strong><span style="text-align:center;">Cloud</span></strong>
+ </th><th style="text-align:center;" width="16.6%"><strong><span style="text-align:center;">Servers</span></strong>
+ </th><th style="text-align:center;" width="16.6%"><strong><span style="text-align:center;">Red Team</span></strong>
+ </th><th style="text-align:center;" width="16.6%"><strong><span style="text-align:center;">Blue Team</span></strong>
+ </th><th style="text-align:center;" width="16.6%"><strong><span style="text-align:center;">Network Security</span></strong></th></tr><tr><td><a href="../../certifications/a.html"><img style="max-width:100%;" "alt="logoAPlus " src="https://comptiacdn.azureedge.net/webcontent/images/default-source/siteicons/logoaplus.svg?sfvrsn=5ee1de19_2" id="Overview_C025_imgLogo " data-displaymode="Original " title="logoAPlus
+                    " /></a><br /><a href="../../certifications/linux.html"><img style="max-width:100%;" alt="logoLinuxPlus " src="https://comptiacdn.azureedge.net/webcontent/images/default-source/siteicons/logolinuxplus.svg?sfvrsn=a1b030a_4" id="Overview_C025_imgLogo " data-displaymode="Original " title="logoLinuxPlus
+                    " /></a><br /><a href="../../certifications/server.html"><img style="max-width:100%;" alt="logoServerPlus " src="https://comptiacdn.azureedge.net/webcontent/images/default-source/siteicons/logoserverplus.svg?sfvrsn=2cf52c4_2" id="Overview_C025_imgLogo " data-displaymode="Original " title="logoServerPlus
+                    " /></a></td><td><a href="../../certifications/cloud.html"><img style="max-width:100%;" alt="logoCloudPlus " src="https://comptiacdn.azureedge.net/webcontent/images/default-source/siteicons/logocloudplus.svg?sfvrsn=31d5724_2" id="Overview_C025_imgLogo " data-displaymode="Original " title="logoCloudPlus
+                    " /></a><br /><a href="../../certifications/linux.html"><img style="max-width:100%;" alt="logoLinuxPlus " src="https://comptiacdn.azureedge.net/webcontent/images/default-source/siteicons/logolinuxplus.svg?sfvrsn=a1b030a_4" id="Overview_C025_imgLogo " data-displaymode="Original " title="logoLinuxPlus
+                    " /></a><br /><a href="../../certifications/security.html"><img alt="logoSecurityPlus" src="https://comptiacdn.azureedge.net/webcontent/images/default-source/siteicons/logosecurityplus.svg?sfvrsn=35a7d752_2" id="Overview_C025_imgLogo" data-displaymode="Original" title="logoSecurityPlus" /></a></td><td><a href="../../certifications/security.html"><img style="max-width:100%;" alt="logoSecurityPlus " src="https://comptiacdn.azureedge.net/webcontent/images/default-source/siteicons/logosecurityplus.svg?sfvrsn=35a7d752_2" id="Overview_C025_imgLogo " data-displaymode="Original " title="logoSecurityPlus
+                    " /></a><br /><a href="../../certifications/server.html"><img style="max-width:100%;" alt="logoServerPlus " src="https://comptiacdn.azureedge.net/webcontent/images/default-source/siteicons/logoserverplus.svg?sfvrsn=2cf52c4_2" id="Overview_C025_imgLogo " data-displaymode="Original " title="logoServerPlus
+                    " /></a><br /><a href="../../certifications/linux.html"><img style="max-width:100%;" alt="logoLinuxPlus " src="https://comptiacdn.azureedge.net/webcontent/images/default-source/siteicons/logolinuxplus.svg?sfvrsn=a1b030a_4" id="Overview_C025_imgLogo " data-displaymode="Original " title="logoLinuxPlus
+                    " /></a></td><td><a href="../../certifications/pentest.html"><img style="max-width:100%;" alt="logoPenTestPlus " src="https://comptiacdn.azureedge.net/webcontent/images/default-source/siteicons/logopentestplus25ca3e0f663040228daac744ae75be05.svg?sfvrsn=44a5b3b5_0" id="Overview_C025_imgLogo
+                    " data-displaymode="Original " title="logoPenTestPlus " /></a></td><td><a href="../../certifications/cybersecurity-analyst.html"><img style="max-width:100%;" alt="logocysaplus-01 " src="https://comptiacdn.azureedge.net/webcontent/images/default-source/siteicons/logocysaplus-01.svg?sfvrsn=23af9617_4" id="Overview_C025_imgLogo
+                    " data-displaymode="Original " title="logocysaplus-01 " /></a><br /><a href="../../certifications/pentest.html"><img style="max-width:100%;" alt="logoPenTestPlus " src="https://comptiacdn.azureedge.net/webcontent/images/default-source/siteicons/logopentestplus25ca3e0f663040228daac744ae75be05.svg?sfvrsn=44a5b3b5_0" id="Overview_C025_imgLogo " data-displaymode="Original " title="logoPenTestPlus " /></a></td><td><a href="../../certifications/network.html"><img style="max-width:100%;" alt="logoNetworkPlus " src="https://comptiacdn.azureedge.net/webcontent/images/default-source/siteicons/logonetworkplus.svg?sfvrsn=1ca21668_2" id="Overview_C025_imgLogo " data-displaymode="Original " title="logoNetworkPlus " /></a><br /><a href="../../certifications/comptia-advanced-security-practitioner.html"><img style="max-width:100%;" alt="logoCASP " src="https://comptiacdn.azureedge.net/webcontent/images/default-source/siteicons/logocasp_181cc6b4-05ec-4ddd-be1d-728ec7499b30.svg?sfvrsn=50eaf2dd_6" id="Overview_C025_imgLogo " data-displaymode="Original " title="logoCASP
+                    " /></a><br /><a href="../../certifications/security.html"><img alt="logoSecurityPlus" src="https://comptiacdn.azureedge.net/webcontent/images/default-source/siteicons/logosecurityplus.svg?sfvrsn=35a7d752_2" id="Overview_C025_imgLogo" data-displaymode="Original" title="logoSecurityPlus" /></a></td></tr></tbody></table><p><a href="../../training/resources/exam-objectives.html">Download the exam objectives</a> for the above CompTIA exams to see what&rsquo;s covered and decide which one is right for
+    you.
+</p><p><strong>Want to know more about DDoS attacks and stay up to date on the latest in cybersecurity? <a href="https://certs.comptia.org/it-career-news-ddos-guide/">Subscribe to CompTIA&rsquo;s IT Career News</a> for weekly digests and a monthly newsletter dedicated to cybersecurity, cloud computing, computer networking, tech support and more.</strong></p>
+<div id="section5 start">&nbsp;</div><div style="width:100%;"><div style="border:1px solid #ccc;border-radius:10px;padding:20px;margin:0 auto;"><h2 style="margin-top:10px;padding-top:10px;">Terms to Know</h2><ul class="bulletlist "><li><strong>ACK:</strong> Acknowledgement packet
+            </li><li><strong>DNS:</strong> Domain Name System
+            </li><li><strong>HTTP:</strong> Hyper Text Transfer Protocol
+            </li><li><strong>ICMP:</strong> Internet Control Message Protocol
+            </li><li><strong>OSI/RM:</strong> Open Systems Interconnection/Reference Model
+            </li><li><strong>Incident response:</strong> Steps to take when managing a DDoS attack.
+            </li><li><strong>SYN:</strong> Synchronize packet
+            </li><li><strong>SYN flood:</strong> Where an attacker manipulates the three-way TCP handshake to create a DDoS attack.
+            </li><li><strong>TCP:</strong> Transmission control protocol
+            </li><li><strong>TCP handshake:</strong> A three-step process that occurs whenever two computers communicate with each other at the beginning of a TCP session. Also known as the TCP three-way handshake.
+            </li><li><strong>UDP:</strong> User Datagram Protocol
+            </li></ul></div></div><div id="section5 end">&nbsp;</div>
+<div >
+    <div ></div>    
+    
+</div><script src="../../scripts/jquery.unobtrusive-ajax.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $(".downloadguide").on('click', function () {
+            $.featherlight("<p></p>", { variant: 'roadMap' });
+            $('.featherlight-inner').html("<h2>Loading...</h2>");
+            $.ajax({
+                type: 'POST',
+                url: '/content/guides/what-is-a-ddos-attack-how-it-works/getddosguideform/',
+                dataType: 'html',
+                data: {PDFURL: '6CeByAnc2LpVE7w/tNSckbCAgDgEKlaBQkhIy03bWz8lQMIq4GoqDHrAyLbMPF7+98/dQ1hGhFvKily00CP2ZfS8qdY5C5m6Wp/h+oNg/LVxDKLunpsrDvjPy8zOMy9jzOpwn+B9Nd8jJzFMekAqrXE+1NQ4GyxvCKM2WPE+YEyN7dS/4sYT3qlGTsLOGPZ5O1o9d+FFB0O2DTgOQM55roL+Bq9EbsFJDzofNHzg1u/W5eurUmNwwizkrqCvX8Ht7fQgCZOzzSg2al/eNZz5O9XJTh9+LHob7J5nMq7ghc8='},
+                success: function (data) {
+                    $('.featherlight-inner').html(data);
+                },
+                error: function (ex) {
+                    console.log('Failed : ' + ex);
+                }
+            });
+        });
+    });
+</script>
+
+<div class="roadMap" id="ddosguide">
+    <div class="row downloadSection">
+        <h2>5 Steps to DDoS Response</h2>
+        <p>Download CompTIA’s free Quick Response Guide to DDoS Attacks with tips and tricks for mitigation and response so you’re ready to protect your organization at a moment’s notice.</p>
+        <a href="javascript:;" class="button downloadguide" style="color: #fff">
+            Download the Guide
+        </a>
+    </div>
+
+</div>
+
+
+
+
+
+<br><p><i><b>Read more about</b> <a onclick="gtag('event', 'Clicked Resource Hub Tag', { 'event_category': 'Resource Hub Tag', 'event_label': 'Cybersecurity' });" href="../../resources/cybersecurity.html">Cybersecurity</a>.</i></p> </div> <div class="col-md-3" id="sidebarResearch"> <div id="catcher"></div> <div id="sticky"> <div class="tocHeader" runat="server" id="tocHeader"><h4>Table of Contents</h4></div> <div class="tocContent"> 
+
+<div class="addthis_inline_share_toolbox"></div><p><b>Tags : </b> <a onclick="gtag('event', 'Clicked Resource Hub Tag', { 'event_category': 'Resource Hub Tag', 'event_label': 'Cybersecurity' });" href="../../resources/cybersecurity.html">Cybersecurity</a></p><script>
+      function RecordActivity(Title, Tags, Permissions, AccessType) {
+          if (AccessType.toLowerCase() == "pdfwithlogo") {
+              gtag('event', 'Document Download With Logo', { 'event_category': 'Resource Download', 'event_label': Title });
+          }
+          else if (AccessType.toLowerCase() == "pdf") {
+              gtag('event', 'Document Download', { 'event_category': 'Resource Download', 'event_label': Title });
+          }
+          else {
+              gtag('event', 'Viewed HTML', { 'event_category': 'Resource Download', 'event_label': Title });
+          }
+
+        $.ajax({
+            type: 'POST',
+            url: '/content/guides/what-is-a-ddos-attack-how-it-works/ajaxrecordactivity/',
+            dataType: 'json',
+            data: { title: Title, tags: Tags, permissions: Permissions  },
+            success: function (data) {
+
+            },
+            error: function (ex) {
+                console.log('Failed : ' + ex);
+            }
+        });
+    }
+
+    function downloadPdfWithLogo(ID) {
+        $.featherlight("<p></p>");
+        $('.featherlight-inner').html("<h2>Loading...</h2>");
+        $.ajax({
+            type: 'POST',
+            url: '/content/guides/what-is-a-ddos-attack-how-it-works/getdownloadpdfform/',
+            dataType: 'html',
+            data: { ID: ID },
+            success: function (data) {
+                $('.featherlight-inner').html(data);
+            },
+            error: function (ex) {
+                console.log('Failed : ' + ex);
+            }
+        });
+    }
+
+    //Update Image when Uploaded
+    function ShowImagePreview(input) {
+        if (input.files && input.files[0]) {
+            $('#imgLogo').css('display', 'inline');
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#imgLogo').prop('src', e.target.result)
+                    .width(200);
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+
+</script>
+
+    <script>
+            //Run track script if just accessing/loading page
+            RecordActivity('What Is a DDoS Attack? A Guide for Protection', 'Cybersecurity', 'Public', '')
+    </script>
+
+
+    <div class="sidebarSection download">
+        <h2>Download Document</h2>
+        <div class="content">
+            <div id="TableOfContentsLinks_C066_divDownloadLink">
+                <a target="_blank" href="https://comptiacdn.azureedge.net/webcontent/docs/default-source/research-reports/07513-ddos-handbook-online.pdf?sfvrsn=30c304e9_2" onclick="RecordActivity('What Is a DDoS Attack? A Guide for Protection', 'Cybersecurity', 'Public', 'pdf')" title="Download Full PDF Report">
+                    <img src="../../../comptiawebsite.blob.core.windows.net/webcontent/images/default-source/researchreports/pdf1.png" style="position:relative;top:-3px;">Download Full PDF
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+<div class="sidebarSection download"><h2>Download Document</h2><div class="content"><a href="#ddosguide" title="Get your free Quick Response Guide to DDoS Attacks"><img src="../../../comptiawebsite.blob.core.windows.net/webcontent/images/default-source/researchreports/pdf1.png" style="position:relative;top:8px;margin-bottom:30px;" />Get your free Quick Response Guide to DDoS Attacks</a></div></div>
+
+
+<div class="bluebox"><div class="heading"><h3>Get Started with Cybersecurity</h3></div><div class="body"><ul class="bulletlist"><li><a href="../../resources/cybersecurity.html">Read more about cybersecurity</a></li><li><a href="../../training/by-certification/cysa.html">Get cybersecurity training</a></li><li><a href="../../certifications/cloud.html">Earn a cybersecurity certification</a></li></ul></div></div>
+<div class="sidebarSection"><div class="tableOfContents"><h2>Table of Contents</h2><div class="content"><a href="#section1">What Is a DDoS Attack?</a>
+ <a href="#section2">DDoS Attacks: Who, Why, How</a>
+ <a href="#section3">DDoS Response and Mitigation</a>
+ <a href="#section4">Skills for DDoS Management</a>
+ <a href="#section5">DDoS Terms to Know</a>
+ </div></div></div> </div> </div> </div> </div> </div> </section> <section class="footer-container" id="footer"> <footer class="container"> 
+
+<footer class="footer">
+<div class="row">
+
+<div class="col-md-3">
+<img src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/mainsitetemplateimages/comptia-logocbc0.png?sfvrsn=30cdad27_2" alt="comptia-logo" title="comptia-logo" data-displaymode="Original">&nbsp;
+<ul>
+<li><a href="../../about-us.html" aria-label="About Us">About Us</a></li>
+<li><a href="https://connect.comptia.org/newsroom" aria-label="CompTIA Newsroom">Newsroom</a></li>
+<li><a href="../../contact-us.html" aria-label="Contact Us">Contact Us</a></li>
+<li><a href="../../blog.html" aria-label="CompTIA Blog">Blog</a></li>
+</ul>
+
+<ul class="social">
+    <li><a href="https://www.facebook.com/comptia" aria-label="CompTIA Facebook"><i class="fa fa-facebook-f"></i></a><br></li>
+    <li><a href="https://www.twitter.com/comptia" aria-label="CompTIA Twitter"><i class="fa fa-twitter"></i></a><br></li>
+    <li><a href="https://www.linkedin.com/company/comptia" aria-label="CompTIA LinkedIn"><i class="fa fa-linkedin"></i></a><br></li>
+    <li><a href="https://www.youtube.com/comptia" aria-label="CompTIA YouTube"><i class="fa fa-youtube-play"></i></a><br></li>
+    <li><a href="https://www.instagram.com/comptiaofficial/" aria-label="CompTIA Instagram"><i class="fa fa-instagram"></i></a><br></li>
+    <li><a href="https://open.spotify.com/user/69zrdapuhgxuofckbsuuzm80k?si=89172934b235442a&amp;nd=1" aria-label="CompTIA Spotify"><i class="fa fa-spotify"></i></a><br></li>
+</ul>
+
+</div>
+
+<div class="col-md-3">
+<h3>Certification</h3>
+<ul>
+    <li><a href="../../certifications.html">CompTIA IT Certifications</a></li>
+    <li><a href="https://store.comptia.org/">Store</a></li>
+    
+    <li><a href="https://www.certmetrics.com/comptia/login.aspx">Account Login</a></li>
+<li><a href="https://www.comptiatech.org/">CompTIA Tech Career Academy</a></li>
+</ul>
+</div>
+<div class="col-md-3">
+<h3>Membership Community</h3>
+<ul>
+    <li><a href="../../membership.html">CompTIA – The IT Industry Association</a></li>
+    
+</ul>
+
+<h3>Social Impact</h3>
+<ul>
+    <li><a href="https://www.comptiaspark.org/">CompTIA Spark</a></li>
+</ul>
+</div>
+<div class="col-md-3">
+<h3>Government Relations</h3>
+<ul>
+    <li><a href="https://connect.comptia.org/membership/public-sector">CompTIA Public Sector</a></li>
+</ul>
+
+<h3>Partners</h3>
+<ul>
+    <li><a href="https://partners.comptia.org/">CompTIA Authorized Partner Program</a></li>
+</ul>
+
+<select id="language_select" aria-label="Change Language">
+<option>Change Language</option>
+<option value="/">English</option>
+ <option value="/de/start">German</option>
+ <option value="/pt/pagina-inicial">Portuguese</option>
+ <option value="/es/pagina-principal">Spanish</option>
+</select>
+
+</div>
+
+</div>
+</footer> </footer> </section> <section class="copyright-container"> <div class="container copyright-content"> 
+
+<ul>
+    <li>Copyright © CompTIA, Inc. All Rights Reserved</li>
+    <li><a href="../../sitemap.html">Sitemap</a></li>
+    <li><a href="../../legal.html">Legal</a></li>
+</ul> </div> </section> <script src="../../resourcepackages/mainsite/assets/dist/js/initialize.min9b1a.js?v=4.0.1" type="text/javascript"></script><script type="text/javascript" src="../../WebResource80aa.js?d=NjxTqR2bqTw1rewxxlkHPubjZy05NEOaKaMLHW4Lo32JlaoXFWJWQ76gpu7rAFqs7j_NRtPGHELptxKNcYRgcW7OGBxy-XnAT4LWmqos2vXIQw0HFjI9dJRsIpI5cPTAXYQcJQJ-Pp3o7rLaWXccaUiLnvQOQH2V4P5VWa3JeRRyPS_CM4VssLHlWRIAKxx6Y1V5c066Qqdi90--l3eSSkDGbkQ1&amp;t=637429511240000000">
+
+</script><script type="text/javascript">
+//Report Template Specific Accordion
+$(function () {
+    var $el = $("#accordionResearch2");
+    if ($el.length) {
+        $("#accordionResearch2").jqueryAccordion({
+            interval: 600,
+            fadeContent: false,
+            open: false,
+            defaultOpenIndex: 1,
+        });
+    }
+});
+</script><script type="text/javascript">
+//Report Template Specific Accordion
+$(function () {
+    var $el = $("#thirdAccordion");
+    if ($el.length) {
+        $("#thirdAccordion").jqueryAccordion({
+            interval: 600,
+            fadeContent: false,
+            open: false,
+            defaultOpenIndex: 1,
+        });
+    }
+});
+</script> </body> 
+<!-- Mirrored from www.comptia.org/content/guides/what-is-a-ddos-attack-how-it-works by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Feb 2023 04:37:14 GMT -->
+</html>

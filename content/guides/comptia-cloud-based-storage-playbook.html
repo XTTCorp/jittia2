@@ -1,0 +1,757 @@
+ <!DOCTYPE html> <html lang="en"> 
+<!-- Mirrored from www.comptia.org/content/guides/comptia-cloud-based-storage-playbook by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Feb 2023 05:12:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head> <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> <meta charset="utf-8" /> <title>
+	Cloud-Based Storage Playbook | Cloud Computing | CompTIA
+</title> <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0, minimum-scale=1.0" /> <meta name="referrer" content="always" /> <script src="../../../code.jquery.com/jquery-latest.min.js" type="text/javascript"></script><script src="../../scripts/jquery.validate.min.js" type="text/javascript"></script><script src="../../scripts/jquery.validate.unobtrusive.min.js" type="text/javascript"></script><script src="../../client%20scripts/mvcfoolproof.unobtrusive.js" type="text/javascript"></script><script src="../../scripts/js-cookie/js.cookie-2.2.0.min.js" type="text/javascript"></script><script src="../../resourcepackages/mainsite/assets/dist/js/project.minbc3e.js?v=4.0.9" type="text/javascript"></script><link href="../../resourcepackages/mainsite/assets/dist/css/main.minf642.css?v=4.0.10" rel="stylesheet" type="text/css" /> <script src="../../../s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b4e3a272dd369e0" type="text/javascript"></script> <script src="../../../kit.fontawesome.com/df896256a0.js" crossorigin="anonymous"></script> <!-- idio Analytics Tracking Code --> <script type="text/javascript">
+        // Set client and delivery
+
+        _iaq = [
+            ['client', '5d23cdc951f74144b35946c0c4de3efe'],
+            ['delivery', 1062],
+            ['track', 'consume']
+        ];
+
+        // Include the Idio Analytics JavaScript
+        !function (d, s) { var ia = d.createElement(s); ia.async = 1, s = d.getElementsByTagName(s)[0], ia.src = '../../../s.usea01.idio.episerver.net/ia.js', s.parentNode.insertBefore(ia, s) }(document, 'script');
+    </script> <!-- / idio Analytics Tracking Code --> <script src="../../../ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script> <script type="text/javascript">WebFont.load({ google: { families: ["Roboto:300,300italic,regular,italic,500,500italic,700,700italic"] } });</script> <script src="../../../use.typekit.net/fqu5ybu.js" type="text/javascript"></script> <script type="text/javascript">try { Typekit.load(); } catch (e) { }</script> <meta property="og:title" content="Cloud-Based Storage Playbook | Cloud Computing | CompTIA" /><meta property="og:description" content="This playbook template provides the information you need to identify, target, position and close new opportunities in cloud-based storage." /><meta property="og:url" content="https://www.comptia.org/content/guides/comptia-cloud-based-storage-playbook" /><meta property="og:type" content="website" /><meta property="og:site_name" content="Default" /><meta property="og:image" content="https://comptiacdn.azureedge.net/webcontent/images/default-source/mainsitetemplateimages/comptia_logo_white.png?sfvrsn=df1edab8_2" /><link rel="alternate" hreflang="en" href="comptia-cloud-based-storage-playbook.html" /><link rel="alternate" hreflang="x-default" href="comptia-cloud-based-storage-playbook.html" /><meta name="Generator" content="Sitefinity 13.1.7428.0 OME" /><link rel="canonical" href="comptia-cloud-based-storage-playbook.html" /><meta name="article:tag" content="informational" /><meta name="keywords" content="informational" /><script type="text/javascript">
+	
+(function(){
+    var metadataStr = '{\"Id\":\"b4a65119-f31f-48de-bc01-476a7d6a7976\",\"ContentType\":\"Page\",\"Title\":\"CompTIA Cloud-Based Storage Playbook\",\"CanonicalTitle\":\"CompTIA Cloud-Based Storage Playbook\",\"CanonicalUrl\":\"comptia-cloud-based-storage-playbook.html\",\"Language\":\"en\",\"CreatedOn\":\"2019-01-23T20:06:10Z\",\"ModifiedOn\":\"2019-12-09T21:27:44Z\",\"SiteName\":\"Default\",\"PageId\":\"b4a65119-f31f-48de-bc01-476a7d6a7976\"}';
+    window.decMetadata = window.decMetadata || {};
+    window.decMetadata.contentMetadata = JSON.parse(metadataStr);
+})();
+</script><script type="text/javascript">
+	(function() {
+    var detectjs = false;
+    var executeDataIntelligenceScript = function() {
+        var source;
+        if (!window.JSON) {
+            source = '/WebResource.axd?d=tTNUeDtL8OsI39FmMLAdgBQBc-fQa8Zapz4xvupjc2u3a0YKXmxWFXx9mciVdoC7VzbV4hb5cqjKUmgjgX74neyz5il70jFCpEoTH-EkQxelKL1MKV5hAkveXsdpQDwAKAhg6P86u61v4L4qK-n7gdu4kJw1&t=637429511240000000';
+        } else if (!detectjs) {
+            source = '/WebResource.axd?d=6kZXgApsQ6ne3RX7gMeiNahLDbzLehKOtS8GRay_gzHC_qE3a2_kpaSbDUjmpgRqKRmLS4_1gBJtu2kHZBJBtGZ55w0X5YkbqhYB4x5b9GqYV7wZB2CgSaSY6UbHUTBbwkgwFKtd7E_tak0eqrZQj76pH8lPhLBOUHHtYcjNrvZVwfRqyiiYxjmAUNt4swxYqwDQiQpQbZY6wUAB3neaqOVik_I1&t=637429511220000000';
+            detectjs = true;
+        } else if (!window.DataIntelligenceSubmitScript) {
+            source = '/WebResource.axd?d=svCNDiDihPX-0SS0GCW70GTCob9kSVbrmRcpYaIyqKiuSRqNT_HmrbuuLKCCVxSkZpUFcGKXvrV-kdFWRV9WOSBbhT_LXa6RHrd9nAgi4Lh1CxYskGQglbaFjQ1VMwYjcqHs4z983wuNNAfc8VNkfSEFqakXZo8cqG4g2tlSECFAg6ZCRrYLwsJxumR2TUwZZFqowmwrbvm1l3cJxFytNAh1bNCCZF0N-eto-_nAfxFvyd1D0&t=637429511220000000';
+        } else if (!window.sfDataIntell) {
+            source = '../../../cdn.insight.sitefinity.com/sdk/sitefinity-insight-client.min.3.0.11.js';
+        } else {
+            return DataIntelligenceSubmitScript.load({"apiServerUrl":"https://api.insight.sitefinity.com","apiKey":"3053cddb-5173-1bee-1b10-43e0ff4f97c4","applicationName":"DevCompTIAOrg","trackingCookieDomain":"","keepDecTrackingCookieOnTrackingConsentRejection":false});
+        }
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        var callback = function() {
+            if (!this.readyState || this.readyState === 'complete' || this.readyState === 'loaded') {
+                executeDataIntelligenceScript();
+            }
+        };
+        if(script.addEventListener) {
+            script.addEventListener('load', callback, false);
+        } else if(script.readyState) {
+            script.onreadystatechange = callback;
+        }
+        script.src = source;
+        return document.body.appendChild(script);
+    };
+    if (window.addEventListener) {
+        window.addEventListener('load', executeDataIntelligenceScript, false);
+    } else if (window.attachEvent) {
+        window.attachEvent('onload', executeDataIntelligenceScript);
+    }
+})();
+</script><meta name="description" content="This playbook template provides the information you need to identify, target, position and close new opportunities in cloud-based storage." /></head> <body lang="en"> <!-- MS Dynamics --> <div id="dPCA2Xv2ViMzSahA85lfNNpqlep_9M6Prbp8xqs7K6q8"></div> <script src="../../../mktdplp102cdn.azureedge.net/public/latest/js/ws-trackingd23c.js?v=1.69.1065.0"></script> <div class="d365-mkt-config" style="display:none" data-website-id="PCA2Xv2ViMzSahA85lfNNpqlep_9M6Prbp8xqs7K6q8" data-hostname="4fb516e0ad974eb7b7d929125dbdc1ff.svc.dynamics.com"></div> <!-- End MS Dynamics -->  <!-- Google Tag Manager --> <script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-M53PKPD');</script> <!-- End Google Tag Manager --> <!-- Global site tag (gtag.js) - Google Analytics --> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113138049-1"></script> <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-113138049-1', {
+        send_page_view: false
+    });
+</script> <!-- Google Tag Manager (noscript) --> <noscript> <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M53PKPD"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe> </noscript> <!-- End Google Tag Manager (noscript) --> <!-- OneTrust Cookies Consent Notice start for comptia.org --> <script async src="../../../cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="d3d66ac2-27bc-4963-9709-689280baad0b"></script> <script type="text/javascript">
+        function OptanonWrapper() { }
+    </script> <!-- OneTrust Cookies Consent Notice end for comptia.org --> <!-- Pull the Wootric Snippet --> <script type="text/javascript" src="../../../cdn.wootric.com/wootric-sdk.js"></script> <!-- begin Wootric code --> <script type="text/javascript">
+    window.wootricSettings = {
+        created_at: Math.floor(Date.now() / 1000),
+        account_token: 'NPS-88f9d834'
+    };
+    // Request a survey
+    window.wootric('run');
+</script> <!-- end Wootric code --> 
+
+
+ <section class="header-container-new"> <header class="header"> 
+
+<div class="siteupdate"><div class="popup popup-3" aria-modal="true" role="dialog"><div class="popup-3_box"><img src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/newsiteupdates/whatbringsyoutooursitetoday.jpg" loading="lazy" sizes="100vw" srcset="https://comptiacdn.azureedge.net/webcontent/images/default-source/newsiteupdates/whatbringsyoutooursitetoday-p-500.jpg 500w, 
+    https://comptiacdn.azureedge.net/webcontent/images/default-source/newsiteupdates/whatbringsyoutooursitetoday-p-800.jpg 800w, 
+    https://comptiacdn.azureedge.net/webcontent/images/default-source/newsiteupdates/whatbringsyoutooursitetoday-p-1080.jpg 1080w, 
+    https://comptiacdn.azureedge.net/webcontent/images/default-source/newsiteupdates/whatbringsyoutooursitetoday.jpg 1920w" alt="What brings you to our site today" class="width-full radius-none"><div class="container-large"><div class="popup-3_layout"><div class="popup_heading">What brings you to our site today?</div><div class="popup-1_tags"><a href="../../career-intent.html" class="popup-2_option w-inline-block" onclick="gtag('event', 'ASPopup', { 'event_category': 'PopupOptions', 'event_label': 'Career Intent' });">
+ <div>I'm considering a career change and exploring all my options</div></a>
+ <a href="../../tech-intent.html" class="popup-2_option w-inline-block" onclick="gtag('event', 'ASPopup', { 'event_category': 'PopupOptions', 'event_label': 'Tech Intent' });">
+ <div>I'm interested in a tech career and want to learn more</div></a>
+ <a href="../../comptia-intent.html" class="popup-2_option w-inline-block" onclick="gtag('event', 'ASPopup', { 'event_category': 'PopupOptions', 'event_label': 'CompTIA Intent' });">
+ <div>I'm ready to purchase CompTIA&nbsp;training and certification products</div></a>
+ <a href="../../brand.html" class="popup-2_option w-inline-block" onclick="gtag('event', 'ASPopup', { 'event_category': 'PopupOptions', 'event_label': 'Brand' });">
+ <div>I'd like to learn more about CompTIA</div></a>
+ </div><div data-w-id="bc94d0e4-740d-dc23-da4f-5120e29cb9ac" class="popup-1_close" role="button"><div class="icon"></div></div></div></div></div><div data-w-id="bc94d0e4-740d-dc23-da4f-5120e29cb9af" class="popup_overlay"></div></div></div><a id="top" name="#top"></a>
+
+<script type="text/javascript">
+    //Determine how much padding is needed for the nav.  1170px - window width
+    $(document).ready(function () {
+
+        var e = window,
+            a = 'inner';
+        if (!('innerWidth' in window)) {
+            a = 'client';
+            e = document.documentElement || document.body;
+        }
+        /*var width = jQuery(window).width();*/
+        var width = e[a + 'Width'];
+        var navTotal = width - 1185;
+        var navPadding = navTotal / 2;
+
+        $('.cd-secondary-nav').attr('style', 'padding: 48px ' + (navPadding) + 'px 48px 180px; margin-left: -180px;');
+        $('.cd-secondary-nav.cd-secondary-search-nav').attr('style', 'padding: 48px ' + (navPadding) + 'px; margin-left: -180px;');
+    });
+</script>
+
+<div class="siteupdate">
+    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+        <div class="top-bar hideOnTablet hideOnMobile">
+            <div class="padding-global">
+                <div class="top-bar_menu">
+                    <div><a href="https://connect.comptia.org/" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Corporate Membership' });">Membership Community</a></div>
+                    <div><a href="https://partners.comptia.org/" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Partners' });">Partners</a></div>
+                    <div><a href="../../about-us.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'About Us' });">About Us</a></div>
+                    <div><a href="../../contact-us.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Contact Us' });">Contact Us</a></div>
+                    <div><a href="https://help.comptia.org/" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Help' });">Help</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar_layout">
+            <a href="../../home.html" class="cd-logo" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Top Logo' });">
+                <img src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/mainsitetemplateimages/comptia_logo_rgbd16d9a1df26d4c17a95d23916d9db2d259d3.png?sfvrsn=d6d8_2" alt="CompTIA" title="CompTIA" class="toplogo">
+            </a>
+
+            <div class="cd-main-header">
+                <nav role="navigation" class="navbar_menu w-nav-menu">
+                    <div class="navbar_menu-items">
+                        <nav class="cd-nav">
+                            <ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+                                
+                                <!-- Certifications -->
+                                <li class="has-children">
+                                    <a href="../../certifications.html" aria-haspopup="true" aria-expanded="false" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Certifications' });">
+                                        Certifications<span></span>
+                                    </a>
+
+                                    <ul class="cd-secondary-nav is-hidden">
+                                        <li class="mobile-secondary-navigation-row hideOnDesktop">
+                                            <a href="#0" class="go-back"></a>
+                                            <a class="see-all" href="../../certifications.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Certifications' });">Certifications</a>
+                                            <span class="close-button"><i class="fas fa-xmark" aria-hidden="true"></i></span>
+                                        </li>
+
+                                        <li class="has-children half">
+                                            <span class="nav-heading" role="presentation"><a href="../../certifications.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Certifications' });">Certifications</a></span>
+                                            <ul class="is-hidden three-col">
+                                                <li><a href="../../certifications/a.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'A+' });">A+</a></li>
+                                                <li><a href="../../certifications/comptia-advanced-security-practitioner.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CASP+' });">CASP+</a></li>
+                                                <li><a href="../../certifications/cloud.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Cloud+' });">Cloud+</a></li>
+                                                <li><a href="../../certifications/cloud-essentials.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Cloud Essentials' });">Cloud Essentials+</a></li>
+                                                <li><a href="../../certifications/ctt.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CTT+' });">CTT+</a></li>
+                                                <li><a href="../../certifications/cybersecurity-analyst.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Cybersecurity Analyst+' });">CySA+</a></li>
+                                                <li><a href="../../certifications/data.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Data+' });">Data+</a></li>
+                                                <li><a href="../../certifications/it-fundamentals.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'IT Fundamentals' });">ITF+</a></li>
+                                                <li><a href="../../certifications/linux.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Linux+' });">Linux+</a></li>
+                                                <li><a href="../../certifications/network.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Network+' });">Network+</a></li>
+                                                <li><a href="../../certifications/pentest.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'PenTest+' });">PenTest+</a></li>
+                                                <li><a href="../../certifications/project.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Project+' });">Project+</a></li>
+                                                <li><a href="../../certifications/server.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Server+' });">Server+</a></li>
+                                                <li><a href="../../certifications/security.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Security+' });">Security+</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children quarter">
+                                            <span class="nav-heading" role="presentation">Exam Development</span>
+                                            <ul class="is-hidden one-col">
+                                                <li><a runat="server" href="../../certifications/become-a-subject-matter-expert.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'SME Overview' });">Overview</a></li>
+                                                <li><a runat="server" href="../../certifications/become-a-subject-matter-expert/apply-now.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'How to Apply' });">How to Apply</a></li>
+                                                <li><a runat="server" href="../../certifications/become-a-subject-matter-expert/workshops.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Workshops' });">Currently Recruiting</a></li>
+                                                <li><a runat="server" href="../../certifications/become-a-subject-matter-expert/current-smes.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Current SMEs' });">Current CompTIA SMEs</a></li>
+                                                <li><a runat="server" href="../../certifications/become-a-subject-matter-expert/refer-a-friend.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'SME Refer a Friend' });">Refer a Friend</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children quarter">
+                                            <span class="nav-heading" role="presentation"> Certification Resources</span>
+                                            <ul class="is-hidden one-col">
+
+                                                <li><a href="../../certifications/4-steps-to-certification.html" class="cd-nav-item" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': '4 Steps to Certification' });">4 Steps to Certification</a></li>
+                                                <li><a href="../../certifications/which-certification.html" class="cd-nav-item" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Which Certification is Right' });">Which Certification Is Right for Me?</a></li>
+                                                <li><a href="../../certifications/comptia-digital-badges.html" class="cd-nav-item" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Digital Badges' });">CompTIA Digital Badges</a></li>
+                                                <li><a href="../lp/certified-team-award.html" class="cd-nav-item" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Certified Team Award' });">Certified Team Award</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- Training -->
+                                <li class="has-children">
+                                    <a href="../../training.html" aria-haspopup="true" aria-expanded="false" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Training' });">Training<span></span></a>
+
+                                    <ul class="cd-secondary-nav is-hidden">
+                                        <li class="mobile-secondary-navigation-row hideOnDesktop">
+                                            <a href="#0" class="go-back"></a>
+                                            <a class="see-all" href="../../training.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Training' });">Training</a>
+                                            <span class="close-button"><i class="fas fa-xmark" aria-hidden="true"></i></span>
+                                        </li>
+
+                                        <li class="has-children quarter training-en">
+                                            <span class="nav-heading"><a href="../../training/by-certification.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Training By Certification' });">By Certification</a></span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../training/by-certification/a.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'A+ Training' });">CompTIA A+ Training</a></li>
+                                                <li><a href="../../training/by-certification/network.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Network+ Training' });">CompTIA Network+ Training</a></li>
+                                                <li><a href="../../training/by-certification/security.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Security+ Training' });">CompTIA Security+ Training</a></li>
+                                                <li><a href="../../training/by-certification/casp.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CASP+ Training' });">CompTIA CASP+ Training</a></li>
+                                                <li class="hideOnMobile">&nbsp;</li>
+                                                <li><a href="../../training/by-certification.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'View All Cert Training' });">View All Certs</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children quarter training-en">
+                                            <span class="nav-heading" role="presentation">For Individuals</span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../training/certmaster-learn.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'eLearning' });">eLearning</a></li>
+                                                <li><a href="../../training/certmaster-labs.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Virtual Labs' });">Virtual Labs</a></li>
+
+                                                <li><a href="../../training/classroom-training/online-instructor-led-training.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Virtual Labs' });">Live Online Training</a></li>
+                                                <li><a href="../../training/classroom-training/comptia-tech-training-career-services.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Virtual Labs' });">CompTIA Tech Career Academy</a></li>
+
+                                                <li><a href="../../training/certmaster-practice.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Exam Prep' });">Exam Prep</a></li>
+                                                <li><a href="../../training/books.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CompTIA Books' });">CompTIA Books</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children quarter training-en">
+                                            <span class="nav-heading" role="presentation">For Groups</span>
+                                            <ul class="is-hidden">
+                                                <li><a href="../../training/employers-workforce-development/workforce-development-training.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Workforce Development Solutions' });">Workforce Development Solutions</a></li>
+                                                <li><a href="../../training/employers-workforce-development/academic-government-solutions.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Academic & Government Solutions' });">Employer/Academic/Government</a></li>
+                                                <li><a href="../../training/employers-workforce-development/why-comptia-training-solutions.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Why CompTIA Training Solutions' });">Why CompTIA Training Solutions</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children quarter training-en">
+                                            <span class="nav-heading"><a href="../../training/resources.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Training Resources' });">Training Resources</a></span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../training/resources/practice-tests.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Practice Test' });">Practice Test</a></li>
+                                                <li><a href="../../training/resources/exam-objectives.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Exam Objectives' });">Exam Objectives</a></li>
+                                                <li><a style="height:auto;" href="../../training/certmaster-learn/trial-sign-up.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CertMaster Learn Labs Trial' });">CertMaster Learn + Labs Trial</a></li>
+                                                <li><a style="height:auto;" href="../../training/certmaster-practice/trial-sign-up.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CertMaster Practice Trial' });">CertMaster Practice Trial</a></li>
+                                                <li><a href="../../training/resources/book-samples.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Book Samples' });">CompTIA Book Samples</a></li>
+                                                <li><a style="height:auto;" href="../../training/resources/training-partners.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Authorized Partners' });">Authorized Partner Program</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </li>
+
+                                <!-- Testing -->
+                                <li class="has-children">
+                                    <a href="../../testing.html" aria-haspopup="true" aria-expanded="false" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Testing' });">Testing<span></span></a>
+
+                                    <ul class="cd-secondary-nav is-hidden">
+                                        <li class="mobile-secondary-navigation-row hideOnDesktop">
+                                            <a href="#0" class="go-back"></a>
+                                            <a class="see-all" href="../../testing.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Testing' });">Testing</a>
+                                            <span class="close-button"><i class="fas fa-xmark" aria-hidden="true"></i></span>
+                                        </li>
+
+                                        <li class="has-children third training-en">
+                                            <span class="nav-heading" role="presentation">Testing Options</span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../testing/testing-options/about-testing-options.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'About Testing Options' });">About Testing Options</a></li>
+                                                <li><a href="../../testing/testing-options/take-in-person-exam.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Take In-Person Exam' });">In-Person Exams</a></li>
+                                                <li><a href="../../testing/testing-options/take-online-exam.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Take Online Exam' });">Online Exams</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children third training-en">
+                                            <span class="nav-heading" role="presentation">Exam Vouchers</span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../testing/exam-vouchers/exam-prices.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'About Exam Pricing' });">About Exam Pricing</a></li>
+                                                <li><a href="../../testing/exam-vouchers/buy-exam.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Buy Exam Vouchers' });">Buy Exam Vouchers</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children third training-en">
+                                            <span class="nav-heading" role="presentation">Testing Policies and Procedures</span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../testing/testing-policies-procedures/test-policies.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'About Testing Policies' });">About Testing Policies</a></li>
+                                                <li><a href="../../testing/testing-policies-procedures/test-policies/exam-development.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Exam Development Process' });">Exam Development Process</a></li>
+                                                <li><a style="height:auto;" href="../../contact-us/comptia-exam-security-hotline.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Exam Security Hotline' });">Exam Security Hotline</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </li>
+
+                                <!-- Continuing Ed -->
+                                <li class="has-children">
+                                    <a href="../../continuing-education.html" aria-haspopup="true" aria-expanded="false" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Continuing Education' });">Continuing Education<span></span></a>
+
+                                    <ul class="cd-secondary-nav is-hidden">
+                                        <li class="mobile-secondary-navigation-row hideOnDesktop">
+                                            <a href="#0" class="go-back"></a>
+                                            <a class="see-all" href="../../continuing-education.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Continuing Education' });">Continuing Education</a>
+                                            <span class="close-button"><i class="fas fa-xmark" aria-hidden="true"></i></span>
+                                        </li>
+
+                                        <li class="has-children two-thirds">
+                                            <span class="nav-heading"><a runat="server" href="../../continuing-education/learn.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Learn About the Renewal Process' });">Learn About the Renewal Process</a></span>
+                                            <ul class="is-hidden two-col">
+                                                <li><a href="../../continuing-education/why-renew.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CE Why Renew' });">Why Renew?</a></li>
+                                                <li><a href="../../continuing-education/learn/overview.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Renewal Overview' });">Overview</a></li>
+                                                <li><a href="../../continuing-education/learn/how-to-renew.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'How to Renew' });">How to Renew</a></li>
+                                                <li><a href="../../continuing-education/learn/ce-program-fees.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Continuing Education Fees' });">Continuing Education Fees</a></li>
+                                                <li><a href="../../continuing-education/learn/earn-continuing-education-units.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Continuing Education Units' });">Continuing Education Units (CEUs)</a></li>
+                                                <li><a href="../../continuing-education/learn/renewing-multiple-certifications.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Multiple Renewals' });">Multiple Renewals</a></li>
+                                                <li><a href="../../continuing-education/learn/dod-ce-information.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'DoD Employees' });">DoD Employees and Contractors</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children third">
+                                            <span class="nav-heading"><a href="../../continuing-education/choose.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Choose Your Renewal Path' });">Choose Your Renewal Path</a></span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../continuing-education/choose/renew-with-a-single-activity.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Renew with a Single Activity' });">Renew with a Single Activity</a></li>
+                                                <li><a href="../../continuing-education/choose/renewing-with-multiple-activities.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Renew with a Multiple Activities' });">Renew with Multiple Activities</a></li>
+                                                <li><a href="../../continuing-education/choose/renewal-options.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Renewal Options' });">What Renewal Options Are Available to You?</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- Events -->
+                                <li class="has-children">
+                                    <a href="https://connect.comptia.org/events" aria-haspopup="true" aria-expanded="false" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Events' });">Events<span></span></a>
+
+                                    <ul class="cd-secondary-nav is-hidden">
+                                        <li class="mobile-secondary-navigation-row hideOnDesktop">
+                                            <a href="#0" class="go-back"></a>
+                                            <a class="see-all" href="https://connect.comptia.org/events" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Events' });">Events</a>
+                                            <span class="close-button"><i class="fas fa-xmark" aria-hidden="true"></i></span>
+                                        </li>
+
+                                        <li class="has-children quarter">
+                                            <span class="nav-heading"><a href="../../events/all-events/index.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Event List' });">Events</a></span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../events/all-events/index.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'All Events' });">All Events</a></li>
+                                                <li><a href="https://connect.comptia.org/events/view/comptia-communities-councils-forum-(ccf)-2023?sfredirect=/ccf" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CompTIA Community Forum' });">CompTIA Communities &amp; Councils Forum</a></li>
+                                                <li><a href="https://connect.comptia.org/partnersummit/" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Partner Summit' });">Partner Summit</a></li>
+                                                <li><a href="https://connect.comptia.org/channelcon?sfredirect=/channelcon" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'ChannelCon' });">ChannelCon</a></li>
+                                                <li><a href="https://connect.comptia.org/emea" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'EMEA Member & Partner Conference' });">EMEA Member & Partner Conference</a></li>
+                                                <li><a href="../../events/view/comptia-pti-cyber-leader-summit.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Cyber Leader Summit' });">PTI Cyber Leader Summit</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children quarter">
+                                            <span class="nav-heading"><a href="../../events/webinars/index.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Self-Study Tools' });">Upcoming Webinars</a></span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="https://connect.comptia.org/events/webinars/on-demand" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'On Demand Webinars' });">On Demand Webinars</a></li>
+                                            </ul>
+
+
+                                            <span class="nav-heading"><a href="https://connect.comptia.org/resources/podcasts" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Podcasts' });">Podcasts</a></span>
+                                        </li>
+
+                                        <li class="has-children quarter">
+                                            <span class="nav-heading"><a href="../../events/channel-training/index.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Classroom Training' });">Channel Training</a></span>
+
+                                           <!-- <span class="nav-heading"><a href="/events/industry-events/" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Industry Events' });">Industry Events</a></span> -->
+
+                                            <span class="nav-heading"><a href="../../events/archives/index.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Event Archives' });">Event Archives</a></span>
+                                        </li>
+
+                                        <li class="has-children quarter">
+                                            <div style="padding-top: 50px; padding-bottom: 0;">
+          <a href="../../events/view/comptia-communities-councils-forum-(ccf)-2023.html" style="height: auto;">
+                     <img style="border: medium none; width: 100%;" src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/events/ccf-2023-style-sheet_420-x-121---event-nav-banner0de2.png?sfvrsn=1cf8a2ed_2" data-displaymode="Original" alt="ccf" title="ccf">  </a>
+
+</div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- Resources -->
+                                <li class="has-children">
+                                    <a href="../../resources.html" aria-haspopup="true" aria-expanded="false" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Resources' });">Resources<span></span></a>
+
+                                    <ul class="cd-secondary-nav is-hidden">
+                                        <li class="mobile-secondary-navigation-row hideOnDesktop">
+                                            <a href="#0" class="go-back"></a>
+                                            <a class="see-all" href="../../resources.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Resources' });">Resources</a>
+                                            <span class="close-button"><i class="fas fa-xmark" aria-hidden="true"></i></span>
+                                        </li>
+
+                                        <li class="has-children fifth no-margin">
+                                            <span class="nav-heading"><a href="../../resources.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Trends & Analysis' });">Trends &amp; Analysis</a></span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../resources/cloud-computing.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Cloud Computing' });">Cloud Computing</a></li>
+                                                <li><a href="../../resources/computer-networks.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Computer Networks' });">Computer Networks</a></li>
+                                                <li><a href="../../resources/cybersecurity.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Cybersecurity' });">Cybersecurity</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children fifth no-margin">
+                                            <span class="nav-heading hideOnMobile" role="presentation">&nbsp;</span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../resources/data-and-analytics.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Data and Analytics' });">Data and Analytics</a></li>
+                                                <li><a href="../../resources/it-career-center.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'IT Career Center' });">IT Career Center</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children fifth">
+                                            <span class="nav-heading hideOnMobile" role="presentation">&nbsp;</span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../../resources/it-support-and-help-desk.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'IT Support and Help Desk' });">IT Support and Help Desk</a></li>
+                                                <li><a href="../../resources/it-workforce.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'IT Workforce' });">IT Workforce</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children fifth">
+                                            <span class="nav-heading" role="presentation">IT Career Tools</span>
+
+                                            <ul class="is-hidden">
+                                                <li><a href="../it-careers-path-roadmap.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Career Roadmap' });">Career Roadmap</a></li>
+                                                <li><a href="../lp/it-certifications-job-match.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Certifications and Jobs' });">Certifications and Jobs</a></li>
+                                                <li><a href="../it-salary-calculator.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'IT Salary Calculator' });">IT Salary Calculator</a></li>
+                                                <li><a href="../lp/ziprecruiter.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Zip Recruiter' });">Find a Job</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-children fifth">
+                                            <span class="nav-heading"><a href="../../blog.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CompTIA Blog' });">CompTIA Blog</a></span>
+                                            <span class="nav-heading"><a href="https://connect.comptia.org/resources/comptia-world" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CompTIA World' });">CompTIA World</a></span>
+                                            <span class="nav-heading"><a href="../../membership/it-pro/student-membership-and-benefits.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Students' });">Students</a></span>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- Career Changers -->
+                                <li class="has-children">
+                                    <a href="../../career-change.html" aria-haspopup="true" aria-expanded="false" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Career Changers' });">Career Changers<span></span></a>
+
+                                    <ul class="cd-secondary-nav is-hidden">
+                                        <li class="mobile-secondary-navigation-row hideOnDesktop">
+                                            <a href="#0" class="go-back"></a>
+                                            <a class="see-all" href="../../career-change.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Career Changer' });">Career Changers</a>
+                                            <span class="close-button"><i class="fas fa-xmark" aria-hidden="true"></i></span>
+                                        </li>
+
+                                        <li class="has-children forth no-margin">
+                                            <span class="nav-heading"><a href="../../career-change/plan.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Plan Your Career Change' });">Plan Your Career Change</a></span>
+                                        </li>
+
+                                        <li class="has-children forth no-margin">
+                                            <span class="nav-heading"><a href="../../career-change/exploring-it.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Learn About Careers in IT' });">Learn About Careers in IT</a></span>
+                                        </li>
+
+                                        <li class="has-children forth no-margin">
+                                            <span class="nav-heading"><a href="../../career-change/switching-career-path.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Change Careers to IT' });">Change Careers to IT</a></span>
+                                        </li>
+
+                                        <li class="has-children forth no-margin">
+                                            <span class="nav-heading"><a href="../../career-change/quiz.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Take Free Career Quiz' });">Take Free Career Quiz</a></span>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <ul class="cd-secondary-nav is-hidden cd-secondary-search-nav">
+                                        <li class="mobile-secondary-navigation-row hideOnDesktop">
+                                            <a class="see-all" href="../../search.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Search' });">Search</a>
+                                            <span class="close-button"><i class="fas fa-xmark" aria-hidden="true"></i></span>
+                                        </li>
+                                        <li class="full">
+                                            <div id="cd-search" class="cd-search">
+                                                <form action="https://www.comptia.org/search" method="get" id="searchForm">
+                                                    <input type="text" id="query" name="query" />
+                                                    <button class="ibSearch"><i class="fas fa-magnifying-glass"></i></button>
+                                                </form>
+                                                <div class="popular-results">
+                                                    <span class="nav-heading">Most Popular Search Results</span>
+                                                    <ul>
+                                                        <li><a href="../../searchb514.html?query=security">Security</a></li>
+                                                        <li><a href="../../search1a1e.html?query=comptia%20a%2b">CompTIA A+</a></li>
+                                                        <li><a href="../../search2365.html?query=education">Education</a></li>
+                                                        <li><a href="../../searchb2c9.html?query=network">Network</a></li>
+                                                        <li><a href="../../search2a42.html?query=roadmap">Roadmap</a></li>
+                                                        <li><a href="../../search4e90.html?query=CertMaster">CertMaster</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="hideOnDesktop"><a href="https://my.comptia.org/" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'My Account' });">Log in</a></li>
+
+                                <li class="hideOnDesktop"><a href="https://connect.comptia.org/" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Corporate Membership' });">Corporate Membership</a></li>
+                                <li class="hideOnDesktop"><a href="https://partners.comptia.org/" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Partners' });">Partners</a></li>
+                                <li class="hideOnDesktop"><a href="../../about-us.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'About Us' });">About Us</a></li>
+                                <li class="hideOnDesktop"><a href="../../contact-us.html" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Contact Us' });">Contact Us</a></li>
+                                <li class="hideOnDesktop"><a href="https://help.comptia.org/" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Help' });">Help</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="navbar_menu-buttons cd-header-buttons hideOnMobile hideOnTablet">
+                        <div tabindex="0" role="button" class="search-icon cd-search-trigger"></div>
+
+                        <a id="tn_myaccount" class="button is-login w-inline-block my-account hideOnMobile hideOnTablet" href="https://my.comptia.org/" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'My Account' });">
+Log in
+                        </a>
+                        <a id="tn_store" href="https://store.comptia.org/" class="button is-store w-inline-block hideOnMobile hideOnTablet" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Store' });">
+                            <div class="icon"></div><div>Store</div>
+                        </a>
+                    </div>
+                </nav>
+                
+
+                <ul class="cd-header-buttons hideOnDesktop">
+                    <li class="mobile-button-group"><a class="cd-nav-trigger" href="#cd-primary-nav" aria-label="Mobile Navigation"><i class="fas fa-bars" aria-hidden="true"></i></a></li>
+                    <li class="mobile-button-group">
+                        <ul>
+                            <li><a id="tn_search" class="cd-search-trigger" href="#cd-search" aria-label="Search"><i class="fas fa-magnifying-glass"></i></a></li>
+                            <li>
+                                <a id="tn_store" aria-label="CompTIA Store" class="store" href="https://store.comptia.org/" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Store' });">
+                                    <i class="fas fa-cart-shopping"><span class="item-count">3</span></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
+    </div>
+</div>
+
+
+
+<main class="cd-main-content"></main>
+
+<div class="cd-overlay"></div> </header> </section> <section class="body-container white"> <div class="container"> <div class="row"> <div class="col-md-12"> <div class="detailbreadcrumbs"> 
+<div>
+    <ul class="sf-breadscrumb breadcrumb">
+                <li><a href="../../index.html">Home </a></li>
+                <li><a href="../../resources.html">Content </a></li>
+                <li class="active">CompTIA Cloud-Based Storage Playbook</li>
+    </ul>
+</div> </div> </div> </div> <div class="row"> <div class="col-md-9" id="Content"> 
+
+<h1>CompTIA Cloud-Based Storage Playbook</h1>
+<p>The CompTIA Cloud-Based Storage Playbook provides the information you need to identify, target, position and close new opportunities in cloud-based storage. The guide is designed specifically for sales and technical teams learn how to better understand their customers&rsquo; business, how to ask the right questions and how to profitably close the sale. This PDF version is formatted for viewing on different devices and is offered as a way to share the content internally with your staff. </p><h4>CompTIA Playbook Templates</h4><p>CompTIA Playbooks are templates that solution providers may leverage to create their own solution playbooks. They are also useful tools to use as the basis for both sales training and marketing messaging development. Each playbook provides information around customer needs and challenges, technology landscape, scoping and qualifying questions, as well as solution benefits for each specific solution. </p>
+<h2>How to Use This Template</h2><p>This template offers you a head start in creating a solution sales playbook for selling cloud-based storage solutions.</p><p>While sales playbooks in general can take many forms &ndash; Word documents, slide deck presentations, binders of printed collateral, a collection of electronic files in a shared folder &ndash; this template provides content and ideas for you to integrate into your sales playbook, no matter what form it takes.</p><p>.PDF version &ndash; Formatted for viewing on different devices, the PDF file of the template is offered as a way to share the content internally.</p><p>.PPT version &ndash; Available to you for cutting, copying, pasting, and appending to the template as you deem appropriate for your business and your solution.</p><p>Here are a few ideas for getting the most out of this template:</p><ul class="static list"><li><p>Working with your team use the Playbook Actions in each section to customize the playbook for your unique play.</p></li><li><p>Schedule some meeting time with your sales team. Tackle each section as group &ndash; discussing what fits with your organization and what may differ based on what your sales people experience in the field.</p></li><li><p>Use your CRM or a shared folder to store this template. Ask your sales people for feedback on the applicability of different sections. Ask them to upload playbook-related resources, such as solution presentations, case studies, cost models, SOWs, reference architectures, and so on.</p></li><li><p>Have your team participate in a CompTIA Playbook Workshop. The workshop offers time and space for your team to focus on building out the playbook.</p></li></ul>
+<h2>About Playbooks</h2><h3>What is a Playbook?</h3><p>A playbook is a document or a set of documents where an organization records key information for helping sales and technical teams to:</p><ul class="static list"><li><p>Understand their customers&rsquo; business and the technology trends that impact them.</p></li><li><p>Ask the right questions to qualify, scope, and propose the right solutions.</p></li><li><p>Improve competitiveness and raise the probability of closing sales.</p></li><li><p>Ensure sales teams sell repeatable solutions consistently across customers thereby improving profit and reducing delivery risk.</p></li></ul><h3>What's included?</h3><p>Each CompTIA Playbook is divided into 5 sections: </p><ol><li><p><strong>The Play.</strong> What is the play? Includes the background and opportunity for the solution.</p></li><li><p><strong>Position.</strong> What&rsquo;s the situation? Includes customer pain points, problem description, and needs definition.</p></li><li><p><strong>Game Plan.</strong> What&rsquo;s your strategy? Includes the use case definition and prospecting/scoping questions.</p></li><li><p><strong>Team.</strong> Who are the players? Includes descriptions of what motivates different stakeholders within the target organization.</p></li><li><p><strong>Equipment.</strong> What tools/resources do you have? Includes suggestions for generating resources helpful in the sales process.</p></li></ol><p><em>To learn more about how to use playbooks, review CompTIA&rsquo;s Quick Start Guide to Improving Sales Performance with Solution Playbooks.</em></p>
+<h2>Cloud Storage Play </h2><h3>Background and Opportunity</h3><p>As many solution providers have added managed services to their portfolios over the past several years, cloud computing provides both the opportunity and the imperative to take a monthly service billing model one step further &ndash; to the core infrastructure that customers use to run their businesses.</p><p>Cloud computing is transforming not only end-user computing but also how solution providers grow and profit.</p><div class="smallcontentblockwrapper"><p>In the 1990&rsquo;s, the market first explored the idea of providing storage capacity on-demand.</p></div><p>Firms called storage service providers (SSPs) came on the scene as a variant of application service providers (ASPs) and the first wave of managed service providers (MSPs) firms.</p><p>Spurring on the model:</p><ul class="static list"><li><p>Growth in storage capacity</p></li><li><p>Need to reduce storage costs</p></li><li><p>Newly built, high-speed network bandwidth in metropolitan areas</p></li></ul><div class="smallcontentblockwrapper"><p>Eventually these firms fell victim to the Internet bubble before proving out the model.</p></div><p>The model:</p><ul class="static list"><li><p>Appeared feasible and cost effective</p></li><li><p>Leveraged bandwidth to store primary data offsite</p></li><li><p>Added resiliency</p></li><li><p>Added an on-demand component to the storage cost model</p></li></ul><p>Today, cloud computing and Infrastructure-as-a-Service, the provisioning of basic compute services such as CPU and storage capacity, is widely accepted.</p><p>This acceptance revived the concept of storage-as-a-service in the cloud for customers seeking to add tiers of long term archives, or even for the mobile user looking to store music in the cloud and access it from their smart phone or tablet.</p><p>Cloud-based storage offerings run the gamut from capacity on-demand from large providers such as Amazon Web Services, to more sophisticated multi-tier and archive offerings, to SMB and consumer-oriented offerings from the likes of box.net or Dropbox. One could even argue that Microsoft&rsquo;s moves to Office 365 and Sharepoint applications based in the cloud are ways to get people to store more data in the cloud &ndash; in essence, a storage play.</p><p>Selling Infrastructure-as-a-Service is a different paradigm from both managed services and traditional transaction-based solution provider businesses. Sales and technical teams must obtain the right level of knowledge and deploy the right sales methods in securing cloud-based opportunities.</p><h3>Select Your Approach</h3><div class="smallcontentblockwrapper"><p>Approaches</p><ul class="static list"><li><p>Resell an Existing Cloud Service</p></li><li><p>Build a Service</p></li><li><p>Resell a Gateway or Appliance-Based Solution</p></li></ul></div><p>When adding cloud-based storage to your portfolio there are a few approaches to consider. Each approach has implications for how you train and compensate your sales teams.</p><p>This document assumes that you&rsquo;ve made the decision to follow one of the approaches or perhaps a hybrid of more than one.</p><p>There are differences in how you go to market in each approach. You can customize the subtleties of the playbook approach as you choose partnerships and better understand how your technology and cloud partners can help you succeed.</p><p><strong>Your partners&rsquo; expertise and marketing collateral and strategies should be key inputs into this playbook.</strong></p><h3>Your Approach &ndash; Resell Existing</h3><p>Reselling an existing service is the easiest and most cost effective approach. Many national cloud service providers offer storage on-demand. There are also a variety of specialty cloud-based storage vendors who provide these services with specialized levels of security, performance, and access based on the user need.</p><p>Depending on the provider, this option may also allow the solution provider to &ldquo;front-end&rdquo; configuration and billing of the cloud service, or possibly even white label the offering.</p><p>You also have the option of building your own service. This involves:</p><ul class="static list"><li><p>Acquiring a data center space</p></li><li><p>Developing a platform from existing market-available infrastructure</p></li><li><p>Running data center operations</p></li><li><p>Making direct investments in marketing and demand generation to build the revenue scale to fund capital investments (<strong>most critical</strong>)</p></li></ul><p>If done efficiently, there is great profit in owning and provisioning the infrastructure. However, this is the most cost intensive and risky option. And also carries the highest cost of sales.</p><h3>Your Approach &ndash; Resell a Gateway or Appliance-Based Solution</h3><p>Many vendors have developed hardware and/or software based appliances and gateways to provide secure and dedicated access to offsite storage services.</p><p>These gateways often provide:</p><ul class="static list"><li><p>A layer of value above and beyond simple capacity-on-demand</p></li><li><p>Security and encryption that makes external cloud storage more palatable to customers who are hesitant to put any primary data offsite</p></li></ul><p>This approach also fits into a more traditional resell model for many solution providers since they&rsquo;ll be reselling a recurring revenue service and reselling hardware and software, which needs configuration and installation.</p>
+<h2>Cloud Storage Position</h2><h3>Problem Definition</h3><p>For decades, the growth of storage has challenged budgets and operations. Why?</p><p>Distributed computing moved storage outside the mainframe glasshouse and it proliferated across the enterprise.</p><p>Operations often over purchased storage leading to low levels of utilization, and irate CFOs and CIOs paying for unused capacity.</p><p>Over purchasing was due to:</p><ul class="static list"><li><p>Genuine lack of visibility</p></li><li><p>Poor planning</p></li><li><p>Inability to quickly provision new storage</p></li></ul><div class="smallcontentblockwrapper"><p>Clients require cloud-based storage solutions to address key ongoing challenges.</p></div><p>The wave of SAN and NAS technology and more sophisticated management software began to tame the storage beast through consolidation. However, new applications drove ever-increasing capacity requirements.</p><p>The concept of storage tiering helped. However, it did not address some of the fundamental challenges presented by the growth of data.</p><h3>Pain Points</h3><p>Your customers&rsquo; pain points may include:</p><ul class="static list"><li><p>High cost of storage growth</p></li><li><p>Cost of managing disparate storage platforms</p></li><li><p>Time to provision/de-provision</p></li><li><p>Lack of economies of scale</p></li><li><p>Low capacity utilization (driving up cost)</p></li><li><p>Cost and complexity of replication for disaster recovery</p></li><li><p>Customer dissatisfaction with access to information globally</p></li></ul><h3>Needs Definition</h3><p>Your needs definition may focus on the following:</p><ul class="static list"><li><p>Reduce the cost of storage overall</p></li><li><p>Run at the highest possible utilization rate</p></li><li><p>Provide users multiple cost and performance options for capacity</p></li><li><p>Provide fast expansion of new capacity and decrease in unused capacity</p></li><li><p>Improve resiliency through offsite storage</p></li></ul><p>The impact of not addressing these challenges include:</p><ul class="static list"><li><p>Increased cost</p></li><li><p>Low customer satisfaction within the user organization</p></li><li><p>Slow development cycles impacting time to market</p></li><li><p>Difficulty delivering storage access across and global and mobile footprint</p></li></ul><h3>Developing Your Position</h3><ul class="static list"><li><p>Reach out to existing customers and discuss how they struggle with managing the costs of storage.</p></li><li><p>Model this approach with your own company. Talk to your IT department and determine what might appeal to an SMB customer.</p></li></ul>
+<h2>Cloud Storage Game Plan</h2><h3>Use Case Definition</h3><div class="smallcontentblockwrapper"><p>Define the solution or use case in high-level terms.</p></div><p>The use case definition provides key inputs for marketing collateral and your sales teams&rsquo; &ldquo;elevator pitch.&rdquo;</p><p>Questions to consider:</p><ul class="static list"><li><p>What is the solution or use case to be addressed with the technology?</p></li><li><p>What are the main benefits of the solution?</p></li><li><p>What specific capabilities do you highlight based on your unique customer base?</p></li><li><p>What are the advantages of your approach?</p></li></ul><p>Cloud-based storage provides:</p><ul class="static list"><li><p>A pay-as-you go model for storage capacity</p></li><li><p>Multiple service level options for users without building dedicated infrastructure to provide each service level</p></li><li><p>Built-in disaster tolerance where the data is stored offsite</p></li><li><p>An easy-to-manage and cost-effective method to expand storage capacity when needed</p></li><li><p>Users with an alternative method of meeting their unique cost and access requirements for storage</p></li><li><p>IT departments with the ability to offer their mobile users cost-effective storage capacity on their mobile devices</p></li></ul><h3>Developing Your Strategy</h3><ul class="static list"><li><p>Challenge your marketing, practice management, and technical teams to dig deep and define concrete benefits to real customers and articulate those messages.</p></li><li><p>Consider how you will support the messaging with collateral, thought leadership content (white papers, webinars), and live events such as seminars.</p></li><li><p>Work with your marketing team or service providers to best represent the offering on your website.</p></li><li><p>Create a 60-90 second elevator pitch and script this for your sales team to use in tele-prospecting.</p></li></ul><h3>Prospecting/Scoping Questions</h3><p>Questions to consider:</p><ul class="static list"><li><p>What questions enable your sales team to uncover needs and build credibility with prospects?</p></li><li><p>What questions allow your sales team to size the solution, choose the best-fit approach and build credibility?</p></li><li><p>How can you characterize the advantages of cloud storage in terms of the financial, business, and operational Impact?</p></li><li><p>How can you summarize the holistic impact of the solution?</p></li></ul><p><strong>In this section, document the key questions your team must ask to qualify, size, and scope the solution.</strong></p><h3>Prospecting Questions &ndash; Technology</h3><ul class="static list"><li><p>What is your total amount of storage (GB/TB)</p></li><li><p>What different types/brands of storage device do you use? (DAS/SAN/NAS)</p></li><li><p>Do you replicate any of your storage devices offsite?</p></li><li><p>Do you use any snapshot or copy technology for backups or for specific applications?</p></li><li><p>What percentage of storage is non-shared &ndash; can&rsquo;t be shared or re-provisioned to a SAN or network connected host?</p></li><li><p>Do you employ storage tiering &ndash; different types of data on different storage arrays based on performance, recovery or cost criteria?</p></li><li><p>What is your cost/GB by tier?</p></li><li><p>Do you use any storage virtualization or storage management software platform?</p></li></ul><h3>Business Questions</h3><ul class="static list"><li><p>What is the compound annual growth rate (CAGR) for storage expenditures?</p></li><li><p>What is the CAGR for storage capacity?</p></li><li><p>What percentage of your data falls under compliance requirements?</p></li><li><p>What is the ratio of GB/TB under management per storage operations employee?</p></li><li><p>Have you classified data and its relative value to other data?</p></li><li><p>Are you using any &ldquo;Big Data&rdquo; analytics applications, which drive large quantities of data or temporary storage requirements?</p></li></ul><h3>Scoping Questions</h3><ul class="static list"><li><p>How many servers need connectivity to cloud-based storage?</p></li><li><p>Where are the servers located? How many data centers?</p></li><li><p>How are the servers backed up?</p></li><li><p>What are the security and access requirements for the data?</p></li></ul><h3>Developing Questions</h3><ul class="static list"><li><p>Run a training session where your technical team reviews with the sales team what types of answers to expect from the scoping questions. How do the questions impact solution type and size? What might be some second level questions to ask in order to go deeper?</p></li><li><p>This type of activity illustrates the role these questions play in uncovering, sizing, and qualifying opportunities. These questions also illustrate to your sales and pre-sales team &ldquo;why&rdquo; the answers are important and what they mean.</p></li></ul><h3>Impact of the Solution &ndash; Financial</h3><div class="smallcontentblockwrapper"><p>Characterize the advantages of cloud-based storage in terms of the financial, business, and operational impacts.</p></div><p>Questions to consider when crafting statements detailing financial impact:</p><ul class="static list"><li><p>What was the cost of the solution?</p></li><li><p>What was the customers existing financial run rate vs. the new run rate with a cloud solution?</p></li><li><p>Was there a reduction in labor cost for management of storage operations?</p></li><li><p>Were there shifts in CAPEX to OPEX?</p></li><li><p>Can you calculate the risk avoidance benefits of keeping primary or secondary storage offsite?</p></li><li><p>What is the value of the ability to reclaim unused storage and de-provision when not needed?</p></li></ul><h3>Impact of the Solution &ndash; Business</h3><p>Questions to consider for business impact:</p><ul class="static list"><li><p>How can you reduce costs and translate those funds to greater investment in IT areas, which produce a competitive advantage?</p></li><li><p>Can you shift cost from infrastructure to revenue generating applications?</p></li><li><p>Can faster provisioning mean getting applications to market faster?</p></li></ul><h3>Impact of the Solution &ndash; Operations</h3><p>Questions to consider for operational impact:</p><ul class="static list"><li><p>Is there a reduction in labor costs?</p></li><li><p>Is there a reduction in time to provision new storage?</p></li><li><p>Does this solution positively impact time to market with new application?</p></li><li><p>Is there a reduction in time for upgrades and patch/driver management?</p></li></ul><h3>Holistic Impact of Solution</h3><ul class="static list"><li><p>Develop several short case studies, real or imagined, to illustrate customer benefits from your crafted solution. Use the financial, business, and operational format as a model. Commit each sales person to being able to memorize and pitch in 30-60 seconds at least 3 example cases. A model script might look something like:</p><p><em>&ldquo;We had a large retail customer who was challenged by&rdquo;&hellip;.<br />&ldquo;They were very concerned that&rdquo;&hellip;. <br />&ldquo;And they wanted to get to an end state where they could tier storage off-site&rdquo;&hellip; <br />&ldquo;So we worked with them to craft a solution which provided&rdquo;&hellip; <br />&ldquo;The result was an improvement in&rdquo;&hellip; <br />&ldquo;A reduction in&rdquo;&hellip; <br />&ldquo;And that lead to&rdquo;&hellip;</em></p></li></ul>
+<h3>Potential Value-Add Services </h3><p>Critical to making money in cloud solutions is bundling your own services. Taking margin on just the cloud service is only one piece of the profit puzzle.</p><p>Consider a broad range of add-on and complementary services. Use the following descriptions as a guide to develop service offerings for your firm.</p><p>Examples of Potential Value-Add Services for Storage:</p><ol><li><p>Cost Analysis</p></li><li><p>Optimization</p></li><li><p>Implementation and Configuration</p></li></ol><h3>Value-Add &ndash; Cost Analysis</h3><p>Cost analysis for cloud-based storage includes analyzing the benefits of storage tiering in general.</p><p>Cost analysis can be time consuming and requires an in-depth knowledge of how storage grows and how utilization varies over time.</p><p>Deliverables:</p><ul class="static list"><li><p>Interviews with current operation team and data gathering</p></li><li><p>Financial spreadsheet analysis comparing costs to a potential cloud-based solution including deployment/migration cost and effort</p></li></ul><p>The key to understanding the financial benefits of cloud-based solutions is performing a cost analysis comparing current state to future state.</p><h3>Value Add &ndash; Optimization</h3><div class="smallcontentblockwrapper"><p>Many end-users require improvements and optimization to how they manage their storage environment including refresh of hardware.</p></div><p>Optimization exercises may very well uncover particular areas to introduce limited cloud-based storage or highlight storage management efficiencies that could be gained through managing storage with a cloud-based interface.</p><p>Deliverables:</p><ul class="static list"><li><p>Interviews with current operations team and review of current hardware</p></li><li><p>Software and policy review</p></li><li><p>Gap analysis and remediation plan mapped to the customer&rsquo;s objectives for for both the cost of storage and management policies</p></li></ul><h3>Value Add Implementation and Configuration</h3><div class="smallcontentblockwrapper"><p>Proper planning and resourcing of IT projects is paramount to project success.</p></div><p>Complex critical projects should be properly resourced with dedicated skills and the proper level of project/program management.</p><p>Technology implementation projects should include deliverables such as &ndash; project/resource plan, a mix of full-time or part-time resources, testing, and documentation of the solution/policies.</p><p>In addition to basic configuration of cloud storage via a portal, migration of existing capacity to the cloud may require dedicated effort, planning and services.</p><h3>Your Value-Add Services</h3><ul class="static list"><li><p>Work with your technical team to craft &ldquo;packaged&rdquo; and repeatable service offerings which map to customers needs and augment the overall solution profit opportunity for cloud.</p></li><li><p>Be sure to create model SOWs and mock deliverables in the early stages so your sales teams can leverage those documents in the sales process. Walking through a comprehensive Statement of Work for a complex project can be a highly effective selling tool.</p></li></ul>
+<h2>Cloud Storage Team</h2><h3>Overview</h3><p>Questions to consider:</p><ul class="static list"><li><p>Who do you talk to about this solution?</p></li><li><p>What are their titles?</p></li><li><p>What problems do they care about solving?</p></li><li><p>Where might you find them in the organization?</p></li><li><p>Are they in a vertical market that has special factors &ndash; such as regulations or extreme cost pressures &ndash; that motivate them in a unique way?</p></li></ul><p>Educate your team on the key players and their motivation.</p><h3>CFO</h3><div class="smallcontentblockwrapper"><p>Chief financial officers want to understand how innovation in process and technology can remove cost from the organization and improve the bottom line.</p></div><p>The following elements of cloud-delivered services are particularly attractive to the CFO:</p><ul class="static list"><li><p>Pay-as-you-go capacity</p></li><li><p>Ability to predict cost outlays for technology</p></li><li><p>Minimizes the hit of unplanned/budgeted large technology expenditures</p></li><li><p>Shifts to OPEX from CAPEX</p></li><li><p>Reduces overall cost of operations</p></li><li><p>Minimizes business risk with offsite storage and compliant archives</p></li></ul><p>Based on the benefits, the CFO can be a big advocate of a cloud-based storage approach.</p>
+<h3>CIO</h3><div class="smallcontentblockwrapper"><p>The CIO is a corporate steward of both cost control and risk reduction.</p></div><p>The budget line item for storage has been growing consistently. And &ndash; with the advent of &ldquo;Big Data&rdquo; and the goal of mining large quantities of information to uncover new revenue opportunities &ndash; the desire to retain more data and access data in the cloud will only increase.</p><p>Cloud offers a viable alternative for storage data particularly for temporary use in data mining. This will appeal to the CIO&rsquo;s desire not only to reduce costs but also to deliver cutting edge functionality and competitive advantage to the business.</p><h3>Head of IT Infrastructure</h3><p>The following elements of cloud-based storage solutions interest the Head of Infrastructure, it</p><div class="smallcontentblockwrapper"><p>The head of IT infrastructure is ultimately responsible for managing operations and often bears the brunt of the labor costs in the IT organization.</p></div><ul class="static list"><li><p>Reduces the cost of labor</p></li><li><p>Allows the organization to eliminate or shift that labor to other areas</p></li><li><p>Shifts the burden of the management of SAN/NAS components to an external provider</p></li><li><p>Shifts the responsibility of providing for redundancy of the infrastructure used</p></li><li><p>Shifts effort outside of the organization while maintaining control over the core elements of setting policies and provisioning/de-provisioning storage in an on-demand fashion</p></li></ul><h3>Identifying Your Audience &amp; Team</h3><ul class="static list"><li><p>Role-play potential prospect interviews when training sales and technical teams on the pitch. Leverage your scripts, and have your executives play the parts of the end-user executives. Challenge sales teams to speak only to the unique concerns of each constituent.</p></li><li><p>This activity helps teams become fluid in the language of finance and business requirements which tend to be more of the focus in decisions about using cloud-based services.</p></li></ul>
+<h2>Cloud Storage Equipment </h2><h3>Additional Elements</h3><p>Other playbook elements might include, but should not be limited to: </p><ul class="static list"><li><p>reference architectures</p></li><li><p>solution presentations</p></li><li><p>case studies</p></li><li><p>cost models</p></li><li><p>pricing guidelines for services</p></li><li><p>sample SOW&rsquo;s for projects related to this play</p></li></ul><p>The most important elements of the playbook will be those that support your sales team&rsquo;s ability to sell the business value vs. the technical specifications of cloud solutions.</p><h3>Reference Architectures</h3><p>Draw directly from your vendors&rsquo; technology portfolio for diagrams and reference architectures that can be reviewed with potential clients.</p><p>Provide examples of complete solutions including the required services to help the customer visualize what an end state environment might look like.</p><p>For example, show how cloud-based storage might first start as a singer tier of storage, perhaps archive, then grow.</p><h3>Case Studies and Solution Presentations</h3><h4>Solution Presentations</h4><p>Build PowerPoint presentations supported by industry research and example approaches to solving the problem. Leverage this presentation to build credibility and guide the scoping discussions.</p><h4>Case Studies</h4><p>Tell stories succinctly by highlighting the financial, business, and operational benefits of the solution.</p><p>Build PowerPoint and Word case studies, success stories, and reference architectures that can be used as proof points of past success.</p><br><p><i><b>Read more about</b> <a onclick="gtag('event', 'Clicked Resource Hub Tag', { 'event_category': 'Resource Hub Tag', 'event_label': 'Cloud Computing' });" href="../../resources/cloud-computing.html">Cloud Computing</a>.</i></p> </div> <div class="col-md-3" id="SidebarResource"> <div id="catcher"></div> <div id="sticky"> 
+
+<div >
+    <div ><div class="addthis_inline_share_toolbox"></div></div>    
+    
+</div><p><b>Tags : </b> <a onclick="gtag('event', 'Clicked Resource Hub Tag', { 'event_category': 'Resource Hub Tag', 'event_label': 'Cloud Computing' });" href="../../resources/cloud-computing.html">Cloud Computing</a></p><script>
+      function RecordActivity(Title, Tags, Permissions, AccessType) {
+          if (AccessType.toLowerCase() == "pdfwithlogo") {
+              gtag('event', 'Document Download With Logo', { 'event_category': 'Resource Download', 'event_label': Title });
+          }
+          else if (AccessType.toLowerCase() == "pdf") {
+              gtag('event', 'Document Download', { 'event_category': 'Resource Download', 'event_label': Title });
+          }
+          else {
+              gtag('event', 'Viewed HTML', { 'event_category': 'Resource Download', 'event_label': Title });
+          }
+
+        $.ajax({
+            type: 'POST',
+            url: '/content/guides/comptia-cloud-based-storage-playbook/ajaxrecordactivity/',
+            dataType: 'json',
+            data: { title: Title, tags: Tags, permissions: Permissions  },
+            success: function (data) {
+
+            },
+            error: function (ex) {
+                console.log('Failed : ' + ex);
+            }
+        });
+    }
+
+    function downloadPdfWithLogo(ID) {
+        $.featherlight("<p></p>");
+        $('.featherlight-inner').html("<h2>Loading...</h2>");
+        $.ajax({
+            type: 'POST',
+            url: '/content/guides/comptia-cloud-based-storage-playbook/getdownloadpdfform/',
+            dataType: 'html',
+            data: { ID: ID },
+            success: function (data) {
+                $('.featherlight-inner').html(data);
+            },
+            error: function (ex) {
+                console.log('Failed : ' + ex);
+            }
+        });
+    }
+
+    //Update Image when Uploaded
+    function ShowImagePreview(input) {
+        if (input.files && input.files[0]) {
+            $('#imgLogo').css('display', 'inline');
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#imgLogo').prop('src', e.target.result)
+                    .width(200);
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+
+</script>
+
+    <script>
+            //Run track script if just accessing/loading page
+            RecordActivity('CompTIA Cloud-Based Storage Playbook', 'Technology Solutions | Cloud Computing', 'Public', '')
+    </script>
+
+
+    <div class="sidebarSection download">
+        <h2>Download Document</h2>
+        <div class="content">
+            <div id="TableOfContentsLinks_C066_divDownloadLink">
+                <a target="_blank" href="https://comptiacdn.azureedge.net/webcontent/docs/default-source/research-reports/comptia-cloud-storage-playbook-template.pdf?sfvrsn=a33ab8db_2" onclick="RecordActivity('CompTIA Cloud-Based Storage Playbook', 'Technology Solutions | Cloud Computing', 'Public', 'pdf')" title="Download Full PDF Report">
+                    <img src="../../../comptiawebsite.blob.core.windows.net/webcontent/images/default-source/researchreports/pdf1.png" style="position:relative;top:-3px;">Download Full PDF
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+ </div> </div> </div> </div> </section> 
+ <section class="body-container white"> <div class="container"> <div class="row"> <div class="col-md-9"> 
+ </div> <div class="col-md-3"> 
+ </div> </div> </div> </section> <section class="highlights-container"> <div class="container"> 
+ </div> </section> <section class="footer-container" id="footer"> <footer class="container"> 
+
+<div >
+    <div ><footer class="footer">
+<div class="row">
+
+<div class="col-md-3">
+<img src="../../../comptiacdn.azureedge.net/webcontent/images/default-source/mainsitetemplateimages/comptia-logocbc0.png?sfvrsn=30cdad27_2" alt="comptia-logo" title="comptia-logo" data-displaymode="Original">&nbsp;
+<ul>
+<li><a href="../../about-us.html">About Us</a></li>
+<li><a href="https://connect.comptia.org/newsroom">Newsroom</a></li>
+<li><a href="../../contact-us.html">Contact Us</a></li>
+<li><a href="../../blog.html">Blog</a></li>
+</ul>
+
+<ul class="social">
+    <li><a href="https://www.facebook.com/comptia"><i class="fa fa-facebook-f"></i></a><br></li>
+    <li><a href="https://www.twitter.com/comptia"><i class="fa fa-twitter"></i></a><br></li>
+    <li><a href="https://www.linkedin.com/company/comptia"><i class="fa fa-linkedin"></i></a><br></li>
+    <li><a href="https://www.youtube.com/comptia"><i class="fa fa-youtube-play"></i></a><br></li>
+    <li><a href="https://www.instagram.com/comptiaofficial/"><i class="fa fa-instagram"></i></a><br></li>
+    <li><a href="https://open.spotify.com/user/69zrdapuhgxuofckbsuuzm80k?si=89172934b235442a&amp;nd=1"><i class="fa fa-spotify"></i></a><br></li>
+</ul>
+
+</div>
+
+<div class="col-md-3">
+<h3>Certification</h3>
+<ul>
+    <li><a href="../../certifications.html">CompTIA IT Certifications</a></li>
+    <li><a href="https://store.comptia.org/">Store</a></li>
+    
+    <li><a href="https://www.certmetrics.com/comptia/login.aspx">Account Login</a></li>
+<li><a href="https://www.comptiatech.org/">CompTIA Tech Career Academy</a></li>
+</ul>
+</div>
+<div class="col-md-3">
+<h3>Membership Community</h3>
+<ul>
+    <li><a href="../../membership.html">CompTIA – The IT Industry Association</a></li>
+    
+</ul>
+
+<h3>Social Impact</h3>
+<ul>
+    <li><a href="https://www.comptiaspark.org/">CompTIA Spark</a></li>
+</ul>
+</div>
+<div class="col-md-3">
+<h3>Government Relations</h3>
+<ul>
+    <li><a href="https://connect.comptia.org/membership/public-sector">CompTIA Public Sector</a></li>
+</ul>
+
+<h3>Partners</h3>
+<ul>
+    <li><a href="https://partners.comptia.org/">CompTIA Authorized Partner Program</a></li>
+</ul>
+
+<select id="language_select">
+<option>Change Language</option>
+<option value="/">English</option>
+ <option value="/de/start">German</option>
+ <option value="/pt/pagina-inicial">Portuguese</option>
+ <option value="/es/pagina-principal">Spanish</option>
+</select>
+
+</div>
+
+</div>
+</footer></div>    
+    
+</div> </footer> </section> <section class="copyright-container"> <div class="container copyright-content"> 
+
+<div >
+    <div ><ul>
+    <li>Copyright © CompTIA, Inc. All Rights Reserved</li>
+    <li><a href="../../sitemap.html">Sitemap</a></li>
+    <li><a href="../../legal.html">Legal</a></li>
+</ul></div>    
+    
+</div> </div> </section> <script src="../../resourcepackages/mainsite/assets/dist/js/initialize.min9b1a.js?v=4.0.1" type="text/javascript"></script><script type="text/javascript" src="../../WebResource80aa.js?d=NjxTqR2bqTw1rewxxlkHPubjZy05NEOaKaMLHW4Lo32JlaoXFWJWQ76gpu7rAFqs7j_NRtPGHELptxKNcYRgcW7OGBxy-XnAT4LWmqos2vXIQw0HFjI9dJRsIpI5cPTAXYQcJQJ-Pp3o7rLaWXccaUiLnvQOQH2V4P5VWa3JeRRyPS_CM4VssLHlWRIAKxx6Y1V5c066Qqdi90--l3eSSkDGbkQ1&amp;t=637429511240000000">
+
+</script> </body> 
+<!-- Mirrored from www.comptia.org/content/guides/comptia-cloud-based-storage-playbook by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Feb 2023 05:12:53 GMT -->
+</html>
